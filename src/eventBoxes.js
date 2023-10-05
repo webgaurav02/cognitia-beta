@@ -9,7 +9,7 @@
           "flex justify-center translate-y-5  bg-bgdpt rounded-t-3xl border-[#0A0A0A] w-[500px] h-[200px]"}>
         <div className=" flex relative -translate-y-3 row-span-3 bg-[#181818] border-gray-500  rounded-t-2xl w-[500px] h-[200px] text-center hover:translate-x-0 hover:translate-y-0 duration-300 text-white" >
           <div className="w-5/12 h-full">
-            <img src="https://images.unsplash.com/photo-1683009427042-e094996f9780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" className="h-full w-full object-cover rounded-tl-2xl"></img>
+            <img src="https://images.unsplash.com/photo-1683009427042-e094996f9780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" className="h-full w-full object-cover rounded-tl-2xl" draggable="false"></img>
           </div>
           <div className="flex flex-col rows-7 m-5 text-left w-7/12 h-full">
             <div className="flex h-1/6 space-x-2 w-full">
