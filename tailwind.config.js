@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['POPPINS'],
+        poppinsbold: ['POPPINSBOLD'],
         montserrat: ['MONTSERRAT']
       },
       colors:{

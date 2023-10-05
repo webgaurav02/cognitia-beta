@@ -3,7 +3,7 @@ export default function Timeline(){
     return(
         <div className=" bg-[#101010] h-[768px] w-screen">
             <div className=" mx-36 grid grid-rows-1 grid-cols-3 h-full font-poppins">
-                <div className="flex self-center col-span-1 text-white text-8xl font-bold"> 
+                <div className="flex self-center col-span-1 text-white text-8xl font-poppinsbold"> 
                     Here's a timeline of all the events
                 </div>
                 <div className="grid grid-rows-3 col-span-2"> 
@@ -19,19 +19,19 @@ export default function Timeline(){
                         </div>
                         <div className="flex w-full h-full overflow-clip">
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                         </div>                                         
@@ -48,19 +48,19 @@ export default function Timeline(){
                         </div>
                         <div className="flex w-full h-full overflow-clip">
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                         </div>                                         
@@ -77,19 +77,19 @@ export default function Timeline(){
                         </div>
                         <div className="flex w-full h-full overflow-clip">
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Hack the box</div>
+                                <div className=" text-xl font-poppinsbold">Hack the box</div>
                                 <div>Time-10:15</div>
                             </div>
                             <div className="w-1/4 border-r-2 border-[#486284] mr-10">
-                                <div className=" text-xl">Andha Biswas</div>
+                                <div className=" text-xl font-poppinsbold">Andha Biswas</div>
                                 <div>Time-11:15</div>
                             </div>
                         </div>                                         

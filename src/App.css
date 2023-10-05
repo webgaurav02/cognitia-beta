@@ -1,7 +1,7 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-::-webkit-scrollbar {
-    display: none;
-  }
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: #101010;
+}
 
   .rec-arrow {
     border-color: white;
@@ -14,8 +14,4 @@
 .rec-arrow:hover:not(:disabled) {
     background-color: white!important;
     color: black!important;
-}
-
-body{
-  background-color: #101010;
 }

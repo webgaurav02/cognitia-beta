@@ -12,9 +12,9 @@ const breakPoints=[
 export default function EventCarousel () {
   return (
     <>
-    <div className='w-full h-[300px] '>
-      <div className='bg-[#0A0A0A] w-full h-full mt-0'>
-        <Carousel 
+    <div className='w-full h-[250px] '>
+      <div className='flex justify-center bg-[#101010] w-full h-full mt-0'>
+        <Carousel
           breakPoints={breakPoints}
           pagination={false}
           >

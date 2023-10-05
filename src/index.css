@@ -11,3 +11,8 @@
     font-family: "MONTSERRAT";
     src: url("../public/fonts/Montserrat-VariableFont_wght.ttf");
   }
+
+  @font-face {
+    font-family: "POPPINSBOLD";
+    src: url("../public/fonts/Poppins-Bold.ttf");
+  }

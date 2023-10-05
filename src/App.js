@@ -1,12 +1,13 @@
 import './App.css';
 import background from './background.png'
 import Timeline from './timeline.js'
-import EventCarousel from './eventCarousel';
+import PopularEvents from './pop.js'
+import Footer from './footer';
 // colors 90A8ED FF90E8 FFC900 23A094 
 function App() {
   return (
     <>
-    <div className='fixed h-24 w-screen bg-[#1A1A1A] border-b-2 border-stone-300'></div>
+    <div className='fixed h-24 w-screen bg-[#1A1A1A] border-b-2 border-stone-300 z-50'></div>
     <div className='h-24'></div>
     <div className=' bg-[#101010] font-poppins w-screen h-11/12 text-white'> 
       <div className=' px-36 grid grid-rows-7 grid-cols-5 h-full'>
@@ -20,12 +21,21 @@ function App() {
     <div className='flex justify-center'>
       <div className="w-11/12 border-b-2 border-stone-300"></div>
     </div>
-    
+
     <Timeline />
 
     <div className='flex justify-center'>
       <div className="w-11/12 border-b-2 border-stone-300"></div>
     </div>
+
+    <PopularEvents/>
+
+    <div className='flex justify-center'>
+      <div className="w-11/12 border-b-2 border-stone-300"></div>
+    </div>
+
+    <Footer/>
+
     </>
   );
 }
