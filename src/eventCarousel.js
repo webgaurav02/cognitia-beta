@@ -1,4 +1,4 @@
-import React, { isValidElement } from 'react';
+
 import Carousel from 'react-elastic-carousel'
 import EventBox from './eventBoxes';
 

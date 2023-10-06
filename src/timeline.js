@@ -7,7 +7,7 @@ export default function Timeline(){
                     Here's a timeline of all the events
                 </div>
                 <div className="grid grid-rows-3 col-span-2"> 
-                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-end justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C]">
+                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-end justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex text-xl">
                             <div className="self-center ">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ export default function Timeline(){
                             </div>
                         </div>                                         
                     </div>
-                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-center justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C]">
+                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-center justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex text-xl">
                             <div className="self-center">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ export default function Timeline(){
                             </div>
                         </div>                                         
                     </div>
-                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-start justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C]">
+                    <div className="grid grid-rows-2 py-6 px-20 flex-col self-start justify-self-center h-40 w-11/12 bg-white rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex text-xl">
                             <div className="self-center">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">

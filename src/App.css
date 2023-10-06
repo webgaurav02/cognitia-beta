@@ -17,7 +17,7 @@ body {
 }
 
 #bgPic{
-  background-image: url('../public/images/fpbg.jpg');
   height: 80vh;
   position: relative;
+  width: screen;
 }
