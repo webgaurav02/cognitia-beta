@@ -15,3 +15,9 @@ body {
     background-color: white!important;
     color: black!important;
 }
+
+#bgPic{
+  background-image: url('../public/images/fpbg.jpg');
+  height: 80vh;
+  position: relative;
+}
