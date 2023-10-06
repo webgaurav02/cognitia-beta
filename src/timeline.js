@@ -7,7 +7,9 @@ export default function Timeline(){
                     Here's a timeline of all the events
                 </div>
                 <div className="grid grid-rows-3 col-span-2 text-xs md:text-xl h-3/4 w-full md:h-full md:w-full"> 
-                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-end justify-self-center h-24 md:h-40 md:w-11/12 bg-white rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
+                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-end justify-self-center h-24 md:h-40 md:w-11/12 bg-white 
+                      hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4
+                        rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex md:text-xl">
                             <div className="self-center ">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +38,9 @@ export default function Timeline(){
                             </div>
                         </div>                                         
                     </div>
-                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-center justify-self-center h-24  md:h-40 md:w-11/12 bg-white rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
+                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-center justify-self-center h-24  md:h-40 md:w-11/12 bg-white 
+                    hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4
+                    rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex md:text-xl">
                             <div className="self-center ">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +69,9 @@ export default function Timeline(){
                             </div>
                         </div>                                         
                     </div>
-                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-start justify-self-center h-24 md:h-40 md:w-11/12 bg-white rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
+                    <div className="grid grid-rows-2 py-2 px-2 md:py-6 md:px-20 flex-col self-start justify-self-center h-24 md:h-40 md:w-11/12 bg-white 
+                    hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4
+                    rounded-lg md:rounded-3xl text-[#1A202C] duration-300">
                         <div className="flex md:text-xl">
                             <div className="self-center ">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
