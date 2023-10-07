@@ -5,6 +5,7 @@ import prl5 from './images/prl5.png';
 import prl7 from './images/prl7.png';
 import bgend from './images/bgend.png'
 import TextBlock from './textBlock';
+import ScrollDown from './scrollDown';
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
@@ -27,6 +28,7 @@ function ParalaxHome() {
           </div>        
           </ParallaxLayer>
 
+          
         <ParallaxLayer 
           offset={0.1}
           speed={1.3}>
@@ -34,6 +36,15 @@ function ParalaxHome() {
             <img src={prl2} alt="background" className='w-[900px] sm:w-[1920px] opacity-100 object-cover'/>  
           </div>     
         </ParallaxLayer>
+
+        <ParallaxLayer  
+          offset={0.3}
+          speed={0}>  
+          <div className='-translate-y-0 sm:-translate-y-48 xl:-translate-y-24 2xl:-translate-y-24'>
+            <ScrollDown/>
+            </div>
+          </ParallaxLayer>
+
 
         <ParallaxLayer 
           offset={0.9}
@@ -77,6 +88,13 @@ function ParalaxHome() {
             <img src={bgend} alt="background" className='w-[900px] sm:w-[1920px] opacity-100 object-cover sm:-translate-y-[35vh]'></img>  
           </div> 
         </ParallaxLayer>
+
+        <ParallaxLayer  
+          offset={1.8}
+          speed={0}>  
+            <ScrollDown/>
+             
+          </ParallaxLayer>
       
         <ParallaxLayer
           offset={0.2}
@@ -88,7 +106,7 @@ function ParalaxHome() {
           </div>
           <div className='flex justify-end content-center row-span-6 lg:col-span-3 '> </div>
           <div className=' py-2 sm:py-0 row-span-2 col-span-2 text-md sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 self-center duration-500'>Welcome to Cognitia, NIT Meghalaya’s annual tech and cultural fest. Explore all events and get registered now! </div>
-        <div className='  py-2 sm:py-0 row-span-2 col-span-2 '><button className='border-black rounded-lg bg-[#F8D57E] text-black h-10 w-40 sm:h-20 sm:w-72 text-2xl hover:bg-white duration-500'>View Events</button></div>
+        <div className='  py-2 sm:py-0 row-span-2 col-span-2 '><button className='border-black border-2 rounded-lg bg-[#E1ABE8] text-black h-10 w-40 sm:h-20 sm:w-72 text-2xl hover:bg-white duration-500'>View Events</button></div>
         </div>
         </div>
         </ParallaxLayer>
