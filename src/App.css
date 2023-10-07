@@ -1,5 +1,8 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
   background-color: #101010;
 }
 

@@ -54,7 +54,7 @@ function ParalaxHome() {
 
         <ParallaxLayer 
           offset={0.1}
-          speed={2.5}>
+          speed={2.4}>
           <div className='animation_layer'>
             <img src={prl5} alt="background" className='w-[900px] sm:w-[1920px] opacity-100 object-cover'/>  
           </div>     

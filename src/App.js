@@ -7,29 +7,36 @@ import ParalaxHome from './paralaxHome';
 function App() {
   return (
     <>
-    <div className='fixed h-10 sm:h-24 w-screen bg-[#1A1A1A] border-b-2 border-stone-300 z-50'></div>
+    <div >
+      <div className='fixed h-10 sm:h-24 w-screen bg-[#1A1A1A] border-b-2 border-stone-300 z-50'></div>
 
-    <ParalaxHome/>
+      <ParalaxHome/>
 
     
-    <div className='flex justify-center'>
-      <div className="w-11/12 border-b-2 border-stone-300"></div>
+      <div className='flex justify-center '>
+        <div className="w-11/12 pb-28 sm:pb-0"></div>
+      </div>
+      
+
+      <div className='flex justify-center'>
+        <div className="w-11/12 border-b-2 border-stone-300"></div>
+      </div>
+
+      <Timeline />
+
+
+      <div className='flex justify-center'>
+        <div className="w-11/12 border-b-2 border-stone-300"></div>
+      </div>
+
+      <PopularEvents/>
+
+      <div className='flex justify-center'>
+        <div className="w-11/12 border-b-2 border-stone-300"></div>
+      </div>
+
+      <Footer/>
     </div>
-
-    <Timeline />
-
-    <div className='flex justify-center'>
-      <div className="w-11/12 border-b-2 border-stone-300"></div>
-    </div>
-
-    <PopularEvents/>
-
-    <div className='flex justify-center'>
-      <div className="w-11/12 border-b-2 border-stone-300"></div>
-    </div>
-
-    <Footer/>
-
     </>
   );
 }

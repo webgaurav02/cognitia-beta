@@ -1,9 +1,9 @@
 
 export default function Timeline(){
     return(
-        <div className=" bg-[rgb(16,16,16)] h-[768px] w-screen">
-            <div className=" mx-3 mt-10 md:0 md:mx-36 md:grid 
-            grid-rows-1 grid-cols-3 h-full 
+        <div className=" bg-[rgb(16,16,16)] h-[600px] sm:h-[768px] w-screen">
+            <div className=" mx-3 mt-10 md:0 md:mx-36 md:grid
+            grid-rows-1 grid-cols-3 h-full
             font-poppins">
                 <div className="flex self-center col-span-1
                 px-5 translate-y-10 md:px-0 md:translate-y-0  
