@@ -1,7 +1,9 @@
 export default function Footer(){
     return(
         <>
-        <div className="md:px-20 px-5 lg:px-32 xl:px-48 2xl:px-64 w-screen h-[40vh] text-white font-poppins">
+        <div className="md:px-20 px-5 lg:px-32 xl:px-48 2xl:px-64 
+        w-screen h-[40vh] 
+        text-white font-poppins">
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 w-full h-full ">
                 <div className=" font-poppinsbold text-xl sm:text2xl row-span-1 self-end mb-2">COGNITIA</div>
                 <div>

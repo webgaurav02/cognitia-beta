@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <div >
-      <div className='fixed h-10 sm:h-24 w-screen border-b-2 border-stone-300 z-50'>
+      <div className='fixed h-24 w-screen border-b-2 border-stone-300 z-50'>
         <NavBar/>
       </div>
 
