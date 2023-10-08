@@ -14,7 +14,7 @@ function App() {
 
     
       <div className='flex justify-center '>
-        <div className="w-11/12 pb-28 sm:pb-0"></div>
+        <div className="w-11/12  sm:pb-0"></div>
       </div>
       
 
