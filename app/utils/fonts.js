@@ -8,6 +8,10 @@ export const poppins = localFont({
   src: "../assets/Poppins-Regular.ttf",
 });
 
+export const poppinsbold = localFont({
+  src: "../assets/Poppins-Bold.tff",
+});
+
 export const jost = localFont({
   src: "../assets/Jost-VariableFont_wght.ttf",
 });
