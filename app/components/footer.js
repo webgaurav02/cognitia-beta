@@ -4,6 +4,9 @@ export default function Footer() {
   return (
     <>
       <div className={jakarta.className}>
+      <div className="flex justify-center">
+          <div className="w-11/12 border-b-2 border-stone-300"></div>
+        </div>
       <div
         className="md:px-20 px-5 lg:px-32 xl:px-48 2xl:px-64 
         w-screen h-[40vh] 
