@@ -1,4 +1,5 @@
 import { jakarta } from "../utils/fonts";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,9 +21,9 @@ export default function Footer() {
             Links
           </div>
           <div className="flex-row space-y-2 row-span-2 ">
-            <div>Home</div>
-            <div>Events</div>
-            <div>Team</div>
+            <div><Link href="/">Home</Link></div>
+            <div><Link href="/events">Events</Link></div>
+            <div><Link href="/team">Team</Link></div>
           </div>
             <div className=" text-xs sm:text-lg xl:text-lg flex-row row-span-2 col-span-2">
             < div className="flex=col space-y-4 text-justify">

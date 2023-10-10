@@ -26,7 +26,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl1}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[4px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -39,7 +39,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl2}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -62,7 +62,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl3}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -143,7 +143,7 @@ function ParallaxHome() {
               </div>
               <div className="  py-2 sm:py-0 row-span-2 col-span-2 ">
                 <Link href="/events">
-                  <button className="border-black border-[1px] sm:border-2 rounded-lg bg-[#E1ABE8] text-black h-10 w-40 sm:h-20 sm:w-72 text-2xl hover:bg-white duration-500 opacity-60">
+                  <button className="border-[#E1ABE8] border-[1px] sm:border-2 rounded-lg text-[#E1ABE8] text-lg h-10 w-40 sm:h-20 sm:w-72 sm:text-2xl hover:bg-white duration-500">
                     View Events
                   </button>
                 </Link>
