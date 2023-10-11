@@ -42,8 +42,8 @@ async function EventBody() {
   function buildTopBanner() {
     return (
       <div className="relative overflow-visible">
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-600 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-900 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-900 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
         <div className="relative z-20 ml-2 md:ml-32 md:mr-32">
           {" "}
           <div className="lg:flex md:mb-20 lg:items-center 2xl:space-x-72">
