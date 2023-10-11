@@ -517,7 +517,7 @@ const Team = () => {
 function App() {
   return (
     <>
-      <div className="relative h-full w-full bg-[#101010]">
+      <div className="relative h-full overflow-hidden w-full bg-[#101010]">
         <NavBar />
         <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-900 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
         <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
