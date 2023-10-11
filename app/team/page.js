@@ -384,7 +384,7 @@ const componentsMap = {
 
 const Navbar1 = ({ items, onSelect, activeItem }) => {
   return (
-    <div className="w-full pb-0 text-center grid grid-cols-4 items-center  overflow-x-hidden  border-b border-grey   mb-0 box-border transition-transform duration-300 ease-in bg-[#101010]">
+    <div className="w-full pb-0 text-center grid grid-cols-4 items-center  overflow-x-hidden  border-b border-grey   mb-0 box-border transition-transform duration-300 ease-in">
       {items.map((item, index) => (
         <div
           key={index}
@@ -447,7 +447,7 @@ const Team = () => {
   };
   const CurrentComponent = componentsMap[currentView];
   return (
-    <div className="text-white bg-[#101010]">
+    <div className="text-white z-10 relative">
       <div className="flex justify-center items-center">
         <div>
           {slideIndex !== 0 && (
@@ -517,19 +517,23 @@ const Team = () => {
 function App() {
   return (
     <>
-      <div className="h-full w-full bg-[#101010]">
+      <div className="relative h-full w-full bg-[#101010]">
         <NavBar />
-        <div className="text-center mx-auto -z-50 w-full bg-[#101010] text-white pb-8">
-          {" "}
-          <h1
-            style={{ letterSpacing: "-1px" }}
-            className="pt-10 sm:pt-10 md:pt-10 text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 text-center font-poppins tracking-wide leading-tight"
-          >
-            Meet the badass team
-          </h1>
-          <div className="flex  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
-            A special thanks to all the wonderful people who contributed to the
-            event! Words can&apos;t express our appreciation for you!
+        <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-900 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="relative z-10">
+          <div className="text-center mx-auto z-50 w-full text-white pb-8">
+            {" "}
+            <div
+              style={{ letterSpacing: "-1px" }}
+              className="pt-10 z-50 sm:pt-10 md:pt-10 text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 text-center font-poppins tracking-wide leading-tight"
+            >
+              Meet the badass <span className="text-[#61E2F4]">team</span>
+            </div>
+            <div className="flex  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
+              A special thanks to all the wonderful people who contributed to
+              the event! Words can&apos;t express our appreciation for you!
+            </div>
           </div>
         </div>
 

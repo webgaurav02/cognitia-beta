@@ -24,13 +24,14 @@ async function EventBody() {
     return (
       <div
         id="filters"
-        className="flex flex-row justify-between -translate-x-16 lg:-translate-x-28 mt-6 mb-4 space-x-1"
+        className="flex flex-row justify-between overflow-x-scroll mt-6 mb-4 space-x-1"
       >
         <FilterButton type={"cc"} name={"CODING"} />
         <FilterButton type={"rc"} name={"ROBOTIC"} />
         <FilterButton type={"ac"} name={"ASTRO"} />
-        <FilterButton type={"cc"} name={"CODING"} />
-        <FilterButton type={"rc"} name={"ROBOTIC"} />
+        <FilterButton type={"dp"} name={"DEPART"} />
+        <FilterButton type={"cc"} name={"GAMING"} />
+        <FilterButton type={"rc"} name={"CULTURAL"} />
         <FilterButton type={"dp"} name={"DEPART"} />
         <FilterButton type={"rc"} name={"ASTRO"} />
         <FilterButton type={"cc"} name={"CODING"} />
