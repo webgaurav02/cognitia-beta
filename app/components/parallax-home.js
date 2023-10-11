@@ -12,6 +12,7 @@ import Image from "next/image";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Link from "next/link";
+import { jost, montserrat, poppins } from "../utils/fonts";
 
 function ParallaxHome() {
   return (
@@ -25,7 +26,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl1}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[4px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -38,7 +39,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl2}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -61,7 +62,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl3}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -110,16 +111,18 @@ function ParallaxHome() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.2} speed={-1}>
+          <div className={montserrat.className}>
           <div
             className="w-screen h-[768px] xl:h-[500px] 2xl:h-[768px] -translate-y-72 sm:-translate-y-10 z-50     
-          text-white font-poppins"
+          text-white font-bold"
           >
             <div
               className=" mt-5 px-2 pt-52 sm:mt-0 sm:pt-0 md:px-36
           grid grid-cols-1 sm:grid sm:grid-rows-7 sm:grid-cols-5 sm:h-full"
             >
+              
               <div
-                className=" py-2 sm:py-0 self-end 
+                className=" py-2 sm:py-0 self-end pt-10 sm:pt-0
             row-span-2 col-span-3 lg:col-span-2 
             text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-9xl 
             "
@@ -140,16 +143,18 @@ function ParallaxHome() {
               </div>
               <div className="  py-2 sm:py-0 row-span-2 col-span-2 ">
                 <Link href="/events">
-                  <button className="border-black border-2 rounded-lg bg-[#E1ABE8] text-black h-10 w-40 sm:h-20 sm:w-72 text-2xl hover:bg-white duration-500">
+                  <button className="border-[#E1ABE8] border-[1px] sm:border-2 rounded-lg text-[#E1ABE8] text-lg h-10 w-40 sm:h-20 sm:w-72 sm:text-2xl hover:bg-white duration-500">
                     View Events
                   </button>
                 </Link>
+              </div>
               </div>
             </div>
           </div>
         </ParallaxLayer>
       </Parallax>
     </div>
+    
   );
 }
 

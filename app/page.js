@@ -31,10 +31,6 @@ export default async function Home() {
 
         <PopularEvents />
 
-        <div className="flex justify-center">
-          <div className="w-11/12 border-b-2 border-stone-300"></div>
-        </div>
-
         <Footer />
       </div>
     </>
