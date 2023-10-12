@@ -3,7 +3,7 @@ import { montserrat } from "../utils/fonts";
 
 export default function Timeline() {
   return (
-    <div className=" bg-[rgb(16,16,16)] h-[668px] sm:h-[768px] w-screen">
+    <div className=" bg-[rgb(16,16,16)] h-[668px] sm:h-screen w-screen">
       <div
         className="grid grid-rows-4 grid-cols-1 justify-items-center space-y-10 sm:space-y-0 md:grid-cols-3 md:grid-rows-1
         h-full w-screen md:px-36

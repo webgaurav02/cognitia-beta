@@ -13,11 +13,11 @@ export default function ScrollDown() {
   });
 
   return (
-    <div className="text-xl text-white font-poppinsbold flex justify-end duration-300 w-screen  sm:-translate-x-10 opacity-70">
+    <div className="text-md sm:text-xl text-white font-poppinsbold flex justify-end duration-300 w-screen sm:-translate-x-10 opacity-70">
       {canShow ? (
         <div>
-          <div className="translate-y-10 translate-x-4">Scroll Down</div>
-          <Image src={ScrollDownGif}></Image>
+          <div className="translate-y-16 sm:translate-y-20 -translate-x-8 sm:translate-x-0">Scroll Down</div>
+          <Image src={ScrollDownGif} className="w-[80px] sm:w-full -translate-x-8 sm:-translate-x-5 translate-y-10"></Image>
         </div>
       ) : (
         <></>
