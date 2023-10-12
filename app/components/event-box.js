@@ -47,8 +47,12 @@ export default function EventBox({
                 <div className={poppins.className}>{eventName}</div>
               </div>
               <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 lg:text-xl">
-                <div className={algreya.className}>Venue: {venue}</div>
-                <div className={algreya.className}>Time: {time}</div>
+                <div className={algreya.className}>
+                  Venue: {venue?.length === 0 ? "" : venue}
+                </div>
+                <div className={algreya.className}>
+                  Time: {time.length == 0 ? "To be announced" : time}
+                </div>
               </div>
 
               <div className={algreya.className}>
@@ -131,7 +135,9 @@ export default function EventBox({
               />
             </svg>
             <div className={algreya.className}>
-              <div className="text-[#DEDEDE] text-sm ml-2">Time: {time}</div>
+              <div className="text-[#DEDEDE] text-sm ml-2">
+                Time: {time.length == 0 ? "To be announced" : time}
+              </div>
             </div>
           </div>
           <div className={jost.className}>

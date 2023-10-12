@@ -41,15 +41,18 @@ export default function EventTabs({ data }) {
         {items.map((item, index) => (
           <div
             key={index}
-            onClick={() => onSelect(item)}
+            onClick={() => {
+              setActiveTab(index);
+              onSelect(item);
+            }}
             style={{ textAlign: "centre" }}
             className={`cursor-pointer ${
-              activeItem === item ? "border-b-2 border-white-500" : ""
+              index === activeTab ? "border-b-2 border-white-500" : ""
             } text-green`}
           >
             <p
-              className={`pb-3 text-sm ${
-                activeItem === item
+              className={`pb-3 text-xs ${
+                index === activeTab
                   ? "text-[#EBEBEB]"
                   : "text-[#EBEBEB] opacity-40"
               } font-plus-jakarta-sans text-sm md:text-lg`}
@@ -85,7 +88,7 @@ export default function EventTabs({ data }) {
 
     const handleSlideRight = () => {
       setSlideIndex((prevIndex) =>
-        Math.min(prevIndex + 1, navbarItems.length - 4)
+        Math.min(prevIndex + 1, navbarItems.length - 3)
       );
     };
     // const CurrentComponent = componentsMap[currentView];
