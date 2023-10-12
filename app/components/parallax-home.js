@@ -26,7 +26,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl1}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[4px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[4px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -39,7 +39,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl2}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -62,7 +62,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl3}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -75,7 +75,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl5}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover"
             />
           </div>
         </ParallaxLayer>
@@ -88,7 +88,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl7}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover"
             />
           </div>
         </ParallaxLayer>
@@ -101,7 +101,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={bgend}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover sm:-translate-y-[35vh]"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover sm:-translate-y-[35vh]"
             />
           </div>
         </ParallaxLayer>
