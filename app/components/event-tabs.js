@@ -7,7 +7,6 @@ import EventBox from "./event-box";
 import { getCodingClubEvents, getRoboticClubEvents } from "../utils/services";
 import coding1 from "../assets/defaults/coding1.png";
 import coding2 from "../assets/defaults/coding2.png";
-import coding3 from "../assets/defaults/coding3.png";
 import coding4 from "../assets/defaults/coding4.png";
 import coding5 from "../assets/defaults/coding5.png";
 import robotic1 from "../assets/defaults/robotic1.jpg";

@@ -122,6 +122,7 @@ export default function EventBox({
       <EventDetail />
       <div className="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg">
         <Image
+          placeholder="blur"
           alt="image"
           className={"rounded-t-xl object-fill w-full h-full"}
           src={bannerImage}
