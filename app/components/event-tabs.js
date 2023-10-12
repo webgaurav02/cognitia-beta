@@ -4,7 +4,11 @@ import { useState } from "react";
 import { poppins } from "../utils/fonts";
 import Grid from "./grid";
 import EventBox from "./event-box";
-import { getCodingClubEvents, getRoboticClubEvents } from "../utils/services";
+import {
+  getCodingClubEvents,
+  getRoboticClubEvents,
+  getDepartmentalEvents,
+} from "../utils/services";
 import coding1 from "../assets/defaults/coding1.png";
 import coding2 from "../assets/defaults/coding2.png";
 import coding4 from "../assets/defaults/coding4.png";
@@ -21,6 +25,7 @@ export default function EventTabs({ data }) {
   const [activeTab, setActiveTab] = useState(0);
   let codingClubEvents = getCodingClubEvents(data);
   let roboticClubEvents = getRoboticClubEvents(data);
+  let departmentalEvents = getDepartmentalEvents(data);
 
   const Navbar = ({ items, onSelect, activeItem }) => {
     return (
@@ -57,7 +62,7 @@ export default function EventTabs({ data }) {
     const [currentView, setCurrentView] = useState("Coding");
     const [slideIndex, setSlideIndex] = useState(0);
 
-    const navbarItems = ["Coding", "Robotics"];
+    const navbarItems = ["Coding", "Robotics", "Dept"];
     // , "Astro", "Depart", "Cultural"
 
     const handleNavbarClick = (item) => {
@@ -175,6 +180,27 @@ export default function EventTabs({ data }) {
         {activeTab === 1 ? (
           <Grid>
             {roboticClubEvents.map((event, index) => {
+              return (
+                <EventBox
+                  key={index}
+                  eventName={event.eventName}
+                  shortDescription={event.shortDescription}
+                  time={event.eventTime}
+                  dpt={"Robotics Club"}
+                  venue={event.venue}
+                  description={event.description}
+                  team={event.team}
+                  bannerImage={roboticClubImages[index % 4]}
+                />
+              );
+            })}
+          </Grid>
+        ) : (
+          <></>
+        )}
+        {activeTab === 2 ? (
+          <Grid>
+            {departmentalEvents.map((event, index) => {
               return (
                 <EventBox
                   key={index}
