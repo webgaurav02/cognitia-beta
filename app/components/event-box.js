@@ -55,7 +55,7 @@ export default function EventBox({
               </div>
               <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 space-x-5 lg:text-xl mt-2">
                 <div className={algreya.className}>
-                  Venue: {venue?.length === 0 ? "" : venue}
+                  Venue: {venue?.length === 0 ? "To be decided" : venue}
                 </div>
                 <div className={algreya.className}>
                   Time: {time.length == 0 ? "To be announced" : time}
