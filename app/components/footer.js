@@ -85,25 +85,25 @@ export default function Footer() {
         <div className="absolute top-0 left-0 invisible md:visible 
         w-screen h-[20px] sm:h-[110vh] 
       text-white bg-[#101010]">
-          <div className="grid grid-cols-3 h-[20px] sm:h-[30vh] py-10
+          <div className="grid grid-cols-3 h-[20px] sm:h-[30vh] content-center
                 md:px-20 lg:px-32 xl:px-48 2xl:px-64">
             <div className="flex-row col-span-1 justify-center py-10 pr-10">
-              <div className="flex w-full h-1/2 text-3xl space-x-2">
-                <div><Image width={40} src={Logo} alt="logo" /></div>
+              <div className="flex w-full h-1/2 text-xl space-x-2">
+                <div><Image width={30} src={Logo} alt="logo" /></div>
                 <div>COGNITIA</div>
               </div>
-              <div className="w-full h-1/2 sm:text-xs md:md xl:text-lg">
+              <div className="w-full h-1/2 sm:text-xs md:md 2xl:text-lg">
                 The official NIT Meghalaya Tech and Cultural fest Landing page and registration portal
               </div>
             </div>
 
             <div className="flex col-span-1 w-full h-full px-8">
-              <div className="flex-row space-y-2 w-full self-end -translate-y-14">
-                <div className="sm:text-md md:text-lg lg:text-xl xl:text-2xl">What is NIT Meghalaya&#39;s motto&#63;</div>
+              <div className="flex-row w-full self-center">
+                <div className="sm:text-md md:text-lg lg:text-lg 2xl:text-2xl">What is NIT Meghalaya&#39;s motto&#63;</div>
                 <div className="flex space-x-5">
-                  <input type="text" className="w-5/6 h-[5vh] rounded-md self-center"></input> 
+                  <input type="text" className="w-5/6 h-[4vh] rounded-md self-center"></input> 
                   <button>
-                  <svg className="self-center" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="self-center" width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M52 26C52 40.3594 40.3594 52 26 52C11.6406 52 0 40.3594 0 26C0 11.6406 11.6406 0 26 0C40.3594 0 52 11.6406 52 26Z" fill="#F8D57E"/>
                     <path d="M35.4142 27.4142C36.1953 26.6332 36.1953 25.3668 35.4142 24.5858L22.6863 11.8579C21.9052 11.0768 20.6389 11.0768 19.8579 11.8579C19.0768 12.6389 19.0768 13.9052 19.8579 14.6863L31.1716 26L19.8579 37.3137C19.0768 38.0948 19.0768 39.3611 19.8579 40.1421C20.6389 40.9232 21.9052 40.9232 22.6863 40.1421L35.4142 27.4142ZM33 28H34V24H33V28Z" fill="#101010"/>
                   </svg>
@@ -144,30 +144,30 @@ export default function Footer() {
           <div className="grid grid-flow-col grid-cols-3 grid-rows-4 h-[20px] sm:h-[70vh]
           md:px-20 lg:px-32 xl:px-48 2xl:px-64">
             <div className="flex row-span-1 col-span-1 items-end ">
-              <div className="flex flex-col items-center xl:text-4xl font-bold w-60 space-y-2">
+              <div className="flex flex-col items-start xl:text-4xl font-bold w-34 space-y-2">
                 <div>CONTACT US</div>
                 <div className="w-11/12 border-t-4 border-yellow-400 self-center"></div>
               </div>
             </div>
             <div className="flex row-span-2 col-span-1 py-10">
-              <div className="flex flex-col xl:text-xl space-y-2">
+              <div className="flex flex-col xl:text-md 2xl:text-xl space-y-2">
                 <div><b>Address</b>: Bijni Complex, Laitumkhrah Shillong-793003, Meghalaya, India</div>
                 <div><b>Phone</b>: 0364-2501294</div>
                 <div><b>Fax</b>:0364-2501113a</div>
               </div>
             </div>
             <div className="flex row-span-1 col-span-1 h-full w-full">
-              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-72 xl:h-16 xl:text-3xl">Contact Now</button>
-            </div>
+              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-56 xl:h-10 xl:text-xl">Contact Now</button>
+           </div>
             
-            <div className="flex row-span-1 col-span-1 items-end justify-center">
-              <div className="flex flex-col items-center xl:text-4xl font-bold w-64 space-y-2">
+            <div className="flex row-span-1 col-span-1 items-end justify-center -translate-x-10 lg:-translate-x-16 xl:-translate-x-0 2xl:-translate-x-0">
+              <div className="flex flex-col items-start xl:text-4xl font-bold w-34 space-y-2">
                 <div>USEFUL LINKS</div>
                 <div className="w-11/12 border-t-4 border-yellow-400 self-center"></div>
               </div>
             </div>
             <div className="flex row-span-2 col-span-1 py-10 justify-center">
-              <div className="flex flex-col xl:text-xl space-y-4 -translate-x-12 lg:-translate-x-20 xl:-translate-x-16">
+              <div className="flex flex-col xl:text-md 2xl:text-xl space-y-2 2xl:space-y-4 -translate-x-12 lg:-translate-x-20 xl:-translate-x-20 2xl:-translate-x-16">
                 <div><Link href="/">Home</Link></div>
                 <div><Link href="/events">Events</Link></div>
                 <div><Link href="/team">Shop</Link></div>
@@ -176,7 +176,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex row-span-1 col-span-1 h-full w-full justify-center">
-              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-72 xl:h-16 xl:text-3xl -translate-x-8 lg:-translate-x-14 xl:translate-x-5">Begin Adventure</button>
+              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-56 xl:h-10 xl:text-xl -translate-x-8 lg:-translate-x-14 xl:-translate-x-3 2xl:translate-x-5">Begin Adventure</button>
             </div>
 
             <div className="flex row-span-1 col-span-1 items-end justify-end -translate-x-36">
@@ -186,7 +186,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex row-span-2 col-span-1 py-10 justify-end">
-            <div className="flex flex-col xl:text-xl space-y-4 -translate-x-8">
+            <div className="flex flex-col xl:text-md 2xl:text-xl space-y-4 -translate-x-8 lg:-translate-x-8 xl:-translate-x-28">
                 <div><Link href="/">Special Thanks</Link></div>
                 <div><Link href="/events">The Development Process</Link></div>
                 <div><Link href="/team">Want to collaborate?</Link></div>
@@ -194,7 +194,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex row-span-1 col-span-1 h-full w-full justify-end">
-              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-72 xl:h-16 xl:text-3xl -translate-x-20 xl:-translate-x-0">Donate</button>
+              <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-56 xl:h-10 xl:text-xl -translate-x-20 xl:-translate-x-16 2xl:-translate-x-0">Donate</button>
             </div>
             
 
