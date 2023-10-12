@@ -11,29 +11,6 @@ export default function EventTabs({ data }) {
   const tabs = ["Coding", "Robotics", "Departmental", "Others"];
   let codingClubEvents = getCodingClubEvents(data);
   let roboticClubEvents = getRoboticClubEvents(data);
-  // function buildHeader() {
-  //   return (
-  //     <div className={poppins.className}>
-  //       <div className="text-xs flex flex-row justify-evenly mt-8 md:text-2xl lg:ml-32 lg:mr-32">
-  //         {tabs.map((tab, index) => (
-  //           <div
-  //             key={index}
-  //             onClick={() => {
-  //               setActiveTab(index);
-  //             }}
-  //             className={`${
-  //               activeTab == index ? "text-neutral-200" : "text-neutral-700"
-  //             } border-b-4 pb-4 pl-4 pr-4 ${
-  //               activeTab == index ? "border-violet-800" : "border-neutral-700"
-  //             } duration-300 cursor-pointer`}
-  //           >
-  //             {tab}
-  //           </div>
-  //         ))}
-  //       </div>
-  //     </div>
-  //   );
-  // }
 
   const Navbar = ({ items, onSelect, activeItem }) => {
     return (
@@ -55,7 +32,7 @@ export default function EventTabs({ data }) {
                 index === activeTab
                   ? "text-[#EBEBEB]"
                   : "text-[#EBEBEB] opacity-40"
-              } font-plus-jakarta-sans text-sm md:text-lg`}
+              } font-plus-jakarta-sans text-md md:text-lg`}
             >
               {" "}
               {item}
@@ -70,13 +47,7 @@ export default function EventTabs({ data }) {
     const [currentView, setCurrentView] = useState("Coding");
     const [slideIndex, setSlideIndex] = useState(0);
 
-    const navbarItems = [
-      "Coding",
-      "Robotics",
-      "Astronomy",
-      "Departmental",
-      "Cultural",
-    ];
+    const navbarItems = ["Coding", "Robotics", "Astro", "Depart", "Cultural"];
 
     const handleNavbarClick = (item) => {
       setCurrentView(item);
@@ -166,9 +137,9 @@ export default function EventTabs({ data }) {
     );
   };
   return (
-    <div>
+    <div className="">
       {<EventTabs />}
-      <div className="md:ml-20 ml-6 mr-6 lg:ml-36 lg:mr-36">
+      <div className="flex flex-col items-center md:ml-20 ml-6 mr-6 lg:ml-36 lg:mr-36">
         {activeTab === 0 ? (
           <Grid>
             {codingClubEvents.map((event, index) => {

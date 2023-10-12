@@ -12,6 +12,7 @@ import { getEvents } from "../utils/services";
 import RegisterIcon from "../components/register-icon";
 import Image from "next/image";
 import Girl from "../assets/girl.png";
+import Link from "next/link";
 
 async function EventBody() {
   let data = await getEvents();
@@ -65,14 +66,16 @@ async function EventBody() {
                   for?
                 </div>
               </div>
-              <div className="flex flex-row ml-2 items-center mt-2  md:mt-6">
-                <RegisterIcon />
-                <div className={montserrat.className}>
-                  <div className="text-sm font-normal md:text-xl text-[#DADADA]">
-                    Register Now!
+              <Link href="#events">
+                <div className="flex flex-row ml-2 items-center mt-2  md:mt-6">
+                  <RegisterIcon />
+                  <div className={montserrat.className}>
+                    <div className="text-sm font-normal md:text-xl text-[#DADADA]">
+                      Register Now!
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <Image
@@ -88,60 +91,7 @@ async function EventBody() {
       </div>
     );
   }
-  function buildCodingEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#D1ED9F] p-2 w-48
-     rounded-lg h-12 text-center justify-center`}
-        >
-          <span className="font-bold text-2xl">Coding</span>
-        </div>
-        {/* <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        /> */}
-      </div>
-    );
-  }
-  function buildRoboticEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#FFC691] p-2 w-48
-     rounded-lg h-12 text-center flex flex-col justify-center`}
-        >
-          <span className="font-bold text-2xl">Robotic</span>
-        </div>
-        <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        />
-      </div>
-    );
-  }
-  function buildDepartmentalEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#E1ABE8] p-2  w-48
-     rounded-lg h-12 text-center flex flex-col justify-center`}
-        >
-          <span className="font-bold text-2xl">Departmental</span>
-        </div>
-        <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        />
-      </div>
-    );
-  }
+
   function buildPopularEvents() {
     return (
       <div className="md:ml-32 md:mr-32 p-6">
@@ -197,6 +147,9 @@ async function EventBody() {
       {buildTopBanner()}
       {buildFiltersList()}
       {buildPopularEvents()}
+      <div className="relative">
+        <div id="events" className="absolute -top-32 w-10 h-72"></div>
+      </div>
       <EventTabs data={data} />
     </div>
   );
@@ -257,3 +210,59 @@ function Skeleton() {
     </div>
   );
 }
+
+function buildCodingEvents() {
+  return (
+    <div className="pl-24 mt-6">
+      <div
+        className={`bg-[#D1ED9F] p-2 w-48
+   rounded-lg h-12 text-center justify-center`}
+      >
+        <span className="font-bold text-2xl">Coding</span>
+      </div>
+      {/* <EventBox
+        eventName="Hack the box"
+        eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
+        dpt="coding"
+        time="2nd Nov 9:50"
+      /> */}
+    </div>
+  );
+}
+
+// function buildRoboticEvents() {
+//   return (
+//     <div className="pl-24 mt-6">
+//       <div
+//         className={`bg-[#FFC691] p-2 w-48
+//    rounded-lg h-12 text-center flex flex-col justify-center`}
+//       >
+//         <span className="font-bold text-2xl">Robotic</span>
+//       </div>
+//       <EventBox
+//         eventName="Hack the box"
+//         eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
+//         dpt="coding"
+//         time="2nd Nov 9:50"
+//       />
+//     </div>
+//   );
+// }
+// function buildDepartmentalEvents() {
+//   return (
+//     <div className="pl-24 mt-6">
+//       <div
+//         className={`bg-[#E1ABE8] p-2  w-48
+//    rounded-lg h-12 text-center flex flex-col justify-center`}
+//       >
+//         <span className="font-bold text-2xl">Departmental</span>
+//       </div>
+//       <EventBox
+//         eventName="Hack the box"
+//         eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
+//         dpt="coding"
+//         time="2nd Nov 9:50"
+//       />
+//     </div>
+//   );
+// }

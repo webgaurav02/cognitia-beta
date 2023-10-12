@@ -5,6 +5,7 @@ import { algreya, jost, montserrat, poppins } from "../utils/fonts";
 import Waves from "../assets/Image.png";
 import Image from "next/image";
 import Profile from "../assets/profile.png";
+import LinesEllipsis from "react-lines-ellipsis";
 
 export default function EventBox({
   eventName,
@@ -113,14 +114,14 @@ export default function EventBox({
   return (
     <>
       <EventDetail />
-      <div className="flex flex-col">
+      <div className="flex flex-col justify-between">
         <Image
-          className={"rounded-t-xl"}
+          className={"rounded-t-xl object-cover"}
           src={Waves}
-          height={900}
-          width={900}
+          height={1000}
+          width={1000}
         />
-        <div className=" bg-neutral-800 rounded-b-xl p-6">
+        <div className="h-56 flex flex-col justify-between bg-neutral-800 rounded-b-xl p-6">
           <div className="flex-row flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,14 +141,21 @@ export default function EventBox({
               </div>
             </div>
           </div>
-          <div className={jost.className}>
-            <div className="font-normal text-[#EBEBEB] text-3xl mt-2">
-              {eventName}
+          <div>
+            <div className={jost.className}>
+              <div className="font-normal text-[#EBEBEB] text-2xl mt-2 mb-2">
+                {/* <LinesEllipsis text={eventName} maxLine={1} ellipsis="..." /> */}
+                {eventName}
+              </div>
             </div>
-          </div>
-          <div className={poppins.className}>
-            <div className="text-white opacity-60 text-sm">
-              {shortDescription}
+            <div className={poppins.className}>
+              <div className="text-white opacity-60 text-sm">
+                <LinesEllipsis
+                  text={shortDescription}
+                  maxLine={2}
+                  ellipsis="..."
+                />
+              </div>
             </div>
           </div>
           <div
