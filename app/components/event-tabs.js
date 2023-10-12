@@ -5,8 +5,20 @@ import { poppins } from "../utils/fonts";
 import Grid from "./grid";
 import EventBox from "./event-box";
 import { getCodingClubEvents, getRoboticClubEvents } from "../utils/services";
+import coding1 from "../assets/defaults/coding1.png";
+import coding2 from "../assets/defaults/coding2.png";
+import coding3 from "../assets/defaults/coding3.png";
+import coding4 from "../assets/defaults/coding4.png";
+import coding5 from "../assets/defaults/coding5.png";
+import robotic1 from "../assets/defaults/robotic1.jpg";
+import robotic2 from "../assets/defaults/robotic2.jpg";
+import robotic3 from "../assets/defaults/robotic3.jpg";
+import robotic4 from "../assets/defaults/robotic4.jpg";
 
 export default function EventTabs({ data }) {
+  const codingClubImages = [coding1, coding2, coding5, coding4, coding5];
+  const roboticClubImages = [robotic1, robotic2, robotic3, robotic4];
+
   const [activeTab, setActiveTab] = useState(0);
   const tabs = ["Coding", "Robotics", "Departmental", "Others"];
   let codingClubEvents = getCodingClubEvents(data);
@@ -153,6 +165,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
+                  bannerImage={codingClubImages[index % 5]}
                 />
               );
             })}
@@ -173,6 +186,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
+                  bannerImage={roboticClubImages[index % 4]}
                 />
               );
             })}

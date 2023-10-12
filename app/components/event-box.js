@@ -15,6 +15,7 @@ export default function EventBox({
   venue,
   description,
   team,
+  bannerImage,
 }) {
   const [openDetail, setOpenDetail] = useState(false);
   function buildLine() {
@@ -38,9 +39,14 @@ export default function EventBox({
           {" "}
           {"< "}back
         </div>
-        <div className="2xl:w-[40%] lg:w-[50%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
-          <div className="flex flex-col">
-            <Image src={Waves} width={1000} height={1000} />
+        <div className="2xl:w-[40%] lg:w-[50%] sm:w-[40%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
+          <div
+            onKeyDown={(e) => {
+              console.log(e);
+            }}
+            className="flex flex-col"
+          >
+            <Image alt="image" src={bannerImage} width={1000} height={1000} />
 
             <div className="flex flex-col pl-4 pr-4 lg:ml-12 lg:mr-12">
               <div className="text-4xl text-[#E9E9E9] font-bold mt-5 lg:text-6xl lg:mt-10">
@@ -114,14 +120,15 @@ export default function EventBox({
   return (
     <>
       <EventDetail />
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg">
         <Image
-          className={"rounded-t-xl object-cover"}
-          src={Waves}
+          alt="image"
+          className={"rounded-t-xl object-fill w-full h-full"}
+          src={bannerImage}
           height={1000}
           width={1000}
         />
-        <div className="h-56 flex flex-col justify-between bg-neutral-800 rounded-b-xl p-6">
+        <div className="h-60 flex flex-col justify-between bg-neutral-800 rounded-b-xl p-6">
           <div className="flex-row flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
