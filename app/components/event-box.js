@@ -53,7 +53,7 @@ export default function EventBox({
                 {" "}
                 <div className={poppins.className}>{eventName}</div>
               </div>
-              <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 lg:text-xl">
+              <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 space-x-5 lg:text-xl mt-2">
                 <div className={algreya.className}>
                   Venue: {venue?.length === 0 ? "" : venue}
                 </div>
@@ -69,7 +69,9 @@ export default function EventBox({
                 </div>
               </div>
               <div className="text-neutral-300 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                <span className={montserrat.className}>Register Now! </span>
+                <span className={montserrat.className}>
+                  Registrations opening soon!{" "}
+                </span>
               </div>
             </div>
 
@@ -85,31 +87,40 @@ export default function EventBox({
             </div>
             {buildLine()}
             <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  lg:overflow-hidden overflow-x-scroll lg:ml-14 lg:mr-12">
-              {team?.map((member, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-lg">
-                    <Image src={Profile}></Image>
+              {team?.map((member, index) => {
+                console.log(member);
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="w-32 h-40 rounded-lg overflow-hidden">
+                      <Image
+                        alt="profile"
+                        width={1000}
+                        height={1000}
+                        quality={50}
+                        loader={({ src, width, quality }) =>
+                          `${src}?w=${width}&q=${quality || 75}`
+                        }
+                        src={member.image ? member.image : Profile}
+                      ></Image>
+                    </div>
+                    <span className="text-sm text-[#DEDEDE] text-center font-semibold mt-2">
+                      <div className={poppins.className}>
+                        {member.name.split(/(\s+)/)[0]}
+                      </div>
+                    </span>
+                    <span className="text-xs text-[#DEDEDE] font-medium">
+                      <div className={algreya.className}>{member.position}</div>
+                    </span>
                   </div>
-                  <span className="text-sm text-[#DEDEDE] text-center font-semibold mt-10">
-                    <div className={poppins.className}>{member.name}</div>
-                  </span>
-                  <span className="text-xs text-[#DEDEDE] font-medium">
-                    <div className={algreya.className}>Head</div>
-                  </span>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <div className="font-bold text-neutral-100 text-2xl mt-4 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
               <div className={poppins.className}>Contact Us</div>
             </div>
             {buildLine()}
             <div className="text-[#9E9E9E] text-sm mt-3 mr-4 ml-4 mb-5 lg:ml-14 lg:mr-12">
-              <div className={algreya.className}>
-                {" "}
-                Participants can come in teams of twos or threes for this event.
-                Make sure to bring your own system i.e a Laptop or Desktop with
-                Mac OS, Windows or Linux
-              </div>
+              <div className={algreya.className}> Details coming soon..</div>
             </div>
           </div>
         </div>
@@ -173,7 +184,7 @@ export default function EventBox({
             }}
           >
             <div className={algreya.className}>
-              <div className="text-[#C9C9C9]">register</div>
+              <div className="text-[#C9C9C9] font-semibold">register</div>
             </div>
           </div>
         </div>

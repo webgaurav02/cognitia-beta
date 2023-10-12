@@ -13,5 +13,5 @@ export function getCodingClubEvents(data) {
 }
 
 export function getRoboticClubEvents(data) {
-  return data.filter((event) => event.department === "");
+  return data.filter((event) => event.department === "RC");
 }

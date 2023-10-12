@@ -19,7 +19,6 @@ export default function EventTabs({ data }) {
   const roboticClubImages = [robotic1, robotic2, robotic3, robotic4];
 
   const [activeTab, setActiveTab] = useState(0);
-  const tabs = ["Coding", "Robotics", "Departmental", "Others"];
   let codingClubEvents = getCodingClubEvents(data);
   let roboticClubEvents = getRoboticClubEvents(data);
 
@@ -58,7 +57,8 @@ export default function EventTabs({ data }) {
     const [currentView, setCurrentView] = useState("Coding");
     const [slideIndex, setSlideIndex] = useState(0);
 
-    const navbarItems = ["Coding", "Robotics", "Astro", "Depart", "Cultural"];
+    const navbarItems = ["Coding", "Robotics"];
+    // , "Astro", "Depart", "Cultural"
 
     const handleNavbarClick = (item) => {
       setCurrentView(item);
@@ -197,59 +197,3 @@ export default function EventTabs({ data }) {
     </div>
   );
 }
-
-// {" "}
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
-//           <EventBox
-//             eventName="Hack the box"
-//             eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//             dpt="coding"
-//             time="2nd Nov 9:50"
-//           />
