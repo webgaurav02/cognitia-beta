@@ -13,6 +13,10 @@ import RegisterIcon from "../components/register-icon";
 import Image from "next/image";
 import Girl from "../assets/girl.png";
 import Link from "next/link";
+import coding1 from "../assets/defaults/coding1.png";
+import coding3 from "../assets/defaults/coding3.png";
+import coding4 from "../assets/defaults/coding4.png";
+import coding5 from "../assets/defaults/coding5.png";
 
 async function EventBody() {
   let data = await getEvents();
@@ -111,6 +115,7 @@ async function EventBody() {
         <div className="">
           <Grid>
             <EventBox
+              alt="image"
               eventName="Hack the box"
               eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
               dpt="coding"
@@ -118,8 +123,10 @@ async function EventBody() {
               shortDescription={
                 "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
               }
+              bannerImage={coding5}
             />
             <EventBox
+              alt="image"
               eventName="Hack the box"
               eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
               dpt="coding"
@@ -127,8 +134,10 @@ async function EventBody() {
               shortDescription={
                 "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
               }
+              bannerImage={coding4}
             />
             <EventBox
+              alt="image"
               eventName="Hack the box"
               eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
               dpt="coding"
@@ -136,6 +145,7 @@ async function EventBody() {
               shortDescription={
                 "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
               }
+              bannerImage={coding1}
             />
           </Grid>
         </div>
@@ -229,40 +239,3 @@ function buildCodingEvents() {
     </div>
   );
 }
-
-// function buildRoboticEvents() {
-//   return (
-//     <div className="pl-24 mt-6">
-//       <div
-//         className={`bg-[#FFC691] p-2 w-48
-//    rounded-lg h-12 text-center flex flex-col justify-center`}
-//       >
-//         <span className="font-bold text-2xl">Robotic</span>
-//       </div>
-//       <EventBox
-//         eventName="Hack the box"
-//         eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//         dpt="coding"
-//         time="2nd Nov 9:50"
-//       />
-//     </div>
-//   );
-// }
-// function buildDepartmentalEvents() {
-//   return (
-//     <div className="pl-24 mt-6">
-//       <div
-//         className={`bg-[#E1ABE8] p-2  w-48
-//    rounded-lg h-12 text-center flex flex-col justify-center`}
-//       >
-//         <span className="font-bold text-2xl">Departmental</span>
-//       </div>
-//       <EventBox
-//         eventName="Hack the box"
-//         eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-//         dpt="coding"
-//         time="2nd Nov 9:50"
-//       />
-//     </div>
-//   );
-// }
