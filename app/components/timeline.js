@@ -61,7 +61,7 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Official commencement of the Cognitia 2k23 event</div>
+                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Official commencement of the Cognitia 2k23 event</div>
                 </div>
                 <div className="mx-6 md:mx-10 flex space-x-4 ">
                   <div className="self-center ">
@@ -83,7 +83,7 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
+                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
                 </div>
               </div>
             </div>
@@ -128,9 +128,9 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Official commencement of the Cognitia 2k23 event</div>
+                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Day 2 of Technical and Cultural Events</div>
                 </div>
-                <div className="mx-6 md:mx-10 flex space-x-4 ">
+                {/* <div className="mx-6 md:mx-10 flex space-x-4 ">
                   <div className="self-center ">
                     <svg
                       width="16"
@@ -150,8 +150,8 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
-                </div>
+                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
+                </div> */}
               </div>
             </div>
            </div>
@@ -195,7 +195,7 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Official commencement of the Cognitia 2k23 event</div>
+                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Day 3 of Technical and Cultural Events</div>
                 </div>
                 <div className="mx-6 md:mx-10 flex space-x-4 ">
                   <div className="self-center ">
@@ -217,7 +217,7 @@ export default function Timeline() {
                       <circle cx="8" cy="8.5" r="4" fill="white" />
                     </svg>
                   </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-xl 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
+                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Closing Ceremony at 5:00pm</div>
                 </div>
               </div>
             </div>
