@@ -14,7 +14,9 @@ export default function NavBar() {
       <div class="w-full z-50 h-24 backdrop-filter backdrop-blur-md border-b border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] pr-6 pl-6">
         <div className="h-full flex flex-row justify-between content-center md:mr-32 md:ml-32">
           <div className="text-neutral-200 md:text-[30px] self-center font-medium text-2xl">
-            <Image width={80} height={80} src={Logo} alt="logo" />
+            <Link href={"/"}>
+              <Image width={80} height={80} src={Logo} alt="logo" />
+            </Link>
           </div>
 
           <div className="flex flex-row self-center text-neutral-200 font-medium space-x-6 md:text-lg text-sm">

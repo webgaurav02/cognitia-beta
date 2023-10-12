@@ -24,13 +24,14 @@ async function EventBody() {
     return (
       <div
         id="filters"
-        className="flex flex-row justify-between -translate-x-16 lg:-translate-x-28 mt-6 mb-4 space-x-1"
+        className="flex flex-row justify-between overflow-x-scroll mt-6 mb-4 space-x-1"
       >
         <FilterButton type={"cc"} name={"CODING"} />
         <FilterButton type={"rc"} name={"ROBOTIC"} />
         <FilterButton type={"ac"} name={"ASTRO"} />
-        <FilterButton type={"cc"} name={"CODING"} />
-        <FilterButton type={"rc"} name={"ROBOTIC"} />
+        <FilterButton type={"dp"} name={"DEPART"} />
+        <FilterButton type={"cc"} name={"GAMING"} />
+        <FilterButton type={"rc"} name={"CULTURAL"} />
         <FilterButton type={"dp"} name={"DEPART"} />
         <FilterButton type={"rc"} name={"ASTRO"} />
         <FilterButton type={"cc"} name={"CODING"} />
@@ -41,8 +42,8 @@ async function EventBody() {
   function buildTopBanner() {
     return (
       <div className="relative overflow-visible">
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-600 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-900 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-900 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
         <div className="relative z-20 ml-2 md:ml-32 md:mr-32">
           {" "}
           <div className="lg:flex md:mb-20 lg:items-center 2xl:space-x-72">
