@@ -114,7 +114,7 @@ function ParallaxHome() {
           <div className={jost.className}>
             <div
               className="w-screen h-[768px] xl:h-[500px] 2xl:h-[768px] -translate-y-72 sm:-translate-y-10 z-50     
-          text-white font-bold"
+          text-white font-bold mt-6"
             >
               <div
                 className="px-2 pt-52 sm:mt-0 sm:pt-0 md:px-36
