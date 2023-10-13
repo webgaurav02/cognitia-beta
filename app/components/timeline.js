@@ -54,7 +54,7 @@ export default function Timeline() {
                 <div className={jakarta.className}>
                   {" "}
                   <div className="self-center text-sm md:text-lg font-semibold">
-                    Official commencement of the Cognitia 2k23 event
+                    Official commencement of the Cognitia 2023 event
                   </div>
                 </div>
               </div>
