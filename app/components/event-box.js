@@ -96,7 +96,7 @@ export default function EventBox({
                         alt="profile"
                         width={1000}
                         height={1000}
-                        quality={50}
+                        quality={30}
                         loader={({ src, width, quality }) =>
                           `${src}?w=${width}&q=${quality || 75}`
                         }

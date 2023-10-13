@@ -1,231 +1,147 @@
-import { jakarta } from "../utils/fonts";
+import { jakarta, poppins } from "../utils/fonts";
 import { montserrat } from "../utils/fonts";
 
 export default function Timeline() {
+  function Container() {
+    return (
+      <>
+        <div className={jakarta.className}>
+          <div
+            className="z-10 justify-self-center w-72 sm:w-96 md:w-[32vw] mb-10 content-center
+           cursor-pointer
+          bg-white rounded-2xl
+          hover:bg-[#C7DFFF] hover:text-black  hover:border-2  shadow-lg hover:translate-x-4 duration-300
+          text-[#1A202C]  flex flex-col mt-10 sm:mt-0 pb-2 md:pb-0"
+          >
+            <div className="md:text-xl relative  flex flex-col p-2">
+              <div
+                className="flex justify-center content-center text-center items-center absolute 
+    bg-[#B2CEF4] rounded-2xl border-black border-[1px]
+    font-bold text-xs md:text-sm p-1 xl:text-lg
+    w-32 h-10 md:w-4/12 md:h-14  left-0 translate-x-[64%] md:translate-x-[100%] -top-6 md:-top-7
+    "
+              >
+                November 2nd
+              </div>
+
+              <div className="mx-6 mt-6 md:mx-10 flex space-x-4">
+                <div className="self-center ">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <rect
+                      y="0.5"
+                      width="16"
+                      height="16"
+                      rx="8"
+                      fill="grey"
+                      fill-opacity="1"
+                    />
+                    <circle
+                      cx="8"
+                      cy="8.5"
+                      r="4"
+                      fill="white"
+                      className="bg-black"
+                    />
+                  </svg>
+                </div>
+                <div className={jakarta.className}>
+                  {" "}
+                  <div className="self-center text-sm md:text-lg font-semibold">
+                    Official commencement of the Cognitia 2k23 event
+                  </div>
+                </div>
+              </div>
+              <div className="mx-6 md:mx-10 flex space-x-4  mt-2  md:mt-5 md:mb-5">
+                <div className="self-center ">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <rect
+                      y="0.5"
+                      width="16"
+                      height="16"
+                      rx="8"
+                      fill="grey"
+                      fill-opacity="1"
+                    />
+                    <circle
+                      cx="8"
+                      cy="8.5"
+                      r="4"
+                      fill="white"
+                      className="bg-black"
+                    />
+                  </svg>
+                </div>
+                <div className="self-center text-sm md:text-lg font-semibold">
+                  Inauguration Ceremony at 9:00am
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
-    <div className=" bg-[rgb(16,16,16)] h-[668px] sm:h-screen w-screen">
+    <div className="relative bg-[rgb(16,16,16)] w-screen">
       <div
-        className="grid grid-rows-4 grid-cols-1 justify-items-center space-y-10 sm:space-y-0 md:grid-cols-3 md:grid-rows-1
+        className="z-10 justify-items-center space-y-10  mt-0 md:mt-20 sm:space-y-0
         h-full w-screen md:px-36
-        font-poppins"
+        font-poppins flex flex-col lg:flex-row items-center mb-10"
       >
         <div className={montserrat.className}>
-        <div
-          className="flex self-center col-span-1 row-span-1
+          <div
+            className="self-center
                 px-5 translate-y-10 md:px-0 md:translate-y-0  md:h-full md:items-center
-                text-white text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold"
-        >
-          Here&apos;s a timeline of all the events
+                text-white text-4xl md:text-4xl lg:text-6xl font-bold mb-4"
+          >
+            Here&apos;s a <span className="text-[#61E2F3]">Timeline</span> of
+            all the events
+          </div>
+          <div className={poppins.className}>
+            <div
+              className="flex self-center col-span-1 row-span-1
+                px-5 translate-y-10 md:px-0 md:translate-y-0  md:h-full md:items-center
+                text-[#8A8A8A] text-sm sm:text-lg font-bold mb-4"
+            >
+              or you could always download the brochure including all the
+              details of the event, down below
+            </div>
+          </div>
         </div>
-        </div>
-        <div
-          className="grid grid-rows-3 row-span-3 md:row-span-1 md:col-span-2 md:justify-items-center
-                h-96 w-72 md:h-full md:w-full
-                text-xs 2xl:text-xl"
-        >
-          <div className="md:self-end md:w-10/12 md:h-11/12">
-          <div className={jakarta.className}>
-          <div
-            className="grid grid-rows-2 justify-self-center w-72 h-24 md:w-full md:h-[18vh] content-center
-                     
-                    bg-white rounded-2xl
-                    hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4 duration-300
-                    text-[#1A202C]"
+        <div className="relative flex flex-col">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1000"
+            height="500"
+            viewBox="0 0 870 629"
+            fill="none"
+            className="absolute -left-40"
           >
-            <div className="flex md:text-xl relative">
-              <div className="flex justify-center content-center items-center absolute 
-              bg-[#B2CEF4] rounded-2xl border-black border-[1px]
-              font-bold text-md md:text-xs xl:text-2xl
-              w-32 h-10 md:w-4/12 md:h-14 left-0 translate-x-[64%] md:translate-x-[100%] -top-6 md:-top-7
-              ">
-                November 2nd
-              </div>
-              <div className="flex flex-col space-y-2 xl:space-y-4 2xl:space-y-7">
-                <div className="mx-6 mt-6 md:mx-10 md:mt-10 flex space-x-4">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Official commencement of the Cognitia 2k23 event</div>
-                </div>
-                <div className="mx-6 md:mx-10 flex space-x-4 ">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
-                </div>
-              </div>
-            </div>
-           </div>
-           </div>
-           </div>
-           <div className="md:self-center md:w-10/12 md:h-11/12">
-          <div className={jakarta.className}>
-          <div
-            className="grid grid-rows-2 justify-self-center w-72 h-24 md:w-full md:h-[18vh] content-center
-                     
-                    bg-white rounded-2xl
-                    hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4 duration-300
-                    text-[#1A202C]"
-          >
-            <div className="flex md:text-xl relative">
-              <div className="flex justify-center content-center items-center absolute 
-              bg-[#B2CEF4] rounded-2xl border-black border-[1px]
-              font-bold text-md md:text-xs xl:text-2xl
-              w-32 h-10 md:w-4/12 md:h-14 left-0 translate-x-[64%] md:translate-x-[100%] -top-6 md:-top-7
-              ">
-                November 2nd
-              </div>
-              <div className="flex flex-col space-y-2 xl:space-y-4 2xl:space-y-7">
-                <div className="mx-6 mt-6 md:mx-10 md:mt-10 flex space-x-4">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Day 2 of Technical and Cultural Events</div>
-                </div>
-                {/* <div className="mx-6 md:mx-10 flex space-x-4 ">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Inauguration Ceremony at 9:00am</div>
-                </div> */}
-              </div>
-            </div>
-           </div>
-           </div>
-           </div>
-           <div className="md:self-start md:w-10/12 md:h-11/12">
-          <div className={jakarta.className}>
-          <div
-            className="grid grid-rows-2 justify-self-center w-72 h-24 md:w-full md:h-[18vh] content-center
-                     
-                    bg-white rounded-2xl
-                    hover:bg-black hover:text-white hover:border-stone-300 hover:border-2 hover:shadow-white shadow-lg hover:translate-x-4 duration-300
-                    text-[#1A202C]"
-          >
-            <div className="flex md:text-xl relative">
-              <div className="flex justify-center content-center items-center absolute 
-              bg-[#B2CEF4] rounded-2xl border-black border-[1px]
-              font-bold text-md md:text-xs xl:text-2xl
-              w-32 h-10 md:w-4/12 md:h-14 left-0 translate-x-[64%] md:translate-x-[100%] -top-6 md:-top-7
-              ">
-                November 2nd
-              </div>
-              <div className="flex flex-col space-y-2 xl:space-y-4 2xl:space-y-7">
-                <div className="mx-6 mt-6 md:mx-10 md:mt-10 flex space-x-4">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Day 3 of Technical and Cultural Events</div>
-                </div>
-                <div className="mx-6 md:mx-10 flex space-x-4 ">
-                  <div className="self-center ">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="0.5"
-                        width="16"
-                        height="16"
-                        rx="8"
-                        fill="#626262"
-                        fill-opacity="0.3"
-                      />
-                      <circle cx="8" cy="8.5" r="4" fill="white" />
-                    </svg>
-                  </div>
-                  <div className="self-center  sm:text-sm md:text-xs xl:text-md 2xl:text-2xl">Closing Ceremony at 5:00pm</div>
-                </div>
-              </div>
-            </div>
-           </div>
-           </div>
-           </div>
-           
-            
+            <path
+              d="M137.05 9.02896C34.3835 119.362 -109.35 388.429 137.05 582.029C445.05 824.029 84.5502 -86.471 310.55 43.529C536.55 173.529 306.55 718.529 534.55 611.529C762.55 504.529 426.55 -73.471 577.55 9.02896C728.55 91.529 952.55 282.529 838.05 365.029C723.55 447.529 600.55 482.029 637.05 564.029C673.55 646.029 870.05 646.029 854.05 582.029"
+              stroke="#454545"
+            />
+          </svg>
+          <div className="relative z-10">
+            <Container />
+            <Container />
+            <Container />
+          </div>
         </div>
       </div>
     </div>
