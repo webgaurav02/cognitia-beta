@@ -5,6 +5,7 @@ import { algreya, jost, montserrat, poppins } from "../utils/fonts";
 import Waves from "../assets/Image.png";
 import Image from "next/image";
 import Profile from "../assets/profile.png";
+import LinesEllipsis from "react-lines-ellipsis";
 
 export default function EventBox({
   eventName,
@@ -14,6 +15,7 @@ export default function EventBox({
   venue,
   description,
   team,
+  bannerImage,
 }) {
   const [openDetail, setOpenDetail] = useState(false);
   function buildLine() {
@@ -37,18 +39,27 @@ export default function EventBox({
           {" "}
           {"< "}back
         </div>
-        <div className="2xl:w-[40%] lg:w-[50%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
-          <div className="flex flex-col">
-            <Image src={Waves} width={1000} height={1000} />
+        <div className="2xl:w-[40%] lg:w-[50%] sm:w-[40%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
+          <div
+            onKeyDown={(e) => {
+              console.log(e);
+            }}
+            className="flex flex-col"
+          >
+            <Image alt="image" src={bannerImage} width={1000} height={1000} />
 
             <div className="flex flex-col pl-4 pr-4 lg:ml-12 lg:mr-12">
               <div className="text-4xl text-[#E9E9E9] font-bold mt-5 lg:text-6xl lg:mt-10">
                 {" "}
                 <div className={poppins.className}>{eventName}</div>
               </div>
-              <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 lg:text-xl">
-                <div className={algreya.className}>Venue: {venue}</div>
-                <div className={algreya.className}>Time: {time}</div>
+              <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 space-x-5 lg:text-xl mt-2">
+                <div className={algreya.className}>
+                  Venue: {venue?.length === 0 ? "To be decided" : venue}
+                </div>
+                <div className={algreya.className}>
+                  Time: {time.length == 0 ? "To be announced" : time}
+                </div>
               </div>
 
               <div className={algreya.className}>
@@ -58,7 +69,9 @@ export default function EventBox({
                 </div>
               </div>
               <div className="text-neutral-300 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                <span className={montserrat.className}>Register Now! </span>
+                <span className={montserrat.className}>
+                  Registrations opening soon!{" "}
+                </span>
               </div>
             </div>
 
@@ -74,31 +87,40 @@ export default function EventBox({
             </div>
             {buildLine()}
             <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  lg:overflow-hidden overflow-x-scroll lg:ml-14 lg:mr-12">
-              {team?.map((member, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-lg">
-                    <Image src={Profile}></Image>
+              {team?.map((member, index) => {
+                console.log(member);
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="w-32 h-40 rounded-lg overflow-hidden">
+                      <Image
+                        alt="profile"
+                        width={1000}
+                        height={1000}
+                        quality={30}
+                        loader={({ src, width, quality }) =>
+                          `${src}?w=${width}&q=${quality || 75}`
+                        }
+                        src={member.image ? member.image : Profile}
+                      ></Image>
+                    </div>
+                    <span className="text-sm text-[#DEDEDE] text-center font-semibold mt-2">
+                      <div className={poppins.className}>
+                        {member.name.split(/(\s+)/)[0]}
+                      </div>
+                    </span>
+                    <span className="text-xs text-[#DEDEDE] font-medium">
+                      <div className={algreya.className}>{member.position}</div>
+                    </span>
                   </div>
-                  <span className="text-sm text-[#DEDEDE] text-center font-semibold mt-10">
-                    <div className={poppins.className}>{member.name}</div>
-                  </span>
-                  <span className="text-xs text-[#DEDEDE] font-medium">
-                    <div className={algreya.className}>Head</div>
-                  </span>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <div className="font-bold text-neutral-100 text-2xl mt-4 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
               <div className={poppins.className}>Contact Us</div>
             </div>
             {buildLine()}
             <div className="text-[#9E9E9E] text-sm mt-3 mr-4 ml-4 mb-5 lg:ml-14 lg:mr-12">
-              <div className={algreya.className}>
-                {" "}
-                Participants can come in teams of twos or threes for this event.
-                Make sure to bring your own system i.e a Laptop or Desktop with
-                Mac OS, Windows or Linux
-              </div>
+              <div className={algreya.className}> Details coming soon..</div>
             </div>
           </div>
         </div>
@@ -109,14 +131,16 @@ export default function EventBox({
   return (
     <>
       <EventDetail />
-      <div className="flex flex-col">
+      <div className="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg">
         <Image
-          className={"rounded-t-xl"}
-          src={Waves}
-          height={900}
-          width={900}
+          placeholder="blur"
+          alt="image"
+          className={"rounded-t-xl object-fill w-full h-full"}
+          src={bannerImage}
+          height={1000}
+          width={1000}
         />
-        <div className=" bg-neutral-800 rounded-b-xl p-6">
+        <div className="h-60 flex flex-col justify-between bg-neutral-800 rounded-b-xl p-6">
           <div className="flex-row flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,17 +155,26 @@ export default function EventBox({
               />
             </svg>
             <div className={algreya.className}>
-              <div className="text-[#DEDEDE] text-sm ml-2">Time: {time}</div>
+              <div className="text-[#DEDEDE] text-sm ml-2">
+                Time: {time.length == 0 ? "To be announced" : time}
+              </div>
             </div>
           </div>
-          <div className={jost.className}>
-            <div className="font-normal text-[#EBEBEB] text-3xl mt-2">
-              {eventName}
+          <div>
+            <div className={jost.className}>
+              <div className="font-normal text-[#EBEBEB] text-2xl mt-2 mb-2">
+                {/* <LinesEllipsis text={eventName} maxLine={1} ellipsis="..." /> */}
+                {eventName}
+              </div>
             </div>
-          </div>
-          <div className={poppins.className}>
-            <div className="text-white opacity-60 text-sm">
-              {shortDescription}
+            <div className={poppins.className}>
+              <div className="text-white opacity-60 text-sm">
+                <LinesEllipsis
+                  text={shortDescription}
+                  maxLine={2}
+                  ellipsis="..."
+                />
+              </div>
             </div>
           </div>
           <div
@@ -151,7 +184,7 @@ export default function EventBox({
             }}
           >
             <div className={algreya.className}>
-              <div className="text-[#C9C9C9]">register</div>
+              <div className="text-[#C9C9C9] font-semibold">register</div>
             </div>
           </div>
         </div>

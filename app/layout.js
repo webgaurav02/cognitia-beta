@@ -5,12 +5,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Cognitia",
-  description: "NIT Meghalya's Annual Tech Fest",
+  description: "The annual tech fest of NIT Meghalaya",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
