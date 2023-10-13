@@ -1,29 +1,37 @@
-import Image from "next/image";
-import GIF from "./assets/umaru-kawaii.gif";
+import NavBar from "./components/nav-bar";
+import ParallaxHome from "./components/parallax-home";
+import Timeline from "./components/timeline";
+import PopularEvents from "./components/popular-events";
+import Footer from "./components/footer";
 import "./components/text-block.css";
-import { jost } from "./utils/fonts";
 
 export default async function Home() {
   return (
     <>
-      <div className="absolute flex flex-row justify-center items-center w-full h-full bg-black">
-        <div>
-          {" "}
-          <div className="flex flex-col justify-center">
-            <Image width={800} height={800} src={GIF}></Image>
-            <div className={jost.className}>
-              <div className="text-white text-4xl text-center mt-8">
-                Website under construction 👷‍♂️🚧
-              </div>
-              <div className="text-neutral-600 text-xl text-center mt-8">
-                We are hard at work, visit again soon!
-              </div>
-              <div className="text-neutral-600 text-md text-center mt-2">
-                - Cognitia 2023 dev team
-              </div>
-            </div>
-          </div>
+      <div id="home">
+        <div className="fixed h-24 w-full z-50">
+          <NavBar />
         </div>
+
+        <ParallaxHome />
+
+        <div className="flex justify-center ">
+          <div className="w-11/12 sm:pb-0"></div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="w-11/12 border-b-2 border-stone-300"></div>
+        </div>
+
+        <Timeline />
+
+        <div className="flex justify-center">
+          <div className="w-11/12 border-b-2 border-stone-300"></div>
+        </div>
+
+        <PopularEvents />
+
+        <Footer />
       </div>
     </>
   );
