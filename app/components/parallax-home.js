@@ -122,29 +122,29 @@ function ParallaxHome() {
               >
                 <div
                   className="pl-4 py-2 sm:py-0 self-end pt-10 sm:pt-0
-            row-span-2 col-span-3 lg:col-span-2 
+            row-span-2 col-span-3 lg:col-span-3
             text-5xl sm:text-[5rem]"
                 >
                   Welcome to Cognitia Tech Fest
                 </div>
-                <div className="flex justify-end content-center row-span-6 lg:col-span-3 ">
+                <div className="flex justify-end content-center row-span-6 lg:col-span-2">
                   {" "}
                 </div>
-                <div className={poppins.className}>
-                  <div
-                    className="pl-4 mt-2 py-2 sm:py-0 
-          row-span-2 col-span-2
-          text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 
-          self-center"
+                <div className="pl-4 mt-2 py-2 sm:py-0
+                  row-span-1 col-span-2
+                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 
+                self-center">
+                  <div className={poppins.className}
+                    
                   >
                     NIT Meghalaya&apos;s annual tech fest. Explore all events
                     and get registered now!{" "}
                   </div>
                 </div>
-                <div className="pl-4 mt-2 py-2 sm:py-0 row-span-2 col-span-2 ">
+                <div className="pl-4 mt-2 py-2 sm:py-0 row-span-1 col-span-3">
                   <Link href="/events">
                     <div className={jost.className}>
-                      <button className="border-[#E1ABE8] border-[1px] lg:mt-10 sm:border-2 rounded-lg text-[#E1ABE8] text-lg font-medium h-10 w-32 sm:h-20 sm:w-72 sm:text-2xl hover:bg-white duration-500">
+                      <button className="border-[#E1ABE8] border-[1px] lg:mt-10 sm:border-2 rounded-lg text-[#E1ABE8] hover:text-black text-lg font-medium h-10 w-32 sm:h-20 sm:w-72 sm:text-2xl hover:bg-[#E1ABE8] duration-500">
                         View Events
                       </button>
                     </div>
