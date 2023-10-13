@@ -2,7 +2,7 @@ import { jakarta, poppins } from "../utils/fonts";
 import { montserrat } from "../utils/fonts";
 
 export default function Timeline() {
-  function Container() {
+  function Container({ date, event1, event2 }) {
     return (
       <>
         <div className={jakarta.className}>
@@ -21,7 +21,7 @@ export default function Timeline() {
     w-32 h-10 md:w-4/12 md:h-14  left-0 translate-x-[64%] md:translate-x-[100%] -top-6 md:-top-7
     "
               >
-                November 2nd
+                {date}
               </div>
 
               <div className="mx-6 mt-6 md:mx-10 flex space-x-4">
@@ -54,7 +54,7 @@ export default function Timeline() {
                 <div className={jakarta.className}>
                   {" "}
                   <div className="self-center text-sm md:text-lg font-semibold">
-                    Official commencement of the Cognitia 2023 event
+                    {event1}
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function Timeline() {
                   </svg>
                 </div>
                 <div className="self-center text-sm md:text-lg font-semibold">
-                  Inauguration Ceremony at 9:00am
+                  {event2}
                 </div>
               </div>
             </div>
@@ -138,9 +138,21 @@ export default function Timeline() {
             />
           </svg>
           <div className="relative z-10">
-            <Container />
-            <Container />
-            <Container />
+            <Container
+              date={"2nd November"}
+              event1={"Official commencement of the Cognitia 2023 event"}
+              event2={"Inauguration Ceremony at 9:00am"}
+            />
+            <Container
+              date={"3rd November"}
+              event1={"Hackathon by the Coding Club"}
+              event2={"Drone Competition by the Robotics Club"}
+            />
+            <Container
+              date={"4th November"}
+              event1={"Roborumble by the Robotics Club"}
+              event2={"Jam Session"}
+            />
           </div>
         </div>
       </div>

@@ -112,42 +112,15 @@ async function EventBody() {
             </div>
           </div>
         </div>
-        <div className="">
-          <Grid>
-            <EventBox
-              alt="image"
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-              bannerImage={coding5}
-            />
-            <EventBox
-              alt="image"
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-              bannerImage={coding4}
-            />
-            <EventBox
-              alt="image"
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-              bannerImage={coding1}
-            />
-          </Grid>
+        <div className={jost.className}>
+          <div className="text-neutral-600 font-bold text-2xl md:text-3xl mb-8">
+            Coming soon...
+          </div>
+        </div>
+        <div className={jost.className}>
+          <div className="text-white font-bold text-4xl md:text-6xl mb-2">
+            Browse all our events
+          </div>
         </div>
       </div>
     );
@@ -158,7 +131,7 @@ async function EventBody() {
       {buildFiltersList()}
       {buildPopularEvents()}
       <div className="relative">
-        <div id="events" className="absolute -top-32 w-10 h-72"></div>
+        <div id="events" className="absolute -top-48 w-10 h-96"></div>
       </div>
       <EventTabs data={data} />
     </div>
