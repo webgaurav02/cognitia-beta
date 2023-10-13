@@ -12,6 +12,11 @@ import { getEvents } from "../utils/services";
 import RegisterIcon from "../components/register-icon";
 import Image from "next/image";
 import Girl from "../assets/girl.png";
+import Link from "next/link";
+import coding1 from "../assets/defaults/coding1.png";
+import coding3 from "../assets/defaults/coding3.png";
+import coding4 from "../assets/defaults/coding4.png";
+import coding5 from "../assets/defaults/coding5.png";
 
 async function EventBody() {
   let data = await getEvents();
@@ -65,14 +70,16 @@ async function EventBody() {
                   for?
                 </div>
               </div>
-              <div className="flex flex-row ml-2 items-center mt-2  md:mt-6">
-                <RegisterIcon />
-                <div className={montserrat.className}>
-                  <div className="text-sm font-normal md:text-xl text-[#DADADA]">
-                    Register Now!
+              <Link href="#events">
+                <div className="flex flex-row ml-2 items-center mt-2  md:mt-6">
+                  <RegisterIcon />
+                  <div className={montserrat.className}>
+                    <div className="text-sm font-normal md:text-xl text-[#DADADA]">
+                      Register Now!
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <Image
@@ -88,60 +95,7 @@ async function EventBody() {
       </div>
     );
   }
-  function buildCodingEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#D1ED9F] p-2 w-48
-     rounded-lg h-12 text-center justify-center`}
-        >
-          <span className="font-bold text-2xl">Coding</span>
-        </div>
-        {/* <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        /> */}
-      </div>
-    );
-  }
-  function buildRoboticEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#FFC691] p-2 w-48
-     rounded-lg h-12 text-center flex flex-col justify-center`}
-        >
-          <span className="font-bold text-2xl">Robotic</span>
-        </div>
-        <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        />
-      </div>
-    );
-  }
-  function buildDepartmentalEvents() {
-    return (
-      <div className="pl-24 mt-6">
-        <div
-          className={`bg-[#E1ABE8] p-2  w-48
-     rounded-lg h-12 text-center flex flex-col justify-center`}
-        >
-          <span className="font-bold text-2xl">Departmental</span>
-        </div>
-        <EventBox
-          eventName="Hack the box"
-          eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-          dpt="coding"
-          time="2nd Nov 9:50"
-        />
-      </div>
-    );
-  }
+
   function buildPopularEvents() {
     return (
       <div className="md:ml-32 md:mr-32 p-6">
@@ -158,36 +112,15 @@ async function EventBody() {
             </div>
           </div>
         </div>
-        <div className="">
-          <Grid>
-            <EventBox
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-            />
-            <EventBox
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-            />
-            <EventBox
-              eventName="Hack the box"
-              eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-              dpt="coding"
-              time="2nd Nov 9:50"
-              shortDescription={
-                "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
-              }
-            />
-          </Grid>
+        <div className={jost.className}>
+          <div className="text-neutral-600 font-bold text-2xl md:text-3xl mb-8">
+            Coming soon...
+          </div>
+        </div>
+        <div className={jost.className}>
+          <div className="text-white font-bold text-4xl md:text-6xl mb-2">
+            Browse all our events
+          </div>
         </div>
       </div>
     );
@@ -197,6 +130,9 @@ async function EventBody() {
       {buildTopBanner()}
       {buildFiltersList()}
       {buildPopularEvents()}
+      <div className="relative">
+        <div id="events" className="absolute -top-48 w-10 h-96"></div>
+      </div>
       <EventTabs data={data} />
     </div>
   );
@@ -254,6 +190,25 @@ function Skeleton() {
           <div className="w-[70vw] md:w-[10vw]  md:h-[5vh] bg-neutral-800 rounded-lg mt-20"></div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function buildCodingEvents() {
+  return (
+    <div className="pl-24 mt-6">
+      <div
+        className={`bg-[#D1ED9F] p-2 w-48
+   rounded-lg h-12 text-center justify-center`}
+      >
+        <span className="font-bold text-2xl">Coding</span>
+      </div>
+      {/* <EventBox
+        eventName="Hack the box"
+        eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
+        dpt="coding"
+        time="2nd Nov 9:50"
+      /> */}
     </div>
   );
 }

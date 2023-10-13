@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 export default function EventCarousel() {
   return (
     <div className="h-64">
-      <Swiper
+      {/* <Swiper
         slidesPerView={4}
         // spaceBetween={15}
         freeMode={true}
@@ -76,7 +76,7 @@ export default function EventCarousel() {
             time="2nd Nov 9:50"
           />
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 }

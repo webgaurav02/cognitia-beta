@@ -26,7 +26,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl1}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[4px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[4px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -39,7 +39,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl2}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -62,7 +62,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl3}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover blur-[3px] sm:blur-0"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover blur-[3px] sm:blur-0"
             />
           </div>
         </ParallaxLayer>
@@ -75,7 +75,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl5}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover"
             />
           </div>
         </ParallaxLayer>
@@ -88,7 +88,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={prl7}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover"
             />
           </div>
         </ParallaxLayer>
@@ -101,7 +101,7 @@ function ParallaxHome() {
               placeholder="blur"
               src={bgend}
               alt="background"
-              className="w-[900px] sm:w-[1920px] opacity-100 object-cover sm:-translate-y-[35vh]"
+              className="w-[900px] sm:w-[1920px] 2xl:w-[2800px] opacity-100 object-cover sm:-translate-y-[35vh]"
             />
           </div>
         </ParallaxLayer>
@@ -111,50 +111,51 @@ function ParallaxHome() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.2} speed={-1}>
-          <div className={montserrat.className}>
-          <div
-            className="w-screen h-[768px] xl:h-[500px] 2xl:h-[768px] -translate-y-72 sm:-translate-y-10 z-50     
-          text-white font-bold"
-          >
+          <div className={jost.className}>
             <div
-              className=" mt-5 px-2 pt-52 sm:mt-0 sm:pt-0 md:px-36
-          grid grid-cols-1 sm:grid sm:grid-rows-7 sm:grid-cols-5 sm:h-full"
+              className="w-screen h-[768px] xl:h-[500px] 2xl:h-[768px] -translate-y-72 sm:-translate-y-10 z-50     
+          text-white font-bold mt-6"
             >
-              
               <div
-                className=" py-2 sm:py-0 self-end pt-10 sm:pt-0
-            row-span-2 col-span-3 lg:col-span-2 
-            text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-9xl 
-            "
+                className="px-2 pt-52 sm:mt-0 sm:pt-0 md:px-36
+          grid grid-cols-1 sm:grid sm:grid-rows-7 sm:grid-cols-5 sm:h-full"
               >
-                COGNITIA 2K23 FEST
-              </div>
-              <div className="flex justify-end content-center row-span-6 lg:col-span-3 ">
-                {" "}
-              </div>
-              <div
-                className=" py-2 sm:py-0 
-          row-span-2 col-span-2 
-          text-md sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 
-          self-center"
-              >
-                Welcome to Cognitia, NIT Meghalaya&apos;s annual tech and
-                cultural fest. Explore all events and get registered now!{" "}
-              </div>
-              <div className="  py-2 sm:py-0 row-span-2 col-span-2 ">
-                <Link href="/events">
-                  <button className="border-[#E1ABE8] border-[1px] sm:border-2 rounded-lg text-[#E1ABE8] text-lg h-10 w-40 sm:h-20 sm:w-72 sm:text-2xl hover:bg-white duration-500">
-                    View Events
-                  </button>
-                </Link>
-              </div>
+                <div
+                  className="pl-4 py-2 sm:py-0 self-end pt-10 sm:pt-0
+            row-span-2 col-span-3 lg:col-span-3
+            text-5xl sm:text-[5rem]"
+                >
+                  Welcome to Cognitia Tech Fest
+                </div>
+                <div className="flex justify-end content-center row-span-6 lg:col-span-2">
+                  {" "}
+                </div>
+                <div className="pl-4 mt-2 py-2 sm:py-0
+                  row-span-1 col-span-2
+                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 
+                self-center">
+                  <div className={poppins.className}
+                    
+                  >
+                    NIT Meghalaya&apos;s annual tech fest. Explore all events
+                    and get registered now!{" "}
+                  </div>
+                </div>
+                <div className="pl-4 mt-2 py-2 sm:py-0 row-span-1 col-span-3">
+                  <Link href="/events">
+                    <div className={jost.className}>
+                      <button className="border-[#E1ABE8] border-[1px] lg:mt-10 sm:border-2 rounded-lg text-[#E1ABE8] hover:text-black text-lg font-medium h-10 w-32 sm:h-20 sm:w-72 sm:text-2xl hover:bg-[#E1ABE8] duration-500">
+                        View Events
+                      </button>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </ParallaxLayer>
       </Parallax>
     </div>
-    
   );
 }
 
