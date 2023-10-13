@@ -2,20 +2,91 @@
 
 import "./team.css";
 import React, { useState } from "react";
-import image1 from "../assets/images/sam.jpeg";
-import image2 from "../assets/images/Kilio3.jpg";
-import image3 from "../assets/images/Amal.jpg";
-import image4 from "../assets/images/Isaiah.jpeg";
-import image5 from "../assets/images/Nishant.jpeg";
-import image6 from "../assets/images/download 6.png";
-import image7 from "../assets/images/download 7.png";
-import image8 from "../assets/images/download 8.png";
-import image9 from "../assets/images/download 9.png";
-import image10 from "../assets/images/download 2.png";
-import image11 from "../assets/images/Mayo.jpeg";
-import image12 from "../assets/images/temp1.jpg";
-import image13 from "../assets/images/temp2.jpg";
-import image14 from "../assets/images/temp3.jpg";
+import image0 from "../assets/images/download 8.jpg";
+//devteam
+import image1 from "../assets/images/dev/sam.jpeg";
+import image2 from "../assets/images/dev/Kilio.jpg";
+import image3 from "../assets/images/dev/Amal Shibu.jpg";
+import image4 from "../assets/images/dev/Isaiah.jpeg";
+import image5 from "../assets/images/dev/Nishant.jpeg";
+import image6 from "../assets/images/dev/Marjiba.jpeg";
+import image8 from "../assets/images/dev/Gunnu Lavanya.jpg";
+import image7 from "../assets/images/dev/Gaurav Polai.jpg";
+//sac committee
+
+import image9 from "../assets/images/SAC Committee/Atanu.jpg";
+import image10 from "../assets/images/SAC Committee/bunil.jpg";
+import image11 from "../assets/images/SAC Committee/pardhu.png";
+import image12 from "../assets/images/SAC Committee/swarop.jpg";
+import image13 from "../assets/images/SAC Committee/rounak.jpg";
+  
+
+//CORE
+import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
+//import image15 from "../assets/images/Core/temp3.jpg";
+import image16 from "../assets/images/Core/Wanrapbok R Kharshandi.jpg";
+//import image17 from "../assets/images/Core/temp3.jpg";
+import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
+
+
+//Design
+//import image20 from "../assets/images/design/
+import image21 from "../assets/images/design/L Komune.jpg";
+import image22 from "../assets/images/design/Jaswanth Bojja.jpg";
+import image23 from "../assets/images/design/Dhanunjay Naidu Paruvada.jpg";
+import image24 from "../assets/images/design/SUBHADEEP SINHA.jpg";
+import image25 from "../assets/images/design/Pankaj Saraswat.jpg";
+import image26 from "../assets/images/design/Deinipaya Alvira Lynshing.png";
+import image27 from "../assets/images/design/Botu Varun Kumar.jpg";
+//import image28 from "../assets/images/design/
+
+//Marketing
+// import image31 from "../assets/images/maketing/
+// import image32 from "../assets/images/maketing/
+// import image33 from "../assets/images/maketing/
+import image34 from "../assets/images/marketing/Kumar Gaurav.jpeg";
+// import image35 from "../assets/images/maketing/
+// import image36 from "../assets/images/maketing/
+// import image37 from "../assets/images/maketing/
+import image38 from "../assets/images/marketing/Satyam Kumar Singh.png";
+import image39 from "../assets/images/marketing/Achintya Chaudhary.jpg";
+import image40 from "../assets/images/marketing/Kabesa S Marak.png";
+import image41 from "../assets/images/marketing/Neelkantha Mandal.jpg";
+
+//Management
+import image51 from "../assets/images/management/Arilam Kyndiah.jpg";
+//import image52 from "../assets/images/management/
+import image53 from "../assets/images/management/Koninika Tarafdar.jpg";
+import image54 from "../assets/images/management/meba.jpg";
+import image55 from "../assets/images/management/PREM KUMAR GUPTA.jpg";
+//import image56 from "../assets/images/management/
+import image57 from "../assets/images/management/Kenneth Wellborn Basaiawmoit.jpeg";
+import image58 from "../assets/images/management/Klusborning Nongbri.jpg";
+//import image59 from "../assets/images/management/
+//import image60 from "../assets/images/management/
+import image61 from "../assets/images/management/B Palguna Rao.jpg";
+import image62 from "../assets/images/management/S Charan Tejha Reddy.jpg";
+//import image63 from "../assets/images/management/
+//import image64 from "../assets/images/management/
+import image65 from "../assets/images/management/Penugurthi.Dinesh.jpg";
+import image66 from "../assets/images/management/Sonam Bharti.jpg";
+import image67 from "../assets/images/management/T.Rakesh Srikar Reddy.jpg";
+import image68 from "../assets/images/management/ajay.jpg";
+//import image69 from "../assets/images/management/
+
+//others
+import image71 from "../assets/images/others/Gannu Abhijith Sai.jpg";
+// import image72 from "../assets/images/others/
+// import image73 from "../assets/images/others/
+// import image74 from "../assets/images/others/
+// import image75 from "../assets/images/others/
+// import image76 from "../assets/images/others/
+import image77 from "../assets/images/others/Karimi Tarun Teja.jpeg";
+import image78 from "../assets/images/others/L SRI KASYAP.jpg";
+import image79 from "../assets/images/others/Simma kiran.jpg";
+//import image80 from "../assets/images/others/
+
+
 import Image from "next/image";
 import NavBar from "../components/nav-bar";
 import { poppins } from "../utils/fonts";
@@ -51,23 +122,13 @@ const TeamSection = ({ images, names, roles }) => {
 function Devteam() {
   const images = [
     image1,
-    image3,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image3,
+    image2,
     image3,
     image4,
     image5,
     image6,
     image7,
     image8,
-    image9,
   ];
   const names = [
     "Samuel",
@@ -77,296 +138,260 @@ function Devteam() {
     "Nishant",
     "Marjiba",
     "Gaurav",
-    "Marjiba",
-    "Gaurav",
+    "Lavanya"
   ];
   const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
+    "Lead developer",
+    "Lead developer",
+    "Lead developer",
+    "Lead developer",
+    "Lead developer",
+    "Lead designer",
+    "Apprentice",
+    "Apprentice",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
-}
+}0
 
-function Robotics() {
+function SAC_Committee() {
   const images = [
+    image9,
+    image10,
     image11,
     image12,
     image13,
+  ];
+  const names = [
+    "Dr. Atanu Singha Roy",
+    "Dr. Bunil Kr. Balabantaray",
+    "Pardhu Mattupalli",
+    "T. Swaroop Kumar",
+    "Rounak Saha",
+  ];
+  const roles = [
+    "SAC President",
+    "Vice-President, Technical",
+    "General Secretary 1,Science & Technology",
+    "General Secretary 2,Science & Technology",
+    "Member 1,Science & Technology",
+  ];
+
+  return <TeamSection images={images} names={names} roles={roles} />;
+}
+function Core() {
+  const images = [
     image14,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
+    image0,
+    image16,
+    image0,
+    image18,
   ];
   const names = [
-    "Mayo",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
+    "Prakhar Gupta",
+    "Shaik Lai Sameer",
+    "Wanrapbok R",
+    "Supriya Neogi",
+    "Om Prakash Yadav",
   ];
   const roles = [
-    "Convener",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-  ];
-
-  return <TeamSection images={images} names={names} roles={roles} />;
-}
-function Marketing() {
-  const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-  ];
-  const names = [
-    "Samuel",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
-  ];
-  const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-  ];
-
-  return <TeamSection images={images} names={names} roles={roles} />;
-}
-function Financing() {
-  const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-  ];
-  const names = [
-    "Samuel",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
-  ];
-  const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
+    "Coordinator",
+    "Coordinator",
+    "Co-coordinator",
+    "Co-coordinator",
+    "Co-coordinator",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 function Design() {
   const images = [
+    image0,
     image1,
-    image3,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image3,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
+    image21,
+    image22,
+    image23,
+    image24,
+    image25,
+    image26,
+    image27,
+    image0,
   ];
   const names = [
-    "Samuel",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
+    "Sri Vadan",
+    "Samuel Khongthaw",
+    "L Komune",
+    "Jaswanth",
+    "Dhanunjay Naidu",
+    "SUBHADEEP SINHA",
+    "Pankaj Saraswat",
+    "Deinipaya Alvira",
+    "Varun B",
+    "Binesh Das"
   ];
   const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
+    "Convener",
+    "Convener",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
+    "Coordinaor",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
 }
-function Hospitality() {
+function Marketing() {
   const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
+    image0,
+    image0,
+    image0,
+    image34,
+    image0,
+    image0,
+    image0,
+    image38,
+    image39,
+    image40,
+    image41,
   ];
   const names = [
-    "Samuel",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
+    "Rathod Vikram",
+    "Banteilang",
+    "Jaswanth Kumar",
+    "Kumar Gaurav",
+    "Harsh Thakur",
+    "Sourabh Paul",
+    "Jenny Fersha",
+    "Satyam Kumar ",
+    "Achintya",
+    "Kabesa S",
+    "Neelkahntha",
   ];
   const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
+    "Coordinator (Sponsor & Marketing)",
+    "Coordinator (Sponsor & Marketing)",
+    "Coordinator (Publicity & Social Media)",
+    "Coordinator (Publicity & Social Media)",
+    "Coordinator (Sponsor & Marketing)",
+    "Co-coordinator (Sponsor & Marketing)",
+    "Co-coordinator (Sponsor & Marketing)",
+    "Co-coordinator (Sponsor & Marketing)",
+    "Co-coordinator (Publicity & Social Media)",
+    "Co-coordinator (Publicity & Social Media)",
+    "Co-coordinator (Publicity & Social Media)",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
 }
-function Cultural() {
+function Management() {
   const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    ,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
+    image51,
+    image0,
+    image53,
+    image0,
+    image55,
+    image54,
+    image57,
+    image58,
+    image0,
+    image0,
+    image61,
+    image62,
+    image0,
+    image0,
+    image65,
+    image66,
+    image67,
+    image68,
+    image0,
   ];
   const names = [
-    "Samuel",
-    "Kilio",
-    "Amal",
-    "Isaiah",
-    "Nishant",
-    "Marjiba",
-    "Gaurav",
-    "Marjiba",
-    "Gaurav",
+    "Arilam",
+    "D S Hrangaolou",
+    "Koninika Tarafdar",
+    "Bahunshisha Snaitang",
+    "Prem",
+    "Mebadeipor",
+    "Kenneth Wellborn ",
+    "Klusborning Nongbri",
+    "Sojib Datta",
+    "Richmondwell L Kalwing",
+    "B Palguna Rao",
+    "S Charan Tejha",
+    "B Sai Upender",
+    "Olivia El Reka",
+    "Penugurthi Dinesh",
+    "Sonam Bharti",
+    "Rakesh Srikar Reddy",
+    "Ajay Reddy",
+    "Dappalapoodi Bhuvanesh"
   ];
   const roles = [
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
-    "lead developer",
+    "Coordinator (Hospitality)",
+    "Coordinator (Hospitality)",
+    "Co-coordinator (Hospitality)",
+    "Co-coordinator (Hospitality)",
+    "Co-coordinator (Hospitality)",
+    "Coordinator (Stage Management)",
+    "Coordinator (Stage Management)",
+    "Coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Coordinator (Event Management)",
+    "Coordinator (Event Management)",
+    "Coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
+    "Coordinator (Food Committee)",
+    "Co-coordinator (Food Committee)",
+
+  ];
+
+  return <TeamSection images={images} names={names} roles={roles} />;
+}
+function Others() {
+  const images = [
+    image71,
+    image0,
+    image0,
+    image0,
+    image0,
+    image0,
+    image77,
+    image78,
+    image79,
+    image0,
+  ];
+  const names = [
+    "Gannu Abhijith Sai",
+    "Arkibud Broadwin Ryntathiang",
+    "Taruna",
+    "Bingi Rakesh",
+    "Diyasha Mahanta",
+    "Rai Kachak Tripura",
+    "Karimi Tarun Teja",
+    "L Sri Kasyap",
+    "Simma Kiran",
+    "Nimmakuri Varun Teja"
+  ];
+  const roles = [
+    "Coordinator (Task Force Club)",
+    "Coordinator (Task Force Club)",
+    "Co-coordinator (Task Force Club)",
+    "Coordinator (Traditional Dance)",
+    "Coordinator (Traditional Dance)",
+    "Coordinator (Photography and fine arts)",
+    "Head (Volunteer)",
+    "Head (Volunteer)",
+    "Coordinator (Volunteer)",
+    "Coordinator (Volunteer)",
+    
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
@@ -374,12 +399,12 @@ function Cultural() {
 
 const componentsMap = {
   Devteam,
-  Cultural,
-  Robotics: Robotics,
-  Marketing,
-  Financing,
+  SAC_Committee,
+  Core,
   Design,
-  Hospitality,
+  Marketing,
+  Management,
+  Others,
 };
 
 const Navbar1 = ({ items, onSelect, activeItem }) => {
@@ -424,12 +449,12 @@ const Team = () => {
 
   const navbarItems = [
     "Devteam",
-    "Cultural",
-    "Robotics",
-    "Marketing",
-    "Financing",
+    "SAC_Committee",
+    "Core",
     "Design",
-    "Hospitality",
+    "Marketing",
+    "Management",
+    "Others",
   ];
 
   const handleNavbarClick = (item) => {
