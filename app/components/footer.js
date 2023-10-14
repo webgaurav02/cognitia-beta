@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-    <div className="h-[40vh] md:h-[110vh]">
+    <div className="h-[70vh] md:h-[115vh]">
       <div className={jakarta.className}>
       <div className="flex justify-center">
           <div className="w-11/12 border-b-2 border-stone-300 opacity-40"></div>
