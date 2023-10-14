@@ -23,7 +23,7 @@ import image13 from "../assets/images/SAC Committee/rounak.jpg";
 //CORE
 import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
 //import image15 from "../assets/images/Core/temp3.jpg";
-import image16 from "../assets/images/Core/Wanrapbok R Kharshandi.jpg";
+import image16 from "../assets/images/Core/WanrapbokRKharshandi.jpg";
 //import image17 from "../assets/images/Core/temp3.jpg";
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
 
