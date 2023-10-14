@@ -115,7 +115,7 @@ async function EventBody() {
           </div>
         </div>
         <div className="">
-          <div className="container my-8 mt-8 mb-32 md:mb-40">
+          <div className="container my-8 mt-8 mb-12 md:mb-40">
             <div className="grid justify-center sm:justify-start lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 md:gap-48">
               <PopularEvent
                 name={"Hackathon"}
@@ -139,8 +139,14 @@ async function EventBody() {
           </div>
         </div>
         <div className={jost.className}>
-          <div className="text-white font-bold text-4xl md:text-6xl mb-6">
+          <div className="text-white font-bold text-4xl md:text-6xl mb-2">
             Browse all our events
+          </div>
+        </div>
+        <div className="text-[#8A8A8A] font-medium leading-tight text-sm md:text-xl mb-4">
+          <div className={poppins.className}>
+            {" "}
+            browse through our large catalogue of events down under!
           </div>
         </div>
       </div>
@@ -152,7 +158,7 @@ async function EventBody() {
       {buildFiltersList()}
       {buildPopularEvents()}
       <div className="relative">
-        <div id="events" className="absolute -top-48 w-10 h-96"></div>
+        <div id="events" className="absolute -top-64 w-10 h-96"></div>
       </div>
       <EventTabs data={data} />
     </div>

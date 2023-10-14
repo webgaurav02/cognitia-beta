@@ -4,7 +4,8 @@ import { useState } from "react";
 import { algreya, jost, montserrat, poppins } from "../utils/fonts";
 import Waves from "../assets/Image.png";
 import Image from "next/image";
-import Profile from "../assets/profile.png";
+// import Profile from "../assets/profile.png";
+import Profile from "../assets/images/download 8.jpg";
 import LinesEllipsis from "react-lines-ellipsis";
 import Link from "next/link";
 
@@ -131,9 +132,9 @@ export default function EventBox({
                         alt="profile"
                         width={1000}
                         height={1000}
-                        quality={30}
+                        quality={10}
                         loader={({ src, width, quality }) =>
-                          `${src}?w=${width}&q=${quality || 75}`
+                          `${src}?w=${width}&q=${10}`
                         }
                         src={member.image ? member.image : Profile}
                       ></Image>

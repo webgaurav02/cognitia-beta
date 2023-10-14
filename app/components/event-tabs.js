@@ -26,13 +26,14 @@ export default function EventTabs({ data }) {
   const codingClubImages = [coding1, coding2, coding5, coding4, coding5];
   const roboticClubImages = [robotic1, robotic2, robotic3, robotic4];
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState("Coding");
   let codingClubEvents = getCodingClubEvents(data);
   let roboticClubEvents = getRoboticClubEvents(data);
   let departmentalEvents = getDepartmentalEvents(data);
   let astronomyClubEvents = getAstonomyEvents(data);
   let gamingClubEvents = getGamingEvents(data);
   let otherEvents = getOtherEvents(data);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   const Navbar = ({ items, onSelect, activeItem }) => {
     return (
@@ -41,17 +42,17 @@ export default function EventTabs({ data }) {
           <div
             key={index}
             onClick={() => {
-              setActiveTab(index);
+              setActiveTab(item);
               onSelect(item);
             }}
             style={{ textAlign: "centre" }}
             className={`cursor-pointer ${
-              index === activeTab ? "border-b-2 border-white-500" : ""
+              item === activeTab ? "border-b-2 border-white-500" : ""
             } text-green`}
           >
             <p
               className={`pb-3 text-xs ${
-                index === activeTab
+                item === activeTab
                   ? "text-[#EBEBEB]"
                   : "text-[#EBEBEB] opacity-40"
               } font-plus-jakarta-sans text-md md:text-lg`}
@@ -66,16 +67,15 @@ export default function EventTabs({ data }) {
   };
 
   const EventTabs = () => {
-    const [currentView, setCurrentView] = useState("Coding");
-    const [slideIndex, setSlideIndex] = useState(0);
+    const [currentView, setCurrentView] = useState(activeTab);
 
     const navbarItems = [
       "Coding",
       "Robotics",
       "Dept",
       "Astro",
-      "Game",
-      "Other",
+      "Gaming",
+      "Others",
     ];
     // , "Astro", "Depart", "Cultural"
 
@@ -133,7 +133,7 @@ export default function EventTabs({ data }) {
             activeItem={currentView}
           />
           <div>
-            {slideIndex !== 1 && (
+            {slideIndex !== 2 && (
               <button
                 className="mr-3 pb-2 text-white"
                 onClick={handleSlideRight}
@@ -159,7 +159,7 @@ export default function EventTabs({ data }) {
                 </svg>
               </button>
             )}
-            {slideIndex === 1 && <div className="ml-8"></div>}
+            {slideIndex === 2 && <div className="ml-8"></div>}
           </div>
         </div>
         {/* <ContainerX content={<CurrentComponent />} /> */}
@@ -170,7 +170,7 @@ export default function EventTabs({ data }) {
     <div className="">
       {<EventTabs />}
       <div className="flex flex-col items-center md:ml-20 ml-6 mr-6 lg:ml-36 lg:mr-36">
-        {activeTab === 0 ? (
+        {activeTab === "Coding" ? (
           <Grid>
             {codingClubEvents.map((event, index) => {
               return (
@@ -193,7 +193,7 @@ export default function EventTabs({ data }) {
         ) : (
           <></>
         )}
-        {activeTab === 1 ? (
+        {activeTab === "Robotics" ? (
           <Grid>
             {roboticClubEvents.map((event, index) => {
               return (
@@ -216,7 +216,7 @@ export default function EventTabs({ data }) {
         ) : (
           <></>
         )}
-        {activeTab === 2 ? (
+        {activeTab === "Dept" ? (
           <Grid>
             {departmentalEvents.map((event, index) => {
               return (
@@ -239,7 +239,7 @@ export default function EventTabs({ data }) {
         ) : (
           <></>
         )}
-        {activeTab === 3 ? (
+        {activeTab === "Astro" ? (
           <Grid>
             {astronomyClubEvents.map((event, index) => {
               return (
@@ -262,7 +262,7 @@ export default function EventTabs({ data }) {
         ) : (
           <></>
         )}
-        {activeTab === 4 ? (
+        {activeTab === "Gaming" ? (
           <Grid>
             {gamingClubEvents.map((event, index) => {
               return (
@@ -285,7 +285,7 @@ export default function EventTabs({ data }) {
         ) : (
           <></>
         )}
-        {activeTab === 5 ? (
+        {activeTab === "Others" ? (
           <Grid>
             {otherEvents.map((event, index) => {
               return (

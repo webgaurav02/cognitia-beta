@@ -86,7 +86,7 @@ import image79 from "../assets/images/others/Simma kiran.jpg";
 
 import Image from "next/image";
 import NavBar from "../components/nav-bar";
-import { poppins } from "../utils/fonts";
+import { algreya, poppins } from "../utils/fonts";
 import Footer from "../components/footer";
 
 const TeamSection = ({ images, names, roles }) => {
@@ -95,20 +95,23 @@ const TeamSection = ({ images, names, roles }) => {
       {images.map((image, index) => (
         <div
           key={index}
-          className="border-solid text-center bg-[#1C1C1C] pb-2 w-75% sm:w-100% md:w-100% mb-5 mx-2 lg:mb-10  rounded-t-lg"
+          className="border-solid text-center bg-[#1C1C1C] w-75% sm:w-100% md:w-100% mb-5 mx-2 lg:mb-10  rounded-lg"
         >
           <Image
             width={1000}
             height={1000}
             src={image}
             alt={`Image ${index + 1}`}
-            className="object-cover max-w-full h-auto rounded-t-lg"
+            className="object-cover max-w-full rounded-t-lg"
             placeholder="blur"
           />
-          <div className="text-white mt font-poppins font-bold text-xl mt-2 flex flex-col">
+          <div className="text-white font-poppins font-bold text-xl flex flex-col justify-center p-2">
             <strong className={poppins.className}>{names[index]}</strong>
 
-            <span className="text-xs text-[#BEBEBE]">{roles[index]}</span>
+            <span className={algreya.className}>
+              {" "}
+              <span className="text-sm text-[#BEBEBE]">{roles[index]}</span>
+            </span>
           </div>
         </div>
       ))}
@@ -204,7 +207,7 @@ function Design() {
   ];
   const names = [
     "Sri Vadan",
-    "Samuel Khongthaw",
+    "Samuel",
     "L Komune",
     "Jaswanth",
     "Dhanunjay Naidu",
@@ -354,7 +357,7 @@ function Others() {
   ];
   const names = [
     "Gannu Abhijith Sai",
-    "Arkibud Broadwin Ryntathiang",
+    "Arkibud B. Ryntathiang",
     "Taruna",
     "Bingi Rakesh",
     "Diyasha Mahanta",
@@ -381,8 +384,8 @@ function Others() {
 }
 
 const componentsMap = {
-  Devteam,
-  SAC_Committee,
+  "Dev Team": Devteam,
+  SAC: SAC_Committee,
   Core,
   Design,
   Marketing,
@@ -400,10 +403,10 @@ const Navbar1 = ({ items, onSelect, activeItem }) => {
           style={{ textAlign: "centre" }}
           className={`cursor-pointer ${
             activeItem === item ? "border-b-2 border-white-500" : ""
-          } text-green`}
+          }`}
         >
           <p
-            className={`pb-3 text-sm ${
+            className={`pb-3 text-xs ${
               activeItem === item
                 ? "text-[#EBEBEB]"
                 : "text-[#EBEBEB] opacity-40"
@@ -427,12 +430,12 @@ const ContainerX = ({ content }) => {
 };
 
 const Team = () => {
-  const [currentView, setCurrentView] = useState("Devteam");
+  const [currentView, setCurrentView] = useState("Dev Team");
   const [slideIndex, setSlideIndex] = useState(0);
 
   const navbarItems = [
-    "Devteam",
-    "SAC_Committee",
+    "Dev Team",
+    "SAC",
     "Core",
     "Design",
     "Marketing",
@@ -537,7 +540,7 @@ function App() {
                 style={{ letterSpacing: "-1px" }}
                 className="pt-10 mt-10 z-50 sm:pt-10 md:pt-10 text-4xl lg:text-4xl xl:text-5xl font-bold text-[#E8E8E8] text-center font-poppins tracking-wide leading-tight"
               >
-                Meet the badass <span className="text-[#61E2F4]">team</span>
+                Meet the <span className="text-[#61E2F4]">team</span>
               </div>
               <div className="flex mb-10  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
                 A special thanks to all the wonderful people who contributed to
