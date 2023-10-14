@@ -19,7 +19,6 @@ import image10 from "../assets/images/SAC Committee/bunil.jpg";
 import image11 from "../assets/images/SAC Committee/pardhu.png";
 import image12 from "../assets/images/SAC Committee/swarop.jpg";
 import image13 from "../assets/images/SAC Committee/rounak.jpg";
-  
 
 //CORE
 import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
@@ -27,7 +26,6 @@ import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
 import image16 from "../assets/images/Core/Wanrapbok R Kharshandi.jpg";
 //import image17 from "../assets/images/Core/temp3.jpg";
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
-
 
 //Design
 //import image20 from "../assets/images/design/
@@ -55,7 +53,7 @@ import image41 from "../assets/images/marketing/Neelkantha Mandal.jpg";
 
 //Management
 import image51 from "../assets/images/management/Arilam Kyndiah.jpg";
-//import image52 from "../assets/images/management/
+import image52 from "../assets/images/management/DS.jpeg";
 import image53 from "../assets/images/management/Koninika Tarafdar.jpg";
 import image54 from "../assets/images/management/meba.jpg";
 import image55 from "../assets/images/management/PREM KUMAR GUPTA.jpg";
@@ -85,7 +83,6 @@ import image77 from "../assets/images/others/Karimi Tarun Teja.jpeg";
 import image78 from "../assets/images/others/L SRI KASYAP.jpg";
 import image79 from "../assets/images/others/Simma kiran.jpg";
 //import image80 from "../assets/images/others/
-
 
 import Image from "next/image";
 import NavBar from "../components/nav-bar";
@@ -138,7 +135,7 @@ function Devteam() {
     "Nishant",
     "Marjiba",
     "Gaurav",
-    "Lavanya"
+    "Lavanya",
   ];
   const roles = [
     "Lead developer",
@@ -152,16 +149,10 @@ function Devteam() {
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
-}0
+}
 
 function SAC_Committee() {
-  const images = [
-    image9,
-    image10,
-    image11,
-    image12,
-    image13,
-  ];
+  const images = [image9, image10, image11, image12, image13];
   const names = [
     "Dr. Atanu Singha Roy",
     "Dr. Bunil Kr. Balabantaray",
@@ -180,13 +171,7 @@ function SAC_Committee() {
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 function Core() {
-  const images = [
-    image14,
-    image0,
-    image16,
-    image0,
-    image18,
-  ];
+  const images = [image14, image0, image16, image0, image18];
   const names = [
     "Prakhar Gupta",
     "Shaik Lai Sameer",
@@ -227,7 +212,7 @@ function Design() {
     "Pankaj Saraswat",
     "Deinipaya Alvira",
     "Varun B",
-    "Binesh Das"
+    "Binesh Das",
   ];
   const roles = [
     "Convener",
@@ -290,7 +275,7 @@ function Marketing() {
 function Management() {
   const images = [
     image51,
-    image0,
+    image52,
     image53,
     image0,
     image55,
@@ -328,7 +313,7 @@ function Management() {
     "Sonam Bharti",
     "Rakesh Srikar Reddy",
     "Ajay Reddy",
-    "Dappalapoodi Bhuvanesh"
+    "Dappalapoodi Bhuvanesh",
   ];
   const roles = [
     "Coordinator (Hospitality)",
@@ -350,7 +335,6 @@ function Management() {
     "Co-coordinator (Event Management)",
     "Coordinator (Food Committee)",
     "Co-coordinator (Food Committee)",
-
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
@@ -378,7 +362,7 @@ function Others() {
     "Karimi Tarun Teja",
     "L Sri Kasyap",
     "Simma Kiran",
-    "Nimmakuri Varun Teja"
+    "Nimmakuri Varun Teja",
   ];
   const roles = [
     "Coordinator (Task Force Club)",
@@ -391,7 +375,6 @@ function Others() {
     "Head (Volunteer)",
     "Coordinator (Volunteer)",
     "Coordinator (Volunteer)",
-    
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;

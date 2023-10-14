@@ -6,6 +6,7 @@ import Waves from "../assets/Image.png";
 import Image from "next/image";
 import Profile from "../assets/profile.png";
 import LinesEllipsis from "react-lines-ellipsis";
+import Link from "next/link";
 
 export default function EventBox({
   eventName,
@@ -16,6 +17,8 @@ export default function EventBox({
   description,
   team,
   bannerImage,
+  rulebook,
+  form,
 }) {
   const [openDetail, setOpenDetail] = useState(false);
   function buildLine() {
@@ -40,12 +43,7 @@ export default function EventBox({
           {"< "}back
         </div>
         <div className="2xl:w-[40%] lg:w-[50%] sm:w-[40%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
-          <div
-            onKeyDown={(e) => {
-              console.log(e);
-            }}
-            className="flex flex-col"
-          >
+          <div className="flex flex-col">
             <Image alt="image" src={bannerImage} width={1000} height={1000} />
 
             <div className="flex flex-col pl-4 pr-4 lg:ml-12 lg:mr-12">
@@ -68,13 +66,27 @@ export default function EventBox({
                   {shortDescription}
                 </div>
               </div>
-              <div className="text-neutral-300 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                <span className={montserrat.className}>
-                  Registrations opening soon!{" "}
-                </span>
-              </div>
+              {!form ? (
+                <div className="text-neutral-300 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                  <span className={montserrat.className}>
+                    Registrations opening soon!{" "}
+                  </span>
+                </div>
+              ) : (
+                <Link href={form}>
+                  <div className="text-neutral-800 h-12 bg-neutral-200 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                    <span className={montserrat.className}>Register now! </span>
+                  </div>
+                </Link>
+              )}
             </div>
-
+            {/* {rulebook ? (
+              <Link href={rulebook}>
+                <div className="text-2xl text-white">View RuleBook</div>
+              </Link>
+            ) : (
+              <></>
+            )} */}
             <div className="font-bold text-neutral-100 text-2xl mt-10 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
               <div className={poppins.className}>About Event</div>
             </div>
@@ -88,7 +100,6 @@ export default function EventBox({
             {buildLine()}
             <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  lg:overflow-hidden overflow-x-scroll lg:ml-14 lg:mr-12">
               {team?.map((member, index) => {
-                console.log(member);
                 return (
                   <div key={index} className="flex flex-col items-center">
                     <div className="w-32 h-40 rounded-lg overflow-hidden">

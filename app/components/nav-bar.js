@@ -41,7 +41,7 @@ export default function NavBar() {
                 Events
               </div>
             </Link>
-            {/* <Link className={jakarta.className} href={"/team"}>
+            <Link className={jakarta.className} href={"/team"}>
               <div
                 className={`cursor-pointer ${
                   pathName === "/team" ? "border-b-2 pb-1" : ""
@@ -49,7 +49,7 @@ export default function NavBar() {
               >
                 Teams
               </div>
-            </Link> */}
+            </Link>
           </div>
         </div>
         {/* {buildLine()} */}

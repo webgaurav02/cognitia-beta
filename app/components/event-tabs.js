@@ -8,6 +8,9 @@ import {
   getCodingClubEvents,
   getRoboticClubEvents,
   getDepartmentalEvents,
+  getAstonomyEvents,
+  getGamingEvents,
+  getOtherEvents,
 } from "../utils/services";
 import coding1 from "../assets/defaults/coding1.png";
 import coding2 from "../assets/defaults/coding2.png";
@@ -17,6 +20,7 @@ import robotic1 from "../assets/defaults/robotic1.jpg";
 import robotic2 from "../assets/defaults/robotic2.jpg";
 import robotic3 from "../assets/defaults/robotic3.jpg";
 import robotic4 from "../assets/defaults/robotic4.jpg";
+import Link from "next/link";
 
 export default function EventTabs({ data }) {
   const codingClubImages = [coding1, coding2, coding5, coding4, coding5];
@@ -26,6 +30,9 @@ export default function EventTabs({ data }) {
   let codingClubEvents = getCodingClubEvents(data);
   let roboticClubEvents = getRoboticClubEvents(data);
   let departmentalEvents = getDepartmentalEvents(data);
+  let astronomyClubEvents = getAstonomyEvents(data);
+  let gamingClubEvents = getGamingEvents(data);
+  let otherEvents = getOtherEvents(data);
 
   const Navbar = ({ items, onSelect, activeItem }) => {
     return (
@@ -62,7 +69,14 @@ export default function EventTabs({ data }) {
     const [currentView, setCurrentView] = useState("Coding");
     const [slideIndex, setSlideIndex] = useState(0);
 
-    const navbarItems = ["Coding", "Robotics", "Dept"];
+    const navbarItems = [
+      "Coding",
+      "Robotics",
+      "Dept",
+      "Astro",
+      "Game",
+      "Other",
+    ];
     // , "Astro", "Depart", "Cultural"
 
     const handleNavbarClick = (item) => {
@@ -75,7 +89,7 @@ export default function EventTabs({ data }) {
 
     const handleSlideRight = () => {
       setSlideIndex((prevIndex) =>
-        Math.min(prevIndex + 1, navbarItems.length - 3)
+        Math.min(prevIndex + 1, navbarItems.length - 4)
       );
     };
     // const CurrentComponent = componentsMap[currentView];
@@ -170,6 +184,8 @@ export default function EventTabs({ data }) {
                   description={event.description}
                   team={event.team}
                   bannerImage={codingClubImages[index % 5]}
+                  rulebook={event.rulebook}
+                  form={event.form}
                 />
               );
             })}
@@ -191,6 +207,8 @@ export default function EventTabs({ data }) {
                   description={event.description}
                   team={event.team}
                   bannerImage={roboticClubImages[index % 4]}
+                  rulebook={event.rulebook}
+                  form={event.form}
                 />
               );
             })}
@@ -207,11 +225,82 @@ export default function EventTabs({ data }) {
                   eventName={event.eventName}
                   shortDescription={event.shortDescription}
                   time={event.eventTime}
-                  dpt={"Robotics Club"}
+                  dpt={"Astronomy Club"}
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
                   bannerImage={roboticClubImages[index % 4]}
+                  rulebook={event.rulebook}
+                  form={event.form}
+                />
+              );
+            })}
+          </Grid>
+        ) : (
+          <></>
+        )}
+        {activeTab === 3 ? (
+          <Grid>
+            {astronomyClubEvents.map((event, index) => {
+              return (
+                <EventBox
+                  key={index}
+                  eventName={event.eventName}
+                  shortDescription={event.shortDescription}
+                  time={event.eventTime}
+                  dpt={"Astronomy Club"}
+                  venue={event.venue}
+                  description={event.description}
+                  team={event.team}
+                  bannerImage={roboticClubImages[index % 4]}
+                  rulebook={event.rulebook}
+                  form={event.form}
+                />
+              );
+            })}
+          </Grid>
+        ) : (
+          <></>
+        )}
+        {activeTab === 4 ? (
+          <Grid>
+            {gamingClubEvents.map((event, index) => {
+              return (
+                <EventBox
+                  key={index}
+                  eventName={event.eventName}
+                  shortDescription={event.shortDescription}
+                  time={event.eventTime}
+                  dpt={"Gaming Club"}
+                  venue={event.venue}
+                  description={event.description}
+                  team={event.team}
+                  bannerImage={roboticClubImages[index % 4]}
+                  rulebook={event.rulebook}
+                  form={event.form}
+                />
+              );
+            })}
+          </Grid>
+        ) : (
+          <></>
+        )}
+        {activeTab === 5 ? (
+          <Grid>
+            {otherEvents.map((event, index) => {
+              return (
+                <EventBox
+                  key={index}
+                  eventName={event.eventName}
+                  shortDescription={event.shortDescription}
+                  time={event.eventTime}
+                  dpt={"Others"}
+                  venue={event.venue}
+                  description={event.description}
+                  team={event.team}
+                  bannerImage={roboticClubImages[index % 4]}
+                  rulebook={event.rulebook}
+                  form={event.form}
                 />
               );
             })}
