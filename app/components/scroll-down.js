@@ -13,7 +13,7 @@ export default function ScrollDown() {
   });
 
   return (
-    <div className="text-md sm:text-xl text-white font-poppinsbold flex justify-end duration-300 w-screen sm:-translate-x-10 opacity-70">
+    <div className="text-md sm:text-xl text-white font-poppinsbold flex justify-end duration-300 w-screen sm:-translate-x-10 sm:-translate-y-10 opacity-70">
       {canShow ? (
         <div>
           {/* <div className="translate-y- sm:translate-y-20 -translate-x-8 sm:translate-x-0">
