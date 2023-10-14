@@ -4,6 +4,8 @@ import Timeline from "./components/timeline";
 import PopularEvents from "./components/popular-events";
 import Footer from "./components/footer";
 import "./components/text-block.css";
+import Brochure from "./components/brochure";
+import Border from "./components/perPageBorder";
 
 export default async function Home() {
   return (
@@ -19,15 +21,13 @@ export default async function Home() {
           <div className="w-11/12 sm:pb-0"></div>
         </div>
 
-        <div className="flex justify-center">
-          <div className="w-11/12 border-b-2 border-stone-300"></div>
-        </div>
+        <Border/>
 
         <Timeline />
 
-        <div className="flex justify-center">
-          <div className="w-11/12 border-b-2 border-stone-300"></div>
-        </div>
+        <Brochure />
+
+        <Border/>
 
         <PopularEvents />
 
