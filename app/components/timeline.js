@@ -110,7 +110,7 @@ export default function Timeline() {
                 text-white text-4xl md:text-4xl lg:text-6xl font-bold mb-4"
           >
             Here&apos;s a <span className="text-[#61E2F3]">Timeline</span> of
-            all the events
+            the events
           </div>
           <div className={poppins.className}>
             <div

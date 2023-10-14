@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Logo from "../assets/logo.png";
 import Image from "next/image";
-import { jakarta } from "../utils/fonts";
+import { jakarta, jost } from "../utils/fonts";
 import { usePathname } from "next/navigation";
 
 export default function NavBar() {
@@ -14,15 +14,15 @@ export default function NavBar() {
   const pathName = usePathname();
   return (
     <>
-      <div class="w-full z-50 h-20 backdrop-filter backdrop-blur-md border-b border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] pr-6 pl-6">
+      <div class="w-full z-50 h-20 backdrop-filter backdrop-blur-md border-b border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] ">
         <div className="h-full flex flex-row justify-between content-center md:mr-32 md:ml-32">
-          <div className="text-neutral-200 md:text-[30px] self-center font-medium text-2xl">
+          <div className="text-neutral-200 md:text-[30px] self-center font-medium text-2xl pl-6 ">
             <Link href={"/"}>
               <Image width={60} height={60} src={Logo} alt="logo" />
             </Link>
           </div>
 
-          <div className="flex flex-row self-center text-neutral-200 font-medium space-x-6 md:text-lg text-xs">
+          <div className="flex flex-row self-center text-neutral-200 font-medium space-x-6 md:text-lg text-xs pr-6 ">
             <Link className={jakarta.className} href="/">
               <div
                 className={`cursor-pointer ${
@@ -41,7 +41,7 @@ export default function NavBar() {
                 Events
               </div>
             </Link>
-            {/* <Link className={jakarta.className} href={"/team"}>
+            <Link className={jakarta.className} href={"/team"}>
               <div
                 className={`cursor-pointer ${
                   pathName === "/team" ? "border-b-2 pb-1" : ""
@@ -49,9 +49,12 @@ export default function NavBar() {
               >
                 Teams
               </div>
-            </Link> */}
+            </Link>
           </div>
         </div>
+        {/* <div className="backdrop-filter backdrop-blur-md bg-opacity-40 text-white absolute w-[100%] text-center">
+          <div className={jost.className}>Best viewed on mobile</div>
+        </div> */}
         {/* {buildLine()} */}
       </div>
     </>

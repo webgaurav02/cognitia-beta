@@ -132,7 +132,7 @@ function ParallaxHome() {
                 </div>
                 <div className="pl-4 mt-2 py-2 sm:py-0
                   row-span-1 col-span-2
-                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 
+                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 w-11/12
                 self-center">
                   <div className={poppins.className}
                     
@@ -142,13 +142,15 @@ function ParallaxHome() {
                   </div>
                 </div>
                 <div className="pl-4 mt-2 py-2 sm:py-0 row-span-1 col-span-3">
-                  <Link href="/events">
+
                     <div className={jost.className}>
+                    <Link href="/events">
                       <button className="border-[#E1ABE8] border-[1px] lg:mt-10 sm:border-2 rounded-lg text-[#E1ABE8] hover:text-black text-lg font-medium h-10 w-32 sm:h-20 sm:w-72 sm:text-2xl hover:bg-[#E1ABE8] duration-500">
                         View Events
                       </button>
+                      </Link>
                     </div>
-                  </Link>
+
                 </div>
               </div>
             </div>

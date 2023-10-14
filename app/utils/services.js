@@ -17,5 +17,17 @@ export function getRoboticClubEvents(data) {
 }
 
 export function getDepartmentalEvents(data) {
-  return data.filter((event) => event.department === "CE");
+  return data.filter((event) => event.department === "DPT");
+}
+
+export function getAstonomyEvents(data) {
+  return data.filter((event) => event.department === "AC");
+}
+
+export function getGamingEvents(data) {
+  return data.filter((event) => event.department === "GE");
+}
+
+export function getOtherEvents(data) {
+  return data.filter((event) => event.department === "OTH");
 }

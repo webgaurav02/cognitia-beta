@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-    <div className="h-[40vh] md:h-[110vh]">
+    <div className="h-[70vh] md:h-[115vh]">
       <div className={jakarta.className}>
       <div className="flex justify-center">
-          <div className="w-11/12 border-b-2 border-stone-300"></div>
+          <div className="w-11/12 border-b-2 border-stone-300 opacity-40"></div>
       </div>
       <div className="relative">
         <div
@@ -171,7 +171,7 @@ export default function Footer() {
               <div className="flex flex-col xl:text-md 2xl:text-xl space-y-2 2xl:space-y-4 -translate-x-12 lg:-translate-x-20 xl:-translate-x-20 2xl:-translate-x-16">
                 <div><Link href="/">Home</Link></div>
                 <div><Link href="/events">Events</Link></div>
-                <div><Link href="/team">Shop</Link></div>
+                <div><Link href="">Shop</Link></div>
                 <div><Link href="/team">Teams</Link></div>
                 <div><Link href="/team">Report Bugs</Link></div>
               </div>
@@ -180,7 +180,7 @@ export default function Footer() {
               <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-56 xl:h-10 xl:text-xl -translate-x-8 lg:-translate-x-14 xl:-translate-x-3 2xl:translate-x-5">Begin Adventure</button>
             </div>
 
-            <div className="flex row-span-1 col-span-1 items-end justify-end -translate-x-36">
+            {/* <div className="flex row-span-1 col-span-1 items-end justify-end -translate-x-36">
               <div className="flex flex-col items-center xl:text-4xl font-bold w-34 space-y-2">
                 <div>EXTRAS</div>
                 <div className="w-11/12 border-t-4 border-yellow-400 self-center"></div>
@@ -196,7 +196,7 @@ export default function Footer() {
             </div>
             <div className="flex row-span-1 col-span-1 h-full w-full justify-end">
               <button className="border-[1px] border-white rounded-[300px] w-32 h-10 xl:w-56 xl:h-10 xl:text-xl -translate-x-20 xl:-translate-x-16 2xl:-translate-x-0">Donate</button>
-            </div>
+            </div> */}
             
 
           </div>
