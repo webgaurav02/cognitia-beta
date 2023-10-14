@@ -10,7 +10,7 @@ import Border from "./components/perPageBorder";
 export default async function Home() {
   return (
     <>
-      <div id="home">
+      <div id="home" className=" bg-[#101010]">
         <div className="fixed h-24 w-full z-50">
           <NavBar />
         </div>
