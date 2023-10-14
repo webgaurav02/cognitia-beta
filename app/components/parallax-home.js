@@ -132,7 +132,7 @@ function ParallaxHome() {
                 </div>
                 <div className="pl-4 mt-2 py-2 sm:py-0
                   row-span-1 col-span-2
-                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 
+                text-sm sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-gray-400 lg:mt-10 w-11/12
                 self-center">
                   <div className={poppins.className}
                     
