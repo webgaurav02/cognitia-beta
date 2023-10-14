@@ -528,18 +528,18 @@ function App() {
       <div className="h-full w-full bg-[#101010]">
         <NavBar />
         <div className="relative w-full">
-          <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-900 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+          <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-600 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
           <div className="absolute  w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
           <div className="relative z-10">
             <div className="text-center mx-auto z-50 w-full text-white pb-8">
               {" "}
               <div
                 style={{ letterSpacing: "-1px" }}
-                className="pt-10 z-50 sm:pt-10 md:pt-10 text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 text-center font-poppins tracking-wide leading-tight"
+                className="pt-10 mt-10 z-50 sm:pt-10 md:pt-10 text-4xl lg:text-4xl xl:text-5xl font-bold text-[#E8E8E8] text-center font-poppins tracking-wide leading-tight"
               >
                 Meet the badass <span className="text-[#61E2F4]">team</span>
               </div>
-              <div className="flex  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
+              <div className="flex mb-10  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
                 A special thanks to all the wonderful people who contributed to
                 the event! Words can&apos;t express our appreciation for you!
               </div>

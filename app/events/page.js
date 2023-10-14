@@ -17,6 +17,8 @@ import coding1 from "../assets/defaults/coding1.png";
 import coding3 from "../assets/defaults/coding3.png";
 import coding4 from "../assets/defaults/coding4.png";
 import coding5 from "../assets/defaults/coding5.png";
+import PopularEvents from "../components/popular-events";
+import PopularEvent from "../components/popular-events-card";
 
 async function EventBody() {
   let data = await getEvents();
@@ -47,8 +49,8 @@ async function EventBody() {
   function buildTopBanner() {
     return (
       <div className="relative overflow-visible">
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-900 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
-        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-900 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 bg-purple-600 z-10 -top-6 -left-20 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+        <div className="absolute w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
         <div className="relative z-20 ml-2 md:ml-32 md:mr-32">
           {" "}
           <div className="lg:flex md:mb-20 lg:items-center 2xl:space-x-72">
@@ -99,26 +101,45 @@ async function EventBody() {
   function buildPopularEvents() {
     return (
       <div className="md:ml-32 md:mr-32 p-6">
-        <div className="rounded-xl flex flex-col mt-6">
+        <div className="rounded-xl flex flex-col mt-6 ml-2">
           <div className={jost.className}>
-            <div className="text-white font-bold text-4xl md:text-6xl mb-2">
+            <div className="text-white font-semibold leading-9 text-[2.6rem] md:text-6xl mb-2">
               Popular events coming up
             </div>
           </div>
-          <div className="text-[#8A8A8A] font-medium text-sm md:text-xl mb-4">
+          <div className="text-[#8A8A8A] mt-1 font-medium leading-tight text-sm md:text-xl mb-4">
             <div className={poppins.className}>
               {" "}
               catch the most popular events and get registered!
             </div>
           </div>
         </div>
-        <div className={jost.className}>
-          <div className="text-neutral-600 font-bold text-2xl md:text-3xl mb-8">
-            Coming soon...
+        <div className="">
+          <div className="container my-8 mt-8 mb-32 md:mb-40">
+            <div className="grid justify-center sm:justify-start lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 md:gap-48">
+              <PopularEvent
+                name={"Hackathon"}
+                shortDescription={
+                  "Participants will be given a problem statement and they must build a website or a mobile application as a solution, within a speciﬁed amount of time. Innovate and create!"
+                }
+              />
+              <PopularEvent
+                name={"Robo Rumble"}
+                shortDescription={
+                  "A competition in which teams fight with their bots in an arena, with the winning bot being crowned the winner.Create a wireless bot with special weapons that can compete with other bots."
+                }
+              />
+              <PopularEvent
+                name={"Tech Charades"}
+                shortDescription={
+                  "Tech Charades is a fun game that combines the classic game of charades with a modern technological twist"
+                }
+              />
+            </div>
           </div>
         </div>
         <div className={jost.className}>
-          <div className="text-white font-bold text-4xl md:text-6xl mb-2">
+          <div className="text-white font-bold text-4xl md:text-6xl mb-6">
             Browse all our events
           </div>
         </div>
@@ -190,25 +211,6 @@ function Skeleton() {
           <div className="w-[70vw] md:w-[10vw]  md:h-[5vh] bg-neutral-800 rounded-lg mt-20"></div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function buildCodingEvents() {
-  return (
-    <div className="pl-24 mt-6">
-      <div
-        className={`bg-[#D1ED9F] p-2 w-48
-   rounded-lg h-12 text-center justify-center`}
-      >
-        <span className="font-bold text-2xl">Coding</span>
-      </div>
-      {/* <EventBox
-        eventName="Hack the box"
-        eventDescription="Sit in front of a box and pretend you know how to hack like you're mr.robot"
-        dpt="coding"
-        time="2nd Nov 9:50"
-      /> */}
     </div>
   );
 }

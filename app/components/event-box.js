@@ -44,18 +44,42 @@ export default function EventBox({
         </div>
         <div className="2xl:w-[40%] lg:w-[50%] sm:w-[40%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
           <div className="flex flex-col">
-            <Image alt="image" src={bannerImage} width={1000} height={1000} />
+            <Image
+              alt="image"
+              className="rounded-bl-3xl rounded-br-3xl"
+              src={bannerImage}
+              width={1000}
+              height={1000}
+            />
 
             <div className="flex flex-col pl-4 pr-4 lg:ml-12 lg:mr-12">
               <div className="text-4xl text-[#E9E9E9] font-bold mt-5 lg:text-6xl lg:mt-10">
                 {" "}
-                <div className={poppins.className}>{eventName}</div>
+                <div className={jost.className}>{eventName}</div>
               </div>
-              <div className="flex flex-row text-neutral-300 text-sm font-medium mr-2 mb-2 space-x-5 lg:text-xl mt-2">
-                <div className={algreya.className}>
+              <div className={jost.className}>
+                <div className="bg-[#212121] pb-3 pl-2 pr-2 pt-3 mt-4 lg:mt-10 rounded-lg">
+                  <div className="ml-2 font-bold lg:text-xl text-xs text-[#E8E8E8]">
+                    Grab the Rulebook here{" "}
+                  </div>
+                  {rulebook ? (
+                    <Link href={rulebook}>
+                      <div className="bg-[#E8E8E8] font-bold lg:text-xl pt-2 pb-2 text-center pl-4 pr-4 mt-2 ml-2 mr-2 mb-2 rounded-md text-[#101010]">
+                        Grab RuleBook
+                      </div>
+                    </Link>
+                  ) : (
+                    <div className="bg-[#E8E8E8] font-bold pt-2 pb-2 text-center pl-4 pr-4 mt-2 ml-2 mr-2 mb-2 rounded-md text-[#101010]">
+                      Coming Soon!
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="flex flex-col lg:mt-10  text-neutral-300 text-sm font-semibold space-y-4 mt-4 mr-2 mb-2  lg:text-xl ">
+                <div className={jost.className}>
                   Venue: {venue?.length === 0 ? "To be decided" : venue}
                 </div>
-                <div className={algreya.className}>
+                <div className={jost.className}>
                   Time: {time.length == 0 ? "To be announced" : time}
                 </div>
               </div>
@@ -67,15 +91,15 @@ export default function EventBox({
                 </div>
               </div>
               {!form ? (
-                <div className="text-neutral-300 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                  <span className={montserrat.className}>
+                <div className="text-neutral-300 lg:mt-10 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                  <span className={jost.className}>
                     Registrations opening soon!{" "}
                   </span>
                 </div>
               ) : (
                 <Link href={form}>
-                  <div className="text-neutral-800 h-12 bg-neutral-200 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                    <span className={montserrat.className}>Register now! </span>
+                  <div className="text-[#252525] lg:mt-10 h-12 bg-[#F8D57E] lg:h-16 text-center  text-md rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                    <span className={jost.className}>Register now! </span>
                   </div>
                 </Link>
               )}
@@ -88,14 +112,14 @@ export default function EventBox({
               <></>
             )} */}
             <div className="font-bold text-neutral-100 text-2xl mt-10 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
-              <div className={poppins.className}>About Event</div>
+              <div className={jost.className}>About Event</div>
             </div>
             {buildLine()}
-            <div className="text-[#9E9E9E] font-medium text-sm mt-3 mr-4 ml-4 lg:ml-14 lg:mr-12">
+            <div className="text-[#9E9E9E] font-medium text-sm mt-3 mr-4 ml-4 lg:text-2xl lg:ml-14 lg:mr-12">
               <div className={algreya.className}>{description}</div>
             </div>
             <div className="font-bold text-neutral-100 text-2xl mt-10 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
-              <div className={poppins.className}>Coordinators</div>
+              <div className={jost.className}>Coordinators</div>
             </div>
             {buildLine()}
             <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  lg:overflow-hidden overflow-x-scroll lg:ml-14 lg:mr-12">
@@ -127,10 +151,10 @@ export default function EventBox({
               })}
             </div>
             <div className="font-bold text-neutral-100 text-2xl mt-4 ml-4 mr-4 lg:ml-14 lg:mr-12 lg:text-4xl">
-              <div className={poppins.className}>Contact Us</div>
+              <div className={jost.className}>Contact Us</div>
             </div>
             {buildLine()}
-            <div className="text-[#9E9E9E] text-sm mt-3 mr-4 ml-4 mb-5 lg:ml-14 lg:mr-12">
+            <div className="text-[#9E9E9E] text-sm mt-3 lg:text-2xl mr-4 ml-4 mb-5 lg:ml-14 lg:mr-12">
               <div className={algreya.className}> Details coming soon..</div>
             </div>
           </div>
