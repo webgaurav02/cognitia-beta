@@ -37,12 +37,8 @@ async function EventBody() {
         <FilterButton type={"rc"} name={"ROBOTIC"} />
         <FilterButton type={"ac"} name={"ASTRO"} />
         <FilterButton type={"dp"} name={"DEPART"} />
-        <FilterButton type={"cc"} name={"GAMING"} />
-        <FilterButton type={"rc"} name={"CULTURAL"} />
-        <FilterButton type={"dp"} name={"DEPART"} />
-        <FilterButton type={"rc"} name={"ASTRO"} />
-        <FilterButton type={"cc"} name={"CODING"} />
-        <FilterButton type={"dp"} name={"DEPART"} />
+        <FilterButton type={"ac"} name={"GAMING"} />
+        <FilterButton type={"rc"} name={"OTHERS"} />
       </div>
     );
   }
