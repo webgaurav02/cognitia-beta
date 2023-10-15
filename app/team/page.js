@@ -370,7 +370,6 @@ function Others() {
     image78,
     image79,
     image0,
-    image100,
   ];
   const names = [
     "Gannu Abhijith Sai",
@@ -383,7 +382,6 @@ function Others() {
     "L Sri Kasyap",
     "Simma Kiran",
     "Nimmakuri Varun Teja",
-    "Chum Kithan",
   ];
   const roles = [
     "Coordinator (Task Force Club)",
@@ -396,7 +394,6 @@ function Others() {
     "Head (Volunteer)",
     "Coordinator (Volunteer)",
     "Coordinator (Volunteer)",
-    "President(NSU)",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
