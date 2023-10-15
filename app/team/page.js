@@ -19,15 +19,13 @@ import image10 from "../assets/images/SAC Committee/bunil.jpg";
 import image11 from "../assets/images/SAC Committee/pardhu.png";
 import image12 from "../assets/images/SAC Committee/swarop.jpg";
 import image13 from "../assets/images/SAC Committee/rounak.jpg";
-  
 
 //CORE
 import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
 import image15 from "../assets/images/Core/sameer.jpg";
-import image16 from "../assets/images/Core/Wanrapbok R Kharshandi.jpg";
+import image16 from "../assets/images/Core/WanrapbokRKharshandi.jpg";
 import image17 from "../assets/images/Core/supriya.jpg";
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
-
 
 //Design
 //import image20 from "../assets/images/design/
@@ -86,11 +84,9 @@ import image78 from "../assets/images/others/L SRI KASYAP.jpg";
 import image79 from "../assets/images/others/Simma kiran.jpg";
 //import image80 from "../assets/images/others/
 
-//chum
-import image100 from "../assets/images/chum.jpeg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar";
-import { poppins } from "../utils/fonts";
+import { algreya, poppins } from "../utils/fonts";
 import Footer from "../components/footer";
 
 const TeamSection = ({ images, names, roles }) => {
@@ -99,21 +95,24 @@ const TeamSection = ({ images, names, roles }) => {
       {images.map((image, index) => (
         <div
           key={index}
-          className="border-solid text-center bg-[#1C1C1C] pb-2 w-75% sm:w-100% md:w-100% mb-5 mx-2 lg:mb-10  rounded-t-lg"
+          className="border-solid text-center bg-[#1C1C1C] w-75% sm:w-100% md:w-100% mb-5 mx-2 lg:mb-10  rounded-lg"
         >
           <Image
             width={1000}
             height={1000}
             src={image}
             alt={`Image ${index + 1}`}
-            className="object-cover max-w-full h-auto rounded-t-lg"
+            className="object-cover max-w-full rounded-t-lg"
             placeholder="blur"
           />
-          <div className={`text-white mt font-poppins font-bold text-xl mt-2 flex flex-col ${image === image10 ? 'text-[19px]' : ''}`}>
+          <div className={`text-white mt font-poppins font-bold text-xl flex flex-col ${image === image10 ? 'text-[19px]' : ''}`}>
             <strong className={poppins.className}>{names[index]}</strong>
-                  <span className="text-xs text-[#BEBEBE]">{roles[index]}</span>
-            </div>
 
+            <span className={algreya.className}>
+              {" "}
+              <span className="text-sm text-[#BEBEBE]">{roles[index]}</span>
+            </span>
+          </div>
         </div>
       ))}
     </div>
@@ -139,7 +138,7 @@ function Devteam() {
     "Nishant",
     "Marjiba",
     "Gaurav",
-    "Lavanya"
+    "Lavanya",
   ];
   const roles = [
     "Lead developer",
@@ -153,16 +152,10 @@ function Devteam() {
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
-}0
+}
 
-function SAC() {
-  const images = [
-    image9,
-    image10,
-    image11,
-    image12,
-    image13,
-  ];
+function SAC_Committee() {
+  const images = [image9, image10, image11, image12, image13];
   const names = [
     "Dr. Atanu Singha Roy",
     "Dr. Bunil Kr. Balabantaray",
@@ -220,7 +213,7 @@ function Design() {
   ];
   const names = [
     "Sri Vadan",
-    "Samuel Khongthaw",
+    "Samuel",
     "L Komune",
     "Jaswanth",
     "Dhanunjay Naidu",
@@ -228,7 +221,7 @@ function Design() {
     "Pankaj Saraswat",
     "Deinipaya Alvira",
     "Varun B",
-    "Binesh Das"
+    "Binesh Das",
   ];
   const roles = [
     "Convener",
@@ -373,7 +366,7 @@ function Others() {
   ];
   const names = [
     "Gannu Abhijith Sai",
-    "Arkibud Broadwin Ryntathiang",
+    "Arkibud B. Ryntathiang",
     "Taruna",
     "Bingi Rakesh",
     "Diyasha Mahanta",
@@ -419,10 +412,10 @@ const Navbar1 = ({ items, onSelect, activeItem }) => {
           style={{ textAlign: "centre" }}
           className={`cursor-pointer ${
             activeItem === item ? "border-b-2 border-white-500" : ""
-          } text-green`}
+          }`}
         >
           <p
-            className={`pb-3 text-sm ${
+            className={`pb-3 text-xs ${
               activeItem === item
                 ? "text-[#EBEBEB]"
                 : "text-[#EBEBEB] opacity-40"
@@ -446,7 +439,7 @@ const ContainerX = ({ content }) => {
 };
 
 const Team = () => {
-  const [currentView, setCurrentView] = useState("Devteam");
+  const [currentView, setCurrentView] = useState("Dev Team");
   const [slideIndex, setSlideIndex] = useState(0);
 
   const navbarItems = [
@@ -547,18 +540,18 @@ function App() {
       <div className="h-full w-full bg-[#101010]">
         <NavBar />
         <div className="relative w-full">
-          <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-900 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
+          <div className="absolute w-48 md:w-80 md:h-80 h-60 bg-purple-600 z-10 top-0 -left-10 rounded-full opacity-30 filter blur-xl animate-blob"></div>
           <div className="absolute  w-48 md:w-80 md:h-80 h-48 delay-1000 bg-indigo-600 z-10 -top-20 -right-28 rounded-full opacity-30 filter blur-xl animate-blob"></div>
           <div className="relative z-10">
             <div className="text-center mx-auto z-50 w-full text-white pb-8">
               {" "}
               <div
                 style={{ letterSpacing: "-1px" }}
-                className="pt-10 z-50 sm:pt-10 md:pt-10 text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 text-center font-poppins tracking-wide leading-tight"
+                className="pt-10 mt-10 z-50 sm:pt-10 md:pt-10 text-4xl lg:text-4xl xl:text-5xl font-bold text-[#E8E8E8] text-center font-poppins tracking-wide leading-tight"
               >
-                Meet the badass <span className="text-[#61E2F4]">team</span>
+                Meet the <span className="text-[#61E2F4]">team</span>
               </div>
-              <div className="flex  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
+              <div className="flex mb-10  flex-col justify-center flex-shrink-0 text-[#EBEBEB] opacity-75 font-plus-jakarta-sans text-sm md:text-lg md:mb-4 mt-2 px-12">
                 A special thanks to all the wonderful people who contributed to
                 the event! Words can&apos;t express our appreciation for you!
               </div>
