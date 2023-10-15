@@ -20,8 +20,46 @@ export default function EventBox({
   bannerImage,
   rulebook,
   form,
+  form3,
 }) {
   const [openDetail, setOpenDetail] = useState(false);
+  function renderFormLink(form, form3) {
+    if (form3) {
+      return (
+        <div className="flex flex-col">
+          <Link legacyBehavior href={form}>
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="text-[#252525] lg:mt-10 h-12 bg-[#F8D57E] lg:h-16 text-center  text-md rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                <span className={jost.className}>
+                  Register for 1st and 2nd years!{" "}
+                </span>
+              </div>
+            </a>
+          </Link>
+          <Link legacyBehavior href={form3}>
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="text-[#252525] lg:mt-10 mt-5 h-12 bg-[#F8D57E] lg:h-16 text-center  text-md rounded-md font-bold flex flex-col justify-center lg:text-xl">
+                <span className={jost.className}>Register for 3rd year! </span>
+              </div>
+            </a>
+          </Link>
+        </div>
+      );
+    }
+    return !form ? (
+      <div className="text-neutral-300 lg:mt-10 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
+        <span className={jost.className}>Registrations opening soon! </span>
+      </div>
+    ) : (
+      <Link legacyBehavior href={form}>
+        <a target="_blank" rel="noopener noreferrer">
+          <div className="text-[#252525] lg:mt-10 h-12 bg-[#F8D57E] lg:h-16 text-center  text-md rounded-md font-bold flex flex-col justify-center lg:text-xl">
+            <span className={jost.className}>Register now! </span>
+          </div>
+        </a>
+      </Link>
+    );
+  }
   function buildLine() {
     return (
       <hr class="w-[94%] lg:w-[88%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#717171]"></hr>
@@ -64,10 +102,12 @@ export default function EventBox({
                     Grab the Rulebook here{" "}
                   </div>
                   {rulebook ? (
-                    <Link href={rulebook}>
-                      <div className="bg-[#E8E8E8] font-bold lg:text-xl pt-2 pb-2 text-center pl-4 pr-4 mt-2 ml-2 mr-2 mb-2 rounded-md text-[#101010]">
-                        Grab RuleBook
-                      </div>
+                    <Link legacyBehavior href={rulebook}>
+                      <a target="_blank" rel="noopener noreferrer">
+                        <div className="bg-[#E8E8E8] font-bold lg:text-xl pt-2 pb-2 text-center pl-4 pr-4 mt-2 ml-2 mr-2 mb-2 rounded-md text-[#101010]">
+                          Grab RuleBook
+                        </div>
+                      </a>
                     </Link>
                   ) : (
                     <div className="bg-[#E8E8E8] font-bold pt-2 pb-2 text-center pl-4 pr-4 mt-2 ml-2 mr-2 mb-2 rounded-md text-[#101010]">
@@ -91,19 +131,7 @@ export default function EventBox({
                   {shortDescription}
                 </div>
               </div>
-              {!form ? (
-                <div className="text-neutral-300 lg:mt-10 h-12 lg:h-16 text-center border-[1px] text-xs rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                  <span className={jost.className}>
-                    Registrations opening soon!{" "}
-                  </span>
-                </div>
-              ) : (
-                <Link href={form}>
-                  <div className="text-[#252525] lg:mt-10 h-12 bg-[#F8D57E] lg:h-16 text-center  text-md rounded-md font-bold flex flex-col justify-center lg:text-xl">
-                    <span className={jost.className}>Register now! </span>
-                  </div>
-                </Link>
-              )}
+              {renderFormLink(form, form3)}
             </div>
             {/* {rulebook ? (
               <Link href={rulebook}>

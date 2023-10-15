@@ -1,9 +1,13 @@
 import { EVENTS } from "./constants";
 
 export async function getEvents() {
-  let response = await fetch(EVENTS, {
-    method: "GET",
-  });
+  let response = await fetch(
+    EVENTS,
+    {
+      method: "GET",
+    },
+    { next: { revalidate: 3600 } }
+  );
   let data = await response.json();
   return data;
 }

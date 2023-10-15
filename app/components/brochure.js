@@ -20,10 +20,15 @@ export default function Brochure() {
             className="flex px-5 md:px-20 md:items-center  h-full w-full 
                     text-white text-2xl font-semibold self-center"
           >
-            <Link href="https://drive.google.com/file/d/1vDGXmcInC3vFnctD7SEdOT8yJH1yz3uH/view?usp=sharing">
-              <button className="p-3 self-center rounded-lg md:text-xl bg-[#E1ABE8] text-base text-black">
-                <div className={jost.className}>View Brochure</div>
-              </button>
+            <Link
+              legacyBehavior
+              href="https://drive.google.com/file/d/1vDGXmcInC3vFnctD7SEdOT8yJH1yz3uH/view?usp=sharing"
+            >
+              <a target="_blank" rel="noopener noreferrer">
+                <button className="p-3 self-center rounded-lg md:text-xl bg-[#E1ABE8] text-base text-black">
+                  <div className={jost.className}>View Brochure</div>
+                </button>
+              </a>
             </Link>
           </div>
         </div>
