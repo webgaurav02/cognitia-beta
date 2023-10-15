@@ -22,9 +22,9 @@ import image13 from "../assets/images/SAC Committee/rounak.jpg";
 
 //CORE
 import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
-//import image15 from "../assets/images/Core/temp3.jpg";
+import image15 from "../assets/images/Core/sameer.jpg";
 import image16 from "../assets/images/Core/WanrapbokRKharshandi.jpg";
-//import image17 from "../assets/images/Core/temp3.jpg";
+import image17 from "../assets/images/Core/supriya.jpg";
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
 
 //Design
@@ -53,7 +53,7 @@ import image41 from "../assets/images/marketing/Neelkantha Mandal.jpg";
 
 //Management
 import image51 from "../assets/images/management/Arilam Kyndiah.jpg";
-import image52 from "../assets/images/management/DS.jpeg";
+import image52 from "../assets/images/management/hrangaolou.jpg";
 import image53 from "../assets/images/management/Koninika Tarafdar.jpg";
 import image54 from "../assets/images/management/meba.jpg";
 import image55 from "../assets/images/management/PREM KUMAR GUPTA.jpg";
@@ -105,7 +105,11 @@ const TeamSection = ({ images, names, roles }) => {
             className="object-cover max-w-full rounded-t-lg"
             placeholder="blur"
           />
-          <div className="text-white font-poppins font-bold text-xl flex flex-col justify-center p-2">
+          <div
+            className={`text-white mt font-poppins font-bold text-xl flex flex-col ${
+              image === image10 ? "text-[19px]" : ""
+            }`}
+          >
             <strong className={poppins.className}>{names[index]}</strong>
 
             <span className={algreya.className}>
@@ -154,7 +158,7 @@ function Devteam() {
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 
-function SAC_Committee() {
+function SAC() {
   const images = [image9, image10, image11, image12, image13];
   const names = [
     "Dr. Atanu Singha Roy",
@@ -174,7 +178,7 @@ function SAC_Committee() {
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 function Core() {
-  const images = [image14, image0, image16, image0, image18];
+  const images = [image14, image15, image16, image17, image18];
   const names = [
     "Prakhar Gupta",
     "Shaik Lai Sameer",
@@ -220,14 +224,14 @@ function Design() {
   const roles = [
     "Convener",
     "Convener",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
-    "Coordinaor",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
+    "Coordinator",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
@@ -277,11 +281,13 @@ function Marketing() {
 }
 function Management() {
   const images = [
-    image51,
     image52,
+    image51,
     image53,
     image0,
     image55,
+    image68,
+    image0,
     image54,
     image57,
     image58,
@@ -294,15 +300,15 @@ function Management() {
     image65,
     image66,
     image67,
-    image68,
-    image0,
   ];
   const names = [
-    "Arilam",
     "D S Hrangaolou",
+    "Arilam",
     "Koninika Tarafdar",
     "Bahunshisha Snaitang",
     "Prem",
+    "Ajay Reddy",
+    "Dappalapoodi Bhuvanesh",
     "Mebadeipor",
     "Kenneth Wellborn ",
     "Klusborning Nongbri",
@@ -315,8 +321,6 @@ function Management() {
     "Penugurthi Dinesh",
     "Sonam Bharti",
     "Rakesh Srikar Reddy",
-    "Ajay Reddy",
-    "Dappalapoodi Bhuvanesh",
   ];
   const roles = [
     "Coordinator (Hospitality)",
@@ -324,20 +328,20 @@ function Management() {
     "Co-coordinator (Hospitality)",
     "Co-coordinator (Hospitality)",
     "Co-coordinator (Hospitality)",
-    "Coordinator (Stage Management)",
-    "Coordinator (Stage Management)",
-    "Coordinator (Stage Management)",
-    "Co-coordinator (Stage Management)",
-    "Co-coordinator (Stage Management)",
-    "Co-coordinator (Stage Management)",
-    "Coordinator (Event Management)",
-    "Coordinator (Event Management)",
-    "Coordinator (Event Management)",
-    "Co-coordinator (Event Management)",
-    "Co-coordinator (Event Management)",
-    "Co-coordinator (Event Management)",
     "Coordinator (Food Committee)",
     "Co-coordinator (Food Committee)",
+    "Coordinator (Stage Management)",
+    "Coordinator (Stage Management)",
+    "Coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Co-coordinator (Stage Management)",
+    "Coordinator (Event Management)",
+    "Coordinator (Event Management)",
+    "Coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
+    "Co-coordinator (Event Management)",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
@@ -384,8 +388,8 @@ function Others() {
 }
 
 const componentsMap = {
-  "Dev Team": Devteam,
-  SAC: SAC_Committee,
+  Dev: Devteam,
+  SAC,
   Core,
   Design,
   Marketing,
@@ -430,11 +434,11 @@ const ContainerX = ({ content }) => {
 };
 
 const Team = () => {
-  const [currentView, setCurrentView] = useState("Dev Team");
+  const [currentView, setCurrentView] = useState("Dev");
   const [slideIndex, setSlideIndex] = useState(0);
 
   const navbarItems = [
-    "Dev Team",
+    "Dev",
     "SAC",
     "Core",
     "Design",
