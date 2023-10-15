@@ -154,7 +154,7 @@ function Devteam() {
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 
-function SAC_Committee() {
+function SAC() {
   const images = [image9, image10, image11, image12, image13];
   const names = [
     "Dr. Atanu Singha Roy",
@@ -439,7 +439,7 @@ const ContainerX = ({ content }) => {
 };
 
 const Team = () => {
-  const [currentView, setCurrentView] = useState("Dev Team");
+  const [currentView, setCurrentView] = useState("Devteam");
   const [slideIndex, setSlideIndex] = useState(0);
 
   const navbarItems = [
