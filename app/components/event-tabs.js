@@ -209,6 +209,7 @@ export default function EventTabs({ data }) {
                   bannerImage={roboticClubImages[index % 4]}
                   rulebook={event.rulebook}
                   form={event.form}
+                  form3={event.form3rdy}
                 />
               );
             })}
