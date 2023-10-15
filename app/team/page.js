@@ -105,7 +105,11 @@ const TeamSection = ({ images, names, roles }) => {
             className="object-cover max-w-full rounded-t-lg"
             placeholder="blur"
           />
-          <div className={`text-white mt font-poppins font-bold text-xl flex flex-col ${image === image10 ? 'text-[19px]' : ''}`}>
+          <div
+            className={`text-white mt font-poppins font-bold text-xl flex flex-col ${
+              image === image10 ? "text-[19px]" : ""
+            }`}
+          >
             <strong className={poppins.className}>{names[index]}</strong>
 
             <span className={algreya.className}>
@@ -174,13 +178,7 @@ function SAC() {
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 function Core() {
-  const images = [
-    image14,
-    image15,
-    image16,
-    image17,
-    image18,
-  ];
+  const images = [image14, image15, image16, image17, image18];
   const names = [
     "Prakhar Gupta",
     "Shaik Lai Sameer",
@@ -302,7 +300,6 @@ function Management() {
     image65,
     image66,
     image67,
-   
   ];
   const names = [
     "D S Hrangaolou",
@@ -324,7 +321,6 @@ function Management() {
     "Penugurthi Dinesh",
     "Sonam Bharti",
     "Rakesh Srikar Reddy",
-    
   ];
   const roles = [
     "Coordinator (Hospitality)",
@@ -346,7 +342,6 @@ function Management() {
     "Co-coordinator (Event Management)",
     "Co-coordinator (Event Management)",
     "Co-coordinator (Event Management)",
-
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
@@ -393,7 +388,7 @@ function Others() {
 }
 
 const componentsMap = {
-  Devteam,
+  Dev: Devteam,
   SAC,
   Core,
   Design,
@@ -439,11 +434,11 @@ const ContainerX = ({ content }) => {
 };
 
 const Team = () => {
-  const [currentView, setCurrentView] = useState("Devteam");
+  const [currentView, setCurrentView] = useState("Dev");
   const [slideIndex, setSlideIndex] = useState(0);
 
   const navbarItems = [
-    "Devteam",
+    "Dev",
     "SAC",
     "Core",
     "Design",
