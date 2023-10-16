@@ -9,8 +9,8 @@ export default function Brochure() {
       <div className="flex flex-col-reverse md:flex-row w-[80vw] h-[40vh] border-[1px] border-stone-600">
         <div className=" flex flex-col  h-full w-full items-center">
           <div
-            className="flex px-5 md:px-20 items-center  h-full w-full 
-                    text-white text-lg md:text-3xl font-semibold text-left md:text-center"
+            className="flex px-5 md:px-28 items-center justify-self-center  h-full w-full 
+                    text-white text-lg md:text-3xl font-semibold text-center"
           >
             <div className={jost.className}>
               View the Cognitia Event Brochure here
