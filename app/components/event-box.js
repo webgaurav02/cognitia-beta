@@ -248,7 +248,7 @@ export default function EventBox({
             }}
           >
             <div className={algreya.className}>
-              <div className="text-[#C9C9C9] font-semibold">register</div>
+              <div className="text-[#C9C9C9] font-semibold">view event</div>
             </div>
           </div>
         </div>
