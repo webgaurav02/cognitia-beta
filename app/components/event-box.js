@@ -151,7 +151,7 @@ export default function EventBox({
               <div className={jost.className}>Coordinators</div>
             </div>
             {buildLine()}
-            <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  lg:overflow-hidden overflow-x-scroll lg:ml-14 lg:mr-12">
+            <div className="flex-row flex justify-start ml-4 mt-5 space-x-5  overflow-x-scroll lg:ml-14 lg:mr-12">
               {team?.map((member, index) => {
                 return (
                   <div key={index} className="flex flex-col items-center">
