@@ -183,7 +183,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
-                  bannerImage={codingClubImages[index % 5]}
+                  bannerImage={event.bannerImage}
                   rulebook={event.rulebook}
                   form={event.form}
                 />
@@ -206,7 +206,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
-                  bannerImage={roboticClubImages[index % 4]}
+                  bannerImage={event.bannerImage}
                   rulebook={event.rulebook}
                   form={event.form}
                   form3={event.form3rdy}
@@ -253,7 +253,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
-                  bannerImage={roboticClubImages[index % 4]}
+                  bannerImage={event.bannerImage}
                   rulebook={event.rulebook}
                   form={event.form}
                 />
@@ -276,7 +276,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
-                  bannerImage={roboticClubImages[index % 4]}
+                  bannerImage={event.bannerImage}
                   rulebook={event.rulebook}
                   form={event.form}
                 />
@@ -299,7 +299,7 @@ export default function EventTabs({ data }) {
                   venue={event.venue}
                   description={event.description}
                   team={event.team}
-                  bannerImage={roboticClubImages[index % 4]}
+                  bannerImage={event.bannerImage}
                   rulebook={event.rulebook}
                   form={event.form}
                 />

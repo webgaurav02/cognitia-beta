@@ -84,6 +84,7 @@ export default function EventBox({
         <div className="2xl:w-[40%] lg:w-[50%] sm:w-[40%] w-[90%] h-[90%] bg-[#0D0D0D] border-[1px] rounded-lg overflow-y-scroll">
           <div className="flex flex-col">
             <Image
+              loader={({ src, width, quality }) => `${src}?w=${width}&q=${10}`}
               alt="image"
               className="rounded-bl-3xl rounded-br-3xl"
               src={bannerImage}
@@ -197,9 +198,10 @@ export default function EventBox({
       <EventDetail />
       <div className="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg">
         <Image
-          placeholder="blur"
+          // placeholder="blur"
           alt="image"
           className={"rounded-t-xl object-fill w-full h-full"}
+          loader={({ src, width, quality }) => `${src}?w=${width}&q=${10}`}
           src={bannerImage}
           height={1000}
           width={1000}
