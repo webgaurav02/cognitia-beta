@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Bug.css'
-import { ReactComponent as Icon } from './images/link.svg';
+import { ReactComponent as Icon } from '../assets/images/link.svg';
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
