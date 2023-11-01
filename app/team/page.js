@@ -28,7 +28,7 @@ import image17 from "../assets/images/Core/supriya.jpg";
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
 
 //Design
-//import image20 from "../assets/images/design/
+import image20 from "../assets/images/design/vadan.jpg";
 import image21 from "../assets/images/design/L Komune.jpg";
 import image22 from "../assets/images/design/Jaswanth Bojja.jpg";
 import image23 from "../assets/images/design/Dhanunjay Naidu Paruvada.jpg";
@@ -199,7 +199,7 @@ function Core() {
 function Design() {
   const images = [
     image0,
-    image1,
+    image20,
     image21,
     image22,
     image23,
