@@ -198,8 +198,8 @@ function Core() {
 }
 function Design() {
   const images = [
-    image0,
     image20,
+    image1,
     image21,
     image22,
     image23,
