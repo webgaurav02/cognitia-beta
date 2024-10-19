@@ -1,0 +1,8 @@
+#filters::-webkit-scrollbar {
+  display: none;
+}
+
+#filters {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
