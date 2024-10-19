@@ -1,8 +1,8 @@
 "use client";
 
 import "./team.css";
-import React, { useState } from "react";
-import image0 from "../assets/images/download 8.jpg";
+import React, { useState,useEffect} from "react";
+import image0 from "../assets/images/download 8.jpg"; 
 //devteam
 import image1 from "../assets/images/dev/sam.jpeg";
 import image2 from "../assets/images/dev/Kilio.jpg";
@@ -17,16 +17,20 @@ import gaurav from "@/app/assets/images/dev/Gaurav.jpeg"
 
 import image9 from "../assets/images/SAC Committee/Atanu.jpg";
 import image10 from "../assets/images/SAC Committee/bunil.jpg";
-import image11 from "../assets/images/SAC Committee/pardhu.png";
-import image12 from "../assets/images/SAC Committee/swarop.jpg";
-import image13 from "../assets/images/SAC Committee/rounak.jpg";
+import image11 from "../assets/images/SAC Committee/swarop.jpg";
+import image12 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
+import image13 from "../assets/images/SAC Committee/Arush.jpg";
+import image13A from "../assets/images/SAC Committee/Indra.jpg";
+
 
 //CORE
-import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
-import image15 from "../assets/images/Core/sameer.jpg";
-import image16 from "../assets/images/Core/WanrapbokRKharshandi.jpg";
-import image17 from "../assets/images/Core/supriya.jpg";
-import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg";
+// import image14 from "../assets/images/Core/Prakhar Gupta.jpg";
+import image15 from "../assets/images/Core/Gannu Abhijith Sai.jpg";
+import image16 from "../assets/images/Core/TVikram Rathod.jpg";
+import image17 from "../assets/images/Core/Neelkantha Mandal.jpg";
+import image18 from "../assets/images/Core/Jitta Chandra Sekhar.jpg";
+
+
 
 //Design
 import image20 from "../assets/images/design/vadan.jpg";
@@ -103,7 +107,7 @@ const TeamSection = ({ images, names, roles }) => {
             height={1000}
             src={image}
             alt={`Image ${index + 1}`}
-            className="object-cover max-w-full rounded-t-lg"
+            className="object-cover max-w-full rounded-t-lg aspect-[3/4]"
             placeholder="blur"
           />
           <div
@@ -137,7 +141,7 @@ function Devteam() {
     image8,
   ];
   const names = [
-    "Samuel",
+    "SAM",
     "Gaurav",
     "Kilio",
     "Amal",
@@ -162,13 +166,14 @@ function Devteam() {
 }
 
 function SAC() {
-  const images = [image9, image10, image11, image12, image13];
+  const images = [image9, image10,image11,image12, image13,image13A];
   const names = [
-    "Dr. Atanu Singha Roy",
+    "Dr. Atanu Singha Roy",                  
     "Dr. Bunil Kr. Balabantaray",
-    "Pardhu Mattupalli",
-    "T. Swaroop Kumar",
-    "Rounak Saha",
+    "T.Swaroop Kumar",
+    "Om Prakash Yadav",
+    "Arush Raman",
+    "IndraShikhar Sharma",
   ];
   const roles = [
     "SAC President",
@@ -176,18 +181,19 @@ function SAC() {
     "General Secretary 1,Science & Technology",
     "General Secretary 2,Science & Technology",
     "Member 1,Science & Technology",
+    "Member 2,Science & Technology",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
 }
 function Core() {
-  const images = [image14, image15, image16, image17, image18];
+  const images = [image0, image15, image16, image17, image18];
   const names = [
-    "Prakhar Gupta",
-    "Shaik Lai Sameer",
-    "Wanrapbok R",
-    "Supriya Neogi",
-    "Om Prakash Yadav",
+    "Ganesh Baidi",
+    "Gannu Abhijith Sai",
+    "T Vikram Rathod",
+    "Neelkantha Mandal",
+    "Jitta Chandra Sekhar",
   ];
   const roles = [
     "Coordinator",
@@ -533,8 +539,15 @@ const Team = () => {
 };
 
 function App() {
+
+
+
   return (
-    <div className="overflow-clip">
+    
+      
+ 
+    <div className="overflow-clip custom-cursor"  >
+
       <div className="h-full w-full bg-[#101010]">
         <NavBar />
         <div className="relative w-full">
