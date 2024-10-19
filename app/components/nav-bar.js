@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
   function buildLine() {
     return (
-      <hr class=" duration-300 w-[100%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
+      <hr className=" duration-300 w-[100%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
     );
   }
   const pathName = usePathname();

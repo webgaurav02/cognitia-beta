@@ -2,9 +2,9 @@
 
 import "./team.css";
 import React, { useState } from "react";
-import image0 from "../assets/images/download 8.jpg";
+import image0 from "../assets/images/download 8.jpg"; 
 //devteam
-import image1 from "../assets/images/dev/sam.jpeg";
+import image1 from "../assets/images/dev/sam.jpg";
 import image2 from "../assets/images/dev/Kilio.jpg";
 import image3 from "../assets/images/dev/Amal Shibu.jpg";
 import image4 from "../assets/images/dev/Isaiah.jpeg";
@@ -103,7 +103,7 @@ const TeamSection = ({ images, names, roles }) => {
             height={1000}
             src={image}
             alt={`Image ${index + 1}`}
-            className="object-cover max-w-full rounded-t-lg"
+            className="object-cover max-w-full rounded-t-lg aspect-[3/4]"
             placeholder="blur"
           />
           <div
@@ -137,7 +137,7 @@ function Devteam() {
     image8,
   ];
   const names = [
-    "Samuel",
+    "SAM",
     "Gaurav",
     "Kilio",
     "Amal",

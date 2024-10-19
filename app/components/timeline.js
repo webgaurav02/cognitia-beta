@@ -40,7 +40,7 @@ export default function Timeline() {
                       height="16"
                       rx="8"
                       fill="grey"
-                      fill-opacity="1"
+                      fillOpacity="1"
                     />
                     <circle
                       cx="8"
@@ -74,7 +74,7 @@ export default function Timeline() {
                       height="16"
                       rx="8"
                       fill="grey"
-                      fill-opacity="1"
+                      fillOpacity="1"
                     />
                     <circle
                       cx="8"

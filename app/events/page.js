@@ -24,7 +24,7 @@ async function EventBody() {
   let data = await getEvents();
   function buildLine() {
     return (
-      <hr class="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
+      <hr className="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
     );
   }
   function buildFiltersList() {
@@ -164,7 +164,7 @@ async function EventBody() {
 export default function EventList() {
   function buildLine() {
     return (
-      <hr class="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
+      <hr className="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
     );
   }
   return (
@@ -186,7 +186,7 @@ export default function EventList() {
 function Skeleton() {
   function buildLine() {
     return (
-      <hr class="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
+      <hr className="w-[90%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#9A9A9A]"></hr>
     );
   }
   return (
