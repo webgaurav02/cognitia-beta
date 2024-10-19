@@ -12,6 +12,7 @@ import image5 from "../assets/images/dev/Nishant.jpeg";
 import image6 from "../assets/images/dev/Marjiba.jpeg";
 import image8 from "../assets/images/dev/Gunnu Lavanya.jpg";
 import image7 from "../assets/images/dev/Gaurav Polai.jpg";
+import gaurav from "@/app/assets/images/dev/Gaurav.jpeg"
 //sac committee
 
 import image9 from "../assets/images/SAC Committee/Atanu.jpg";
@@ -126,6 +127,7 @@ const TeamSection = ({ images, names, roles }) => {
 function Devteam() {
   const images = [
     image1,
+    gaurav,
     image2,
     image3,
     image4,
@@ -136,6 +138,7 @@ function Devteam() {
   ];
   const names = [
     "Samuel",
+    "Gaurav",
     "Kilio",
     "Amal",
     "Isaiah",

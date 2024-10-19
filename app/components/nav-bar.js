@@ -14,7 +14,7 @@ export default function NavBar() {
   const pathName = usePathname();
   return (
     <>
-      <div class="w-full z-50 h-20 backdrop-filter backdrop-blur-md border-b border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] ">
+      <div className="w-full z-50 h-20 backdrop-filter backdrop-blur-md border-b border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] ">
         <div className="h-full flex flex-row justify-between content-center md:mr-32 md:ml-32">
           <div className="text-neutral-200 md:text-[30px] self-center font-medium text-2xl pl-6 ">
             <Link href={"/"}>
