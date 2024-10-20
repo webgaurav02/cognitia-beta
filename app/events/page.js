@@ -31,14 +31,14 @@ async function EventBody() {
     return (
       <div
         id="filters"
-        className="flex flex-row justify-between overflow-x-scroll mt-6 mb-4 space-x-1"
+        className="flex flex-row justify-between overflow-x-scroll mt-6 mb-4 pr-5 space-x-1"
       >
         <FilterButton type={"cc"} name={"CODING"} />
         <FilterButton type={"rc"} name={"ROBOTIC"} />
-        <FilterButton type={"ac"} name={"ASTRO"} />
-        <FilterButton type={"dp"} name={"DEPART"} />
+        <FilterButton type={"ac"} name={"ASTRONOMY"} />
+        <FilterButton type={"dp"} name={"DEPARTMENTAL"} />
         <FilterButton type={"ac"} name={"GAMING"} />
-        <FilterButton type={"rc"} name={"OTHERS"} />
+        <FilterButton type={"rc"} name={"PHOTOGRAPHY"} />
       </div>
     );
   }
@@ -63,7 +63,7 @@ async function EventBody() {
                     "text-[#8A8A8A] font-normal md:text-xl text-sm ml-4 mt-4 mr-6 md:mt-8"
                   }
                 >
-                  Browse all the upcoming events of cognitia 2K23 compiled for
+                  Browse all the upcoming events of cognitia 2K24 compiled for
                   you in one easy to navigate page. So? What are you waiting
                   for?
                 </div>

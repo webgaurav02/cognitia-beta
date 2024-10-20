@@ -62,7 +62,7 @@ export default function EventBox({
   }
   function buildLine() {
     return (
-      <hr class="w-[94%] lg:w-[88%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#717171]"></hr>
+      <hr className="w-[94%] lg:w-[88%] t-4 h-[1px] mx-auto bg-gray-100 border-0 rounded dark:bg-[#717171]"></hr>
     );
   }
   function EventDetail() {

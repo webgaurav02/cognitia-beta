@@ -202,7 +202,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-center">
         <div className="py-6 w-11/12 border-t-2 border-b-2 border-stone-300 border-opacity-40 mb-10  text-white">
-          ©2023 NIT-Meghalaya. All rights reserved
+          ©2024 NIT-Meghalaya. All rights reserved
         </div>
         </div>
        

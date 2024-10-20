@@ -12,7 +12,7 @@ export default function FilterButton({ type, name }) {
   }
   return (
     <Link href="#events">
-      <div className={montserrat.className}>
+      <div className={`${montserrat.className}`}>
         {" "}
         <div className="flex flex-row space-x-3 ml-2">
           <svg
@@ -37,8 +37,7 @@ export default function FilterButton({ type, name }) {
           </svg>
           {type === "cc" ? (
             <div
-              className={`p-2  w-24 lg:w-48
-    rounded-xl h-9 lg:h-16 text-center  border-bgcoding border-[1px] flex flex-col justify-center`}
+              className={`p-2  w-24 lg:w-48 min-w-fit rounded-xl h-9 lg:h-16 text-center  border-bgcoding border-[1px] flex flex-col justify-center`}
             >
               <span
                 className={`font-extrabold text-md lg:text-3xl text-bgcoding`}
@@ -51,8 +50,7 @@ export default function FilterButton({ type, name }) {
           )}
           {type === "rc" ? (
             <div
-              className={`p-2 w-24 lg:w-48
-    rounded-xl h-9 lg:h-16 text-center border-[1px] border-bgrobotics flex flex-col justify-center`}
+              className={`p-2 w-24 lg:w-48 min-w-fit rounded-xl h-9 lg:h-16 text-center border-[1px] border-bgrobotics flex flex-col justify-center`}
             >
               <span
                 className={`font-extrabold text-md lg:text-3xl text-bgrobotics`}
@@ -65,8 +63,7 @@ export default function FilterButton({ type, name }) {
           )}
           {type === "dp" ? (
             <div
-              className={`p-2 w-24 lg:w-48
-    rounded-xl h-9 lg:h-16 text-center border-[1px] border-bgcoding flex flex-col justify-center`}
+              className={`p-2 w-24 lg:w-48 min-w-fit rounded-xl h-9 lg:h-16 text-center border-[1px] border-bgcoding flex flex-col justify-center`}
             >
               <span
                 className={`font-extrabold text-md lg:text-3xl text-bgcoding`}
@@ -79,8 +76,7 @@ export default function FilterButton({ type, name }) {
           )}
           {type === "ac" ? (
             <div
-              className={`p-2 w-24 lg:w-48
-    rounded-xl h-9 lg:h-16 text-center border-[1px] border-purple-600 flex flex-col justify-center`}
+              className={`p-2 w-24 lg:w-48 min-w-fit rounded-xl h-9 lg:h-16 text-center border-[1px] border-purple-600 flex flex-col justify-center`}
             >
               <span
                 className={`font-extrabold text-md lg:text-3xl text-purple-600`}

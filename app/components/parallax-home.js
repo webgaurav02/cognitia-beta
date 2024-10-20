@@ -125,7 +125,7 @@ function ParallaxHome() {
             row-span-2 col-span-3 lg:col-span-3
             text-5xl sm:text-[5rem]"
                 >
-                  Welcome to Cognitia Tech Fest
+                  Welcome to Cognitia 2024
                 </div>
                 <div className="flex justify-end content-center row-span-6 lg:col-span-2">
                   {" "}

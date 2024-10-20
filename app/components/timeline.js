@@ -2,7 +2,7 @@ import { jakarta, poppins } from "../utils/fonts";
 import { montserrat } from "../utils/fonts";
 
 export default function Timeline() {
-  function Container({ date, event1, event2 }) {
+  function Container({ date, event1, event2, event3 }) {
     return (
       <>
         <div className={jakarta.className}>
@@ -58,7 +58,7 @@ export default function Timeline() {
                   </div>
                 </div>
               </div>
-              <div className="mx-6 md:mx-10 flex space-x-4  mt-2  md:mt-5 md:mb-5">
+              <div className="mx-6 md:mx-10 flex space-x-4  mt-2  md:mt-5">
                 <div className="self-center ">
                   <svg
                     width="16"
@@ -89,6 +89,37 @@ export default function Timeline() {
                   {event2}
                 </div>
               </div>
+              {event3 && <div className="mx-6 md:mx-10 flex space-x-4  mt-2  md:mt-5 md:mb-5">
+                <div className="self-center ">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <rect
+                      y="0.5"
+                      width="16"
+                      height="16"
+                      rx="8"
+                      fill="grey"
+                      fill-opacity="1"
+                    />
+                    <circle
+                      cx="8"
+                      cy="8.5"
+                      r="4"
+                      fill="white"
+                      className="bg-black"
+                    />
+                  </svg>
+                </div>
+                <div className="self-center text-sm md:text-lg font-semibold">
+                  {event3}
+                </div>
+              </div>}
             </div>
           </div>
         </div>
@@ -139,17 +170,18 @@ export default function Timeline() {
           </svg>
           <div className="relative z-10">
             <Container
-              date={"2nd November"}
+              date={"7th November"}
               event1={"Official commencement of the Cognitia 2023 event"}
-              event2={"Inauguration Ceremony at 9:00am"}
+              event2={"Inauguration Ceremony at 3:00PM"}
             />
             <Container
-              date={"3rd November"}
-              event1={"Hackathon by the Coding Club"}
-              event2={"Drone Competition by the Robotics Club"}
+              date={"8th November"}
+              event1={"Coding Contest by the Coding Club"}
+              event2={"Drone Event by the Robotics Club"}
+              event3={"Pinnacle Perspective by the Taskforce Club"}
             />
             <Container
-              date={"4th November"}
+              date={"9th November"}
               event1={"Roborumble by the Robotics Club"}
               event2={"Jam Session"}
             />

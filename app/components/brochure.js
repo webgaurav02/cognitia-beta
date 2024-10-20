@@ -1,6 +1,6 @@
 import { algreya, jost, montserrat, poppins } from "../utils/fonts";
 import Image from "next/image";
-import brochure_banner from "../assets/images/brochure_banner.png";
+import brochure_banner from "../assets/cognitia-2024-banner.png";
 import Link from "next/link";
 
 export default function Brochure() {
@@ -22,7 +22,7 @@ export default function Brochure() {
           >
             <Link
               legacyBehavior
-              href="https://drive.google.com/file/d/1vDGXmcInC3vFnctD7SEdOT8yJH1yz3uH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1PuwowhgQ74I52FGulV0SPLlwR9ccgexJ/view?usp=sharing"
             >
               <a target="_blank" rel="noopener noreferrer">
                 <button className="flex p-3 self-center justify-center items-center space-x-2 rounded-lg md:text-xl bg-[#E1ABE8] text-base text-black w-[70vw] h-10 md:h-14 md:w-[30vw]">        
@@ -36,7 +36,7 @@ export default function Brochure() {
           </div>
         </div>
         <div className=" h-full w-full relative">
-          <Image src={brochure_banner} fill={true}></Image>
+          <Image src={brochure_banner} fill></Image>
         </div>
       </div>
     </div>
