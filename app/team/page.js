@@ -86,6 +86,48 @@ import image78 from "../assets/images/others/L SRI KASYAP.jpg"
 import image79 from "../assets/images/others/Simma kiran.jpg"
 //import image80 from "../assets/images/others/
 
+// coding
+import image100 from "../assets/images/download 8.png"
+import image101 from "../assets/images/download 8.png"
+import image102 from "../assets/images/download 8.png"
+import image103 from "../assets/images/download 8.png"
+import image104 from "../assets/images/download 8.png"
+import image105 from "../assets/images/coding/Avinash Renukunta.jpeg"
+import image106 from "../assets/images/coding/Samiksha Deb.jpg"
+import image107 from "../assets/images/coding/Gunnu Lavanya.jpg"
+import image108 from "../assets/images/download 8.png"
+import image109 from "../assets/images/coding/Hriti Chakrabortty.jpg"
+import image110 from "../assets/images/download 8.png"
+import image111 from "../assets/images/coding/Siddhant Purkayastha.jpg"
+import image112 from "../assets/images/download 8.png"
+import image113 from "../assets/images/download 8.png"
+import image114 from "../assets/images/dev/Gaurav.jpeg"
+import image115 from "../assets/images/download 8.png"
+
+
+// Departmental
+import image130 from "../assets/images/departmental/Koruprolu Bhagya Raju.jpg"
+import image131 from "../assets/images/download 8.png"
+import image132 from "../assets/images/departmental/Ajay Goud E.jpg"
+import image133 from "../assets/images/download 8.png"
+import image134 from "../assets/images/download 8.png"
+import image135 from "../assets/images/download 8.png"
+import image136 from "../assets/images/download 8.png"
+import image137 from "../assets/images/download 8.png"
+import image138 from "../assets/images/download 8.png"
+import image139 from "../assets/images/download 8.png"
+import image140 from "../assets/images/download 8.png"
+import image141 from "../assets/images/download 8.png"
+import image142 from "../assets/images/download 8.png"
+import image143 from "../assets/images/departmental/Gurijala Meghana.jpg"
+import image144 from "../assets/images/design/M Manikanta Reddy.jpg"
+import image145 from "../assets/images/departmental/Shubham Kumar.jpg"
+import image146 from "../assets/images/download 8.png"
+import image147 from "../assets/images/departmental/Ajmire Harshada Nitin.jpg"
+import image148 from "../assets/images/departmental/Adarsh Kumar Shrivastav.jpg"	
+import image149 from "../assets/images/download 8.png"
+
+
 import Image from "next/image"
 import NavBar from "../components/nav-bar"
 import { algreya, poppins } from "../utils/fonts"
@@ -337,22 +379,11 @@ function Management() {
 
 function Robotics() {
 	const images = [
-		// image0,
 	]
 	const names = [
-		// "Name",
 	]
 	const roles = [
-		// "Convener",
-		// "Convener",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
+		
 	]
 
 	return <TeamSection images={images} names={names} roles={roles} />
@@ -360,22 +391,60 @@ function Robotics() {
 
 function Coding() {
 	const images = [
-		// image0,
+		image100,
+		image101,
+		image102,
+		image103,
+		image104,
+		image105,
+		image106,
+		image107,
+		image108,
+		image109,
+		image110,
+		image111,
+		image112,
+		image113,
+		image114,
+		image115,
 	]
 	const names = [
-		// "Name",
-	]
+		"Raj Kedia",
+		"Anshu Das",
+		"Shubhavi Kukreja",
+		"Vasundhara Singh",
+		"Roshan Kumar Sah",
+		"Avinash Renukunta",
+		"Samiksha Deb",
+		"Gunnu Lavanya",
+		"Manish Prasad Gupta",
+		"Hriti Chakrabortty",
+		"Satyajeet Rai",
+		"Siddhant Purkayastha",
+		"Karipireddy Surya Teja",
+		"Ritabrata Pal",
+		"Guarav Joshi",
+		"Rounak Saha"
+	  ];
+	  
 	const roles = [
-		// "Convener",
-		// "Convener",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		"Co-Coordinator",
+		
 	]
 
 	return <TeamSection images={images} names={names} roles={roles} />
@@ -389,16 +458,7 @@ function Gaming() {
 		// "Name",
 	]
 	const roles = [
-		// "Convener",
-		// "Convener",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
+		
 	]
 
 	return <TeamSection images={images} names={names} roles={roles} />
@@ -406,23 +466,73 @@ function Gaming() {
 
 function Departmental() {
 	const images = [
-		// image0,
+		image130,
+		image131,
+		image132,
+		image133,
+		image134,
+		image135,
+		image136,
+		image137,
+		image138,
+		image139,
+		image140,
+		image141,
+		image142,
+		image143,
+		image144,
+		image145,
+		image146,
+		image147,
+		image148,
+		image149,
 	]
 	const names = [
-		// "Name",
-	]
-	const roles = [
-		// "Convener",
-		// "Convener",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-	]
+		"Bhagya Raju",
+		"Chebolu Sai Teja",
+		"Ajay",
+		"Somya Sonakshi",
+		"Manisha",
+		"Gunjan",
+		"Diyasha Mahanta",
+		"Sourab Paul",
+		"Kundan Kumar",
+		"Sweetha Singh",
+		"Debadeep Chakraborty",
+		"Aibanribiang Lyngkhoi",
+		"Sayan Debanth",
+		"Gurijala Meghana",
+		"M. Manikanta Reddy",
+		"Shubham Kumar",
+		"Manisha Kumari",
+		"Harshada",
+		"Adarsh Kumar Shrivastav",
+		"Preetikana Das"
+	  ];
+	  
+	  const roles = [
+		"Coordinator (CSE)",
+		"Coordinator (CSE)",
+		"Coordinator (ECE)",
+		"Coordinator (ECE)",
+		"Coordinator (EEE)",
+		"Coordinator (EEE)",
+		"Coordinator (ME)",
+		"Coordinator (ME)",
+		"Coordinator (CE)",
+		"Coordinator (CE)",
+		"Coordinator (Physics)",
+		"Coordinator (Physics)",
+		"Coordinator (Chemistry)",
+		"Co-Coordinator (CSE)",
+		"Co-Coordinator (ECE)",
+		"Co-Coordinator (EEE)",
+		"Co-Coordinator (ME)",
+		"Co-Coordinator (CE)",
+		"Co-Coordinator (Physics)",
+		"Co-Coordinator (Chemistry)",
+	  ];
+	  
 
 	return <TeamSection images={images} names={names} roles={roles} />
 }
