@@ -57,37 +57,35 @@ import image40 from "../assets/images/marketing/Kabesa S Marak.png";
 import image41 from "../assets/images/marketing/Neelkantha Mandal.jpg";
 
 //Management
-import image51 from "../assets/images/management/Arilam Kyndiah.jpg";
-import image52 from "../assets/images/management/hrangaolou.jpg";
-import image53 from "../assets/images/management/Koninika Tarafdar.jpg";
-import image54 from "../assets/images/management/meba.jpg";
-import image55 from "../assets/images/management/PREM KUMAR GUPTA.jpg";
-//import image56 from "../assets/images/management/
-import image57 from "../assets/images/management/Kenneth Wellborn Basaiawmoit.jpeg";
-import image58 from "../assets/images/management/Klusborning Nongbri.jpg";
-//import image59 from "../assets/images/management/
-//import image60 from "../assets/images/management/
-import image61 from "../assets/images/management/B Palguna Rao.jpg";
-import image62 from "../assets/images/management/S Charan Tejha Reddy.jpg";
-//import image63 from "../assets/images/management/
-//import image64 from "../assets/images/management/
-import image65 from "../assets/images/management/Penugurthi.Dinesh.jpg";
-import image66 from "../assets/images/management/Sonam Bharti.jpg";
-import image67 from "../assets/images/management/T.Rakesh Srikar Reddy.jpg";
-import image68 from "../assets/images/management/ajay.jpg";
-//import image69 from "../assets/images/management/
+import image51 from "../assets/images/management/20240323131237_IMG_6123 - Manish Kumar Bishnoi.jpg";
+import image52 from "../assets/images/management/ig_sd - Sojib Datta.jpg";
+import image53 from "../assets/images/management/IMG_20240703_003842_033 - Mushfique Ahmed.jpg";
+import image54 from "../assets/images/management/IMG_20241011_021026 - Minaxi Kumari.jpg";
+import image55 from "../assets/images/management/IMG_20241011_104705 - Yashvi Arya.jpg";
+import image56 from "../assets/images/management/IMG_20241011_182243 - Podugu Ashrith.jpg";
+import image57 from "../assets/images/management/Photo - Nazia Hasan Sheikh (1).jpg";
+import image58 from "../assets/images/management/Screenshot_20241011-143337~2 - Syed Mohammad Ashraf Uddin Rafi.png";
+import image59 from "../assets/images/management/Vasundhara - Vasundhara Singh.jpeg";
+
 
 //others
-import image71 from "../assets/images/others/Gannu Abhijith Sai.jpg";
-// import image72 from "../assets/images/others/
-// import image73 from "../assets/images/others/
-// import image74 from "../assets/images/others/
-// import image75 from "../assets/images/others/
-// import image76 from "../assets/images/others/
-import image77 from "../assets/images/others/Karimi Tarun Teja.jpeg";
-import image78 from "../assets/images/others/L SRI KASYAP.jpg";
-import image79 from "../assets/images/others/Simma kiran.jpg";
-//import image80 from "../assets/images/others/
+
+import image71 from "../assets/images/others/Laxman.jpg";
+import image72 from "../assets/images/others/Vedant.jpg";
+import image73 from "../assets/images/others/Satyajeet.jpg";
+import image74 from "../assets/images/others/Vattimilli Divya Sree.jpg";
+import image75 from "../assets/images/others/Gowthaboina Trisha.jpg";
+import image76 from "../assets/images/others/Sravani.webp";
+import image77 from "../assets/images/others/sanjana thothu.jpg";
+import image78 from "../assets/images/others/Rai  Tripura.jpeg";
+import image79 from "../assets/images/others/Rounak Saha.jpg";
+import image80 from "../assets/images/others/Arunoday Tiwari.jpg";
+import image81 from "../assets/images/others/Hemchand.jpg";
+import image82 from "../assets/images/others/Rama Krishna.jpg";
+import image83 from "../assets/images/others/MD SHAMS TABREZ ANSARI.jpg";
+import image84 from "../assets/images/others/Dharam Singh.jpg";
+import image85 from "../assets/images/others/Priyanshu Singh.jpg";
+import image86 from "../assets/images/others/Anil Kumar.jpg";
 
 import Image from "next/image";
 import NavBar from "../components/nav-bar";
@@ -290,65 +288,55 @@ function Marketing() {
 }
 function Management() {
   const images = [
-    image52,
     image51,
+    image52,
     image53,
-    image0,
-    image55,
-    image68,
-    image0,
     image54,
+    image55,
+    image56,
     image57,
     image58,
+    image59,
     image0,
     image0,
-    image61,
-    image62,
     image0,
     image0,
-    image65,
-    image66,
-    image67,
+    image0,
   ];
   const names = [
-    "D S Hrangaolou",
-    "Arilam",
-    "Koninika Tarafdar",
-    "Bahunshisha Snaitang",
-    "Prem",
-    "Ajay Reddy",
-    "Dappalapoodi Bhuvanesh",
-    "Mebadeipor",
-    "Kenneth Wellborn ",
-    "Klusborning Nongbri",
+    "Manish Kumar Bishnoi",
     "Sojib Datta",
-    "Richmondwell L Kalwing",
-    "B Palguna Rao",
-    "S Charan Tejha",
-    "B Sai Upender",
-    "Olivia El Reka",
+    "Mushfique Ahmed",
+    "Minaxi Kumari",
+    "Yashvi Arya",
+    "Podugu Ashrith",
+    "Nazia Hasan Sheik",
+    "Syed Mohammad Ashraf Uddin Rafi",
+    "Vasundhara Singh",
     "Penugurthi Dinesh",
-    "Sonam Bharti",
-    "Rakesh Srikar Reddy",
+    "B Palguna Rao",
+    "Abhishek",
+    "Rakesh Thumu",
+    "Rahul Kumar",
+    // "B Sai Upender",
+    // "Olivia El Reka",
+    // "Penugurthi Dinesh",
+    // "Sonam Bharti",
+    // "Rakesh Srikar Reddy",
   ];
   const roles = [
-    "Coordinator (Hospitality)",
-    "Coordinator (Hospitality)",
-    "Co-coordinator (Hospitality)",
-    "Co-coordinator (Hospitality)",
-    "Co-coordinator (Hospitality)",
-    "Coordinator (Food Committee)",
-    "Co-coordinator (Food Committee)",
-    "Coordinator (Stage Management)",
     "Coordinator (Stage Management)",
     "Coordinator (Stage Management)",
     "Co-coordinator (Stage Management)",
+    "Coordinator (Event Management)",
+    "Member-1(Event Management)",
+    "Member-2(Stage Management)",
+    "Member-2(Event Management)",
+    "Member-1(Stage Management)",
+    "Coordinator (Event Management)",
+    "Coordinator (Stage Management)",
     "Co-coordinator (Stage Management)",
-    "Co-coordinator (Stage Management)",
     "Coordinator (Event Management)",
-    "Coordinator (Event Management)",
-    "Coordinator (Event Management)",
-    "Co-coordinator (Event Management)",
     "Co-coordinator (Event Management)",
     "Co-coordinator (Event Management)",
   ];
@@ -358,43 +346,93 @@ function Management() {
 function Others() {
   const images = [
     image71,
+    image72,
+    image73,
+    image74,
+    image75,
     image0,
     image0,
-    image0,
-    image0,
-    image0,
+    image76,
     image77,
     image78,
     image79,
+    image80,
+    image81,
     image0,
+    image0,
+    image82,
+    image83,
+    image84,
+    image0,
+    image85,
+    image0,
+    image0,
+    image0,
+    image86,
+    image0,
+
+
+
+
   ];
+  
   const names = [
-    "Gannu Abhijith Sai",
-    "Arkibud B. Ryntathiang",
-    "Taruna",
-    "Bingi Rakesh",
-    "Diyasha Mahanta",
-    "Rai Kachak Tripura",
-    "Karimi Tarun Teja",
-    "L Sri Kasyap",
-    "Simma Kiran",
-    "Nimmakuri Varun Teja",
+    "Laxman",
+    "Vedant",
+    "Satyajeet",
+    "Vattimilli Divya Sree",
+    "Gowthaboina Trisha",
+   "Rakesh Bingi", // Image0 photo not found
+    "Refi Vasti islari", // Image0 photo not found
+    "Sravani",
+    "sanjana thothu",
+    "Rai Tripura",
+    "Rounak Saha",
+    "Arunoday Tiwari",
+    "Hemchand",
+    "Simma Kiran",// Image0 photo not found
+    "Dharmpal",// Image0 photo not found
+    "Rama Krishna",
+    "MD SHAMS TABREZ ANSARI",
+    "Dharam Singh",
+    "Rupesh",// Image0 photo not found
+    "Prinayshu Singh",
+    "Raj Sharma",// Image0 photo not found
+    "Gabriel",// Image0 photo not found
+    "Yaswanth",// Image0 photo not found
+    "Anil Kumar",
+    "Karan Gupta"// Image0 photo not found
   ];
   const roles = [
-    "Coordinator (Task Force Club)",
-    "Coordinator (Task Force Club)",
-    "Co-coordinator (Task Force Club)",
+    "Talk Show Coordinators (Task Force Club)",
+    "Talk Show Coordinators (Task Force Club)",
+    "Talk Show Co-Coordinators (Task Force Club)",
+    "Talk Show Members (Task Force Club)",
+    "Talk Show Members(Task Force Club)",
     "Coordinator (Traditional Dance)",
     "Coordinator (Traditional Dance)",
-    "Coordinator (Photography and fine arts)",
+    "Co-Coordinator (Traditional Dance)",
+    "Member (Traditional Dance)",
+    "Astronomy Coordinator ",
+    "Astronomy Member",
+    "Astronomy Member",
     "Head (Volunteer)",
     "Head (Volunteer)",
     "Coordinator (Volunteer)",
     "Coordinator (Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
+    "Member (Robotic club Volunteer)",
   ];
 
   return <TeamSection images={images} names={names} roles={roles} />;
 }
+
 
 const componentsMap = {
   Dev: Devteam,
