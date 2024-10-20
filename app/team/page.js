@@ -72,8 +72,6 @@ import image67 from "../assets/images/management/T.Rakesh Srikar Reddy.jpg"
 import image68 from "../assets/images/management/ajay.jpg"
 //import image69 from "../assets/images/management/
 
-//robotics
-
 //others
 import image71 from "../assets/images/others/Gannu Abhijith Sai.jpg"
 // import image72 from "../assets/images/others/
@@ -85,6 +83,33 @@ import image77 from "../assets/images/others/Karimi Tarun Teja.jpeg"
 import image78 from "../assets/images/others/L SRI KASYAP.jpg"
 import image79 from "../assets/images/others/Simma kiran.jpg"
 //import image80 from "../assets/images/others/
+
+// robotics
+import image81 from "../assets/images/download 8.png"
+import image82 from "../assets/images/download 8.png"
+import image83 from "../assets/images/download 8.png"
+import image84 from "../assets/images/download 8.png"
+import image85 from "../assets/images/robotics/ameya_patil.jpg"
+import image86 from "../assets/images/robotics/nirupan_jagnekar.jpg"
+import image87 from "../assets/images/download 8.png"
+import image88 from "../assets/images/download 8.png"
+import image89 from "../assets/images/download 8.png"
+import image90 from "../assets/images/download 8.png"
+import image91 from "../assets/images/robotics/badurgari_rasool.jpeg"
+import image92 from "../assets/images/download 8.png"
+import image93 from "../assets/images/robotics/chandrani_dalui.jpg"
+import image94 from "../assets/images/robotics/ankit_raj.jpg"
+import image95 from "../assets/images/download 8.png"
+import image96 from "../assets/images/robotics/shivam_kumar_manglam.jpg"
+import image97 from "../assets/images/robotics/himanshu_kumar_jha.jpg"
+import image98 from "../assets/images/robotics/sumit_kumar.jpg"
+import image99 from "../assets/images/robotics/angshuman_dey.jpg"
+import image991 from "../assets/images/robotics/neelkantha_mandal.jpg"
+import image992 from "../assets/images/download 8.png"
+import image993 from "../assets/images/robotics/pranav_kumar_dubey.jpg"
+import image994 from "../assets/images/robotics/pankaj_saraswat.jpg"
+import image995 from "../assets/images/download 8.png"
+import image996 from "../assets/images/robotics/debashish_nayak.jpeg"
 
 import Image from "next/image"
 import NavBar from "../components/nav-bar"
@@ -337,22 +362,87 @@ function Management() {
 
 function Robotics() {
 	const images = [
-		// image0,
+		image81,
+		image82,
+		image83, 
+		image84,
+		image85,
+		image86,
+		image87,
+		image88,
+		image89,
+		image90,
+		image91,
+		image92,
+		image93,
+		image94,
+		image95,
+		image96,
+		image97,
+		image98,
+		image99,
+		image991,
+		image992,
+		image993,
+		image994,
+		image995,
+		image996,
 	]
 	const names = [
-		// "Name",
+		"Sourabh Paul",
+		"Sachin Raj",
+		"Parthiv Das",
+		"Narendra Kumar",
+		"Ameya Patil",
+		"Nirupan Jagnekar",
+		"Ankit Singh",
+		"Avinash Kumar Singh",
+		"Ashvil Nagar",
+		"Rahul Kumar",
+		"Badurgari Rasool",
+		"Aditya Kumar Pandey",
+		"Chandrani Dalui",
+		"Ankit Raj",
+		"Rohit Aryan",
+		"Shivam Kumar",
+		"Himanshu Kumar Jha",
+		"Sumit Kumar",
+		"Angshuman Dey",
+		"Neelkantha Mandal",
+		"Sanapala Rahul",
+		"Pranav Kumar Dubey",
+		"Pankaj Saraswat",
+		"Ashirbad Raj Arya",
+		"Debashish Nayak"
 	]
 	const roles = [
 		// "Convener",
 		// "Convener",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
-		// "Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
+		"Co-coordinator",
 	]
 
 	return <TeamSection images={images} names={names} roles={roles} />
