@@ -29,7 +29,7 @@ import image17 from "../assets/images/Core/supriya.jpg"
 import image18 from "../assets/images/Core/OM PRAKASH YADAV.jpg"
 
 //Design
-import image20 from "../assets/images/design/paruvada Dhanunjay Naidu.png"
+import image20 from "../assets/images/design/Paruvada Dhanunjay Naidu.png"
 import image21 from "../assets/images/design/SUBHADEEP SINHA.jpg"
 import image22 from "../assets/images/design/Botu Varun Kumar.jpg"
 import image23 from "../assets/images/design/M Manikanta Reddy.jpg"
